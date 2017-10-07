@@ -36,7 +36,7 @@
 
 ### INSERT
 1.  Füge zwei Datensätze mit Ihren oder Fantasywerten nach folgendem Muster ein: 
-```mysql
+```sql
 INSERT INTO users (username, email, password, name, bio, gender, birthday, city, country, centimeters, avatar, role, is_active, remember_token, created_at, updated_at) 
 VALUES ('guenther37', 'guenther@instahub.app', '12345', 'Günther Müller', 'Günther mag Kartoffelsalat.', 'male', '2006-06-06 00:00:00', 'Leipzig', 'Deutschland', '173', 'avatar.png', 'user', '0', NULL, now(), now());
 ```
@@ -54,7 +54,7 @@ VALUES ('guenther37', 'guenther@instahub.app', '12345', 'Günther Müller', 'Gü
 3.  Ersetze die Körpergröße von allen friendzonern durch 160.
   Expertenaufgabe:
 4.  Ersetze den Nachnamen Müller durch Mueller
-5.  Ersetze die Körpergröße mit dem Wert `#!mysql FLOOR(RAND()*45)+150`
+5.  Ersetze die Körpergröße mit dem Wert `#!sql FLOOR(RAND()*45)+150`
   1. Was hat dieser Befehl bewirkt?
   2. Klicke nach dem Ausführen auf die einzelnen Befehle (Öffnen im neuen Tab) und erschließe sich deren Bedeutung.
 
@@ -79,7 +79,7 @@ Um aus den bestehenden Bildbeschreibungen die Tags zu extrahieren kannst du folg
 
 ## Tabelle Photo
 
-```mysql
+```sql
 CREATE TABLE `photos` (
   `id` int(10) UNSIGNED NOT NULL,
   `user_id` int(10) UNSIGNED NOT NULL,
@@ -102,7 +102,7 @@ ALTER TABLE `photos`
 Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensatz](sql/photos.sql) einfügen.
 
 ## Tabelle Tags
-```mysql
+```sql
 CREATE TABLE `tags` (
   `id` int(10) UNSIGNED NOT NULL,
   `photo_id` int(10) UNSIGNED NOT NULL,
@@ -124,7 +124,7 @@ Um aus den bestehenden Bildbeschreibungen die Tags zu extrahieren kannst du folg
 [https://*hub*.instahub.org/dba/updateTags](#)
 
 ## Tabelle Comments 
-```mysql
+```sql
 CREATE TABLE `comments` (
   `id` int(10) UNSIGNED NOT NULL,
   `user_id` int(10) UNSIGNED NOT NULL,
@@ -149,7 +149,7 @@ ALTER TABLE `comments`
 Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensatz](sql/comments.sql) einfügen.
 
 ## Tabelle Follower
-```mysql
+```sql
 CREATE TABLE `follows` (
   `id` int(10) UNSIGNED NOT NULL,
   `following_id` int(10) UNSIGNED NOT NULL,
@@ -171,7 +171,7 @@ ALTER TABLE `follows`
 Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensatz](sql/follows.sql) einfügen.
 
 ## Tabelle Likes
-```mysql
+```sql
 CREATE TABLE `likes` (
   `id` int(10) UNSIGNED NOT NULL,
   `photo_id` int(10) UNSIGNED NOT NULL,
