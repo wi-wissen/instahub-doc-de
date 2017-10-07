@@ -1,4 +1,4 @@
-# Instahub Dokumentation
+# Start
 
 ## Instahub
 
@@ -23,11 +23,11 @@ Der Vorgänger von InstaHub ist die [friendzone](https://blog.wi-wissen.de/post/
 
 Diese Dokumentation richtet sich hauptsächlich an Lehrkräfte. Es werden folgende Themenbereiche behandelt:
 
-**Bedienung** - hier wird die Bedienung von InstaHub besonders aus der Sicht für Lehrkräfte vorgestellt.
+**[Bedienung](frontend)** - hier wird die Bedienung von InstaHub besonders aus der Sicht für Lehrkräfte vorgestellt.
 
-**Didaktik** - hier wird ein Vorschlag zur didaktischen Nutzung von InstaHub gemacht.
+[**Didaktik**](didactic) - hier wird ein Vorschlag zur didaktischen Nutzung von InstaHub gemacht.
 
-**Übungen** - hier sind Vorschläge für Aufgabenstellungen an die Schüler.
+[**Übungen**](exercices) - hier sind Vorschläge für Aufgabenstellungen an die Schüler.
 
 ## Mitmachen!
 
