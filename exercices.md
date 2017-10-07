@@ -1,0 +1,302 @@
+# Aufgaben
+
+    Diese Aufgaben sind aktuell nur aus friendzone übernommen und leicht adaptiert. Vor einem Einsatz im Unterricht müssen diese Aufgaben überarbeitet werden.
+## Auswerten von Daten I
+
+### Projektion
+
+1. Wähle alle Einträge aus der Tabelle users aus
+
+2. Gib alle Vornamen aus profiles aus
+
+3. Gib Vorname und Name aller Einträge aus profiles an
+
+4. Gib die Wohnorte aller friendzoner an
+
+5. Gib jeden Wohnort nur einmal aus
+
+###Selektion (Auswahl)
+
+1.	Wähle alle Einträge aus der Tabelle users aus, bei denen das Geschlecht (gender) weiblich (female) ist.
+  2.Wähle alle Einträge aus der Tabelle users aus, bei deren Nachname „Bauer“ ist.
+  3.Wähle alle Einträge mit dem Vornamen Lisa aus.
+  4.Liste alle Personen aus München auf
+  5.Wie viele Personen wohnen in München (Wie viele Ergebnisse liefert Ihre Abfrage)?
+  6.Kommen alle Personen aus Deutschland? (Vergleiche die Ergebnisse)
+  7.Welche friendzoner haben einen Nachnamen mit einem a?
+  8.Von welchem friendzoner beginnt der Nachname mit einem B?
+
+### Logische Operatoren
+
+1.	Ermittle alle friendzoner welche Leon oder Luca heißen
+2.	Wie viele Namen beginnen mit einem "A" oder einem "B"?
+3.	Von welchem Mitgliedern beginnt der Name mit einem "B" und der Vorname mit einem "A"? Gib deren Name und Heimatstadt aus.
+
+## Verändern von Daten I
+
+###INSERT
+1.  Füge zwei Datensätze mit Ihren oder Fantasywerten nach folgendem Muster ein: 
+```mysql
+INSERT INTO users (username, email, password, name, bio, gender, birthday, city, country, centimeters, avatar, role, is_active, remember_token, created_at, updated_at) 
+VALUES ('guenther37', 'guenther@instahub.app', '12345', 'Günther Müller', 'Günther mag Kartoffelsalat.', 'male', '2006-06-06 00:00:00', 'Leipzig', 'Deutschland', '173', 'avatar.png', 'user', '0', NULL, now(), now());
+```
+    1.  Was bedeutet now()?
+  2.  Welche ID hat Ihr neuer Datensatz? Auf welche Arten könne diese ermitteln?
+  3.  Füge den User Mila Bach aus Hamburg hinzu. Sie können sich die fehlenden Attribute selbst ausdenken. *Hinweis: Sie können den SQL-Ausdruck aus 1. wieder verwenden.*
+  4.  Füge mithilfe der friendzone-Oberfläche (Knopf Add-Member) die hier angezeigte Person hinzu.
+  5.  Welche ID hat Ihr neuer Datensatz? Auf welche Arten könne diese ermitteln?
+  Expertenaufgabe: 
+  6.  Warum wird bei 3. die ID nicht in der friendzone-Oberfläche abgefragt? Sollte die ID dann nicht leer bleiben?
+
+###UPDATE
+1.  Ändre in dem zuletzt hinzugefügten Eintrag die Telefonnummer in +49 341 3939-150
+2.  Ersetze den Begriff "Germany" überall durch "Deutschland"
+3.  Ersetze die Körpergröße von allen friendzonern durch 160.
+  Expertenaufgabe:
+4.  Ersetze den Nachnamen Müller durch Mueller
+5.  Ersetze die Körpergröße mit dem Wert `#!mysql FLOOR(RAND()*45)+150`
+  1. Was hat dieser Befehl bewirkt?
+  2. Klicke nach dem Ausführen auf die einzelnen Befehle (Öffnen im neuen Tab) und erschließe sich deren Bedeutung.
+
+###DELETE
+    1. Lösche den vorletzten Datensatz.
+
+
+##ERM
+###InstaHub
+Zeichne das Entity-Relationship-Modell deines InstaHubs
+
+## Tabelle User
+
+Bereits vor deinem ersten Login in deinem InstaHub haben sich 196 User registriert!
+
+Fügst du über einen SQL-Befehl einen neuen User hinzu, kann sich dieser nicht einloggen, da das Passwort gesichert in der Datenbank abgespeichert werden muss und nicht im Klartext verglichen werden kann.
+
+Um Passwörter im Klartext zu sichern, kannst du in deinem Browser die folgende Adresse aufrufen:
+
+Um aus den bestehenden Bildbeschreibungen die Tags zu extrahieren kannst du folgende Webadresse aufrufen: 
+[https://*hub*.instahub.org/dba/cryptPWs](#)
+
+## Tabelle Photo
+
+```mysql
+CREATE TABLE `photos` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `user_id` int(10) UNSIGNED NOT NULL,
+  `description` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `url` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+ALTER TABLE `photos`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1402;
+  
+ALTER TABLE `photos`
+  ADD CONSTRAINT `photos_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
+```
+
+1. Verstehe den obigen SQL-Befehl.
+2. Führe den obigen SQL-Befehl aus.
+
+Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensatz](sql/photos.sql) einfügen.
+
+##Tabelle Tags
+```mysql
+CREATE TABLE `tags` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `photo_id` int(10) UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+ALTER TABLE `tags`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6869;
+  
+ALTER TABLE `tags`
+  ADD CONSTRAINT `tags_photo_id_foreign` FOREIGN KEY (`photo_id`) REFERENCES `photos` (`id`) ON DELETE CASCADE;
+```
+1. Verstehe den obigen SQL-Befehl.
+2. Führe den obigen SQL-Befehl aus.
+
+Um aus den bestehenden Bildbeschreibungen die Tags zu extrahieren kannst du folgende Webadresse aufrufen: 
+[https://*hub*.instahub.org/dba/updateTags](#)
+
+## Tabelle Comments 
+```mysql
+CREATE TABLE `comments` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `user_id` int(10) UNSIGNED NOT NULL,
+  `photo_id` int(10) UNSIGNED NOT NULL,
+  `body` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+ALTER TABLE `comments`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=953;
+  
+ALTER TABLE `comments`
+  ADD CONSTRAINT `comments_photo_id_foreign` FOREIGN KEY (`photo_id`) REFERENCES `photos` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `comments_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
+  
+
+```
+1. Verstehe den obigen SQL-Befehl.
+2. Führe den obigen SQL-Befehl aus.
+
+Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensatz](sql/comments.sql) einfügen.
+
+## Tabelle Follower
+```mysql
+CREATE TABLE `follows` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `following_id` int(10) UNSIGNED NOT NULL,
+  `follower_id` int(10) UNSIGNED NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+ALTER TABLE `follows`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1500;
+  
+ALTER TABLE `follows`
+  ADD CONSTRAINT `follows_follower_id_foreign` FOREIGN KEY (`follower_id`) REFERENCES `users` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `follows_following_id_foreign` FOREIGN KEY (`following_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
+```
+1. Verstehe den obigen SQL-Befehl.
+2. Führe den obigen SQL-Befehl aus.
+
+Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensatz](sql/follows.sql) einfügen.
+
+## Tabelle Likes
+```mysql
+CREATE TABLE `likes` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `photo_id` int(10) UNSIGNED NOT NULL,
+  `user_id` int(10) UNSIGNED NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+ALTER TABLE `likes`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4999;
+  
+ALTER TABLE `likes`
+  ADD CONSTRAINT `likes_photo_id_foreign` FOREIGN KEY (`photo_id`) REFERENCES `photos` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `likes_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
+```
+1. Verstehe den obigen SQL-Befehl.
+2. Führe den obigen SQL-Befehl aus.
+
+Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensatz](sql/likes.sql) einfügen.
+
+## Modellieren von Daten
+
+### Zootiere
+
+Erstellen Sie für folgendes Szenario ein Entity-Relationship-Modell:  
+
+In einem Zoo leben verschiedene Tierarten. Jede Tierart ist in einem eigenen Gehege untergebracht. Dabei kümmern sich verschiedene Tierpfleger um teilweise mehrere verschiedene Tierarten. Eine Tierart, wie etwa Elefanten, werden von mehreren Tierpflegern betreut. Jede Tierart ist einem Kontinent zugeordnet, wodurch Themenführungen ermöglicht werden. 
+
+1. Wie lautet der SQL Befehl um alle Tierarten anzuzeigen.
+2. Wie lautet der SQL Befehl um alle Tierarten des Zoodirektors anzuzeigen?
+
+Zu  jeder Tierart gehören einzelne Exemplare dieser Art. Ergänzen Sie die einzelnen Tierexemplare und fügen für diese sinnvolle Attribute hinzu. 
+
+1. Während Pinguine nur 25 Jahre werden Elefanten bis 60 Jahre alt. Daher soll für jedes Tier das Geburts- und Sterbedatum festgehalten werden
+2. Wie  kann sich ein Pfleger alle aktuell lebenden Tiere ausgeben lassen? 
+   ("<" bedeutet kleiner als und ">" größer als. Ein Datum wird so angegeben '2011/02/25')
+3. Wie findet der Direkt heraus, welche Tiere letztes Jahr gestorben sind?
+
+Manche  Tierpfleger gehen sehr brutal mit Ihren Tieren um. Es ist schon vorgekommen, dass ein Pfleger auf ein Kücken getreten ist. Der Direktor möchte nun herausfinden, bei welchem Tierpfleger die meisten Tiere sterben und diesen entlassen. 
+
+1. Wie lautet der SQL Ausdruck dazu?
+2. Warum ist die Idee des Zoodirektors nicht zu Ende gedacht?
+
+### Der Bibliothekar
+
+Sie sind in einer dunklen Gasse falsch abgebogen und finden sich unversehens in einer großen Halle voller Bücher wieder. Gerade als Sie beschließen zu gehen erhebt sich hinter einem Stapel veralteter Lexika ein alter Mann und blickt Sie mit traurigen, grauen Augen an. Schon lang ist es her, dass sich ein Besucher in seine Bibliothek verirrt hat. Mit reißender Stimme bittet er Sie ihn bei seinem ERM zu helfen, damit er bald die Bibliothek für junge Menschen erschließen kann.
+
+Unter gelegentlichen Schnaufen und Glucksen berichtet er seine Anforderungen an die Datenbank:
+
+*Ein jedes Buch hat seinen Platz in einem Regal. Dabei wird der Platz in dem Regal durch das Regalbrett genauer bestimmt. Alle Regale befinden sich in diesem Saal. Die Bücher werden verschiedenen Genres zugeordnet. Beispielsweise ist das Werk "Der Frosch zu Gast bei Helmut" nicht nur eine Komödie, sondern auch ein Krimi.* 
+
+1. Erstellen Sie für obige Anforderungen das ERM
+
+2. Ergänzen Sie alle Primär- und Fremdschlüssel an der richtigen Stelle.
+
+3. Fügen Sie dem Büchern weitere sinnvolle Attribute hinzu.
+
+4. Erstellen Sie nach Ihrem ERM Modell folgende SQL-Sätze:
+
+5. 1. Erstellen Sie für alle CRUD-Operatoren auf die Tabelle Bücher je ein Beispiel. 
+      Dies können Sie sich entsprechend Ihres ERM frei aussuchen.
+   2. Geben Sie alle Bücher aus.
+   3. Geben Sie alle Bücher mit dem Titel "Der Frosch zu Gast bei Helmut" aus
+   4. Finden Sie alle Bücher die im Titel "Helmut" tragen.
+   5. Zählen Sie alle Bücher 
+
+6. Sie beschleicht ein schrecklicher Verdacht. Hinter einem verschlissenen Vorhang befindet sich eine weitere Kammer mit Büchern. Bücher von epochaler Bedeutung für die Zukunft des europäischen Schmiedehandwerks. Passen Sie Ihr ERM so an, dass statt dem einzelnen Saal auch die Kammer mit erfasst werden kann.
+
+### Das Stahlwerk der Postapokalypse
+
+Orientierungslos wachen Sie in einer Wüste aus Metall auf. Die Luft ist eiskalt klar. Der Boden besteht aus rostenden Stahl. Um Sie herum laufen orientierungslose Menschen, welche voller Panik versuchen kleine Stahlplatten und Stangen gegen belegte Butterbrote zu tauschen. Sie schleppen sich zu einer großen Halle aus der das Dröhnen von Hämmern zu vernehmen ist. Man erzählt Ihnen, dass dies vor dem Krieg das größte Stahlwerk der Welt war, aber bei einem Bombenangriff das vollständige ERM vernichtet wurde. Nun ist die Werksleitung außer Stande die Mitarbeiter in der Kantine mit Wursbroten zu versorgen, da die Produktion am Boden liegt.
+
+Helfen Sie dem Werksleiter ein erstes ERM für die die Werkshalle "Stahlfuchs" zu entwerfen:
+
+*In der Halle "Stahlfuchs" haben wir mehrere Öfen. An jeden Ofen arbeitet genau ein Heizer. Mehrere Träger bringen Brennstäbe zum Beheizen der verschiedenen Öfen. Jeder Heizer und Träger hat eine Personalnummer. Jeder Ofen ist über seinen Standort genau bestimmt.* 
+
+1. Erstellen Sie für obige Anforderungen das ERM
+
+2. Ergänzen Sie alle Primär- und Sekundärschlüssel an der richtigen Stelle.
+
+3. Fügen Sie dem Träger weitere sinnvolle Attribute hinzu.
+
+4. Erstellen Sie nach Ihrem ERM Modell folgende SQL-Sätze:
+
+5. 1. Erstellen Sie für alle CRUD-Operatoren auf die Tabelle Träger je ein 
+      Beispiel. Dies können Sie sich entsprechend Ihres ERM frei aussuchen.
+   2. Geben Sie alle Träger aus.
+   3. Geben Sie die Träger aus, wessen Personalnummer mit 5 beginnt. 
+   4. Zählen Sie alle Heizer 
+
+6. Zum Danke erhalten Sie ein Butterbrot und Pfefferminztee und ziehen sich für eine Pause auf das Dach der Halle zurück. Voller Stauen erblicken Sie, dass weitere Hallen bis an den Horizont reichen  Passen Sie Ihr ERM so an, dass statt der Halle Stahlfuchs die scheinbar unendlich vielen Hallen mit erfasst werden können.
+
+## Auswerten von Daten II
+
+###INNER JOIN
+
+A.id =B.id
+
+1. Suchen Sie die IDs aller Follower von Frau Osterhagen (id=194) heraus.
+
+2. Der Verfassungsschutz bittet um Mithilfe: Wer hat alles Adolf Hitler zitiert? 
+
+3. 1. Suchen Sie mit der Tabelle posts die id der Mitglieder heraus.
+   2. Der Verfassungsschutz hätte gern gleich eine List mit den Städten, um es an den zuständigen Verfassungsschutz weiterzuleiten.
+
+4. Finden Sie alle Blogeinträge aus München.
+
+###LEFT JOIN ON
+
+is NULL
+
+1. Lara würde gern allen Mitgliedern eine Mail schreiben, welche noch keinen Kommentare geschrieben haben. Suchen Sie deren Vorname und Mail-Adresse heraus.
+
+## Verändern von Daten II
+
+    Noch keine Aufgaben vorhanden.
+
+
+## Komplexaufgaben
+
+### Ein eigener Webshop
+
+Ihre Schülervertretung druckt eigene T-Shirts, welche mitlerweile deutschlandweit sehr gefragt sind. Um noch mehr Schüler und Lehrer mit T-Shirts, wie "Schule ist do....ch toll", "10/8 Lehrer haben Probleme in Mathe" und "Ich bin Leerer" zu erfreuen, wollen Sie einen eigenen Shop entwickeln.
+
+1. Haben Sie schon einmal online eingekauft? Öffnen Sie Ihren Lieblingsshop.
+2. Versuchen  Sie von der Webseite die darunterliegende Datenbank abzuleiten. Dies ist sehr, sehr schwer, da die Datenbank vermutlich äußerst groß ist. Es reicht, wenn Sie einige Bereiche aufnehmen. 
+3. Zeichnen Sie die Datenbank als Entity-Relationship-Modell. 
+4. Notieren Sie für jede CRUD-Operation je einen SQL-Ausdruck für eine von Ihnen ausgewählte Tabelle.
