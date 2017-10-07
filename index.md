@@ -19,7 +19,7 @@ Mit InstaHub können folgende Lernziele erreicht werden:
 
 Der Vorgänger von InstaHub ist die [friendzone](https://blog.wi-wissen.de/post/friendzone). Diese wurde 2017 mit dem [Unterrichtspreis der Gesellschaft für Informatik](https://www.gi.de/aktuelles/meldungen/detailansicht/article/julian-dorn-erhaelt-unterrichtspreis-2017-der-gesellschaft-fuer-informatik-fuer-friendzone.html) ausgezeichnet.
 
-##Gliederung der Dokumentation
+## Gliederung der Dokumentation
 
 Diese Dokumentation richtet sich hauptsächlich an Lehrkräfte. Es werden folgende Themenbereiche behandelt:
 
@@ -29,13 +29,13 @@ Diese Dokumentation richtet sich hauptsächlich an Lehrkräfte. Es werden folgen
 
 **Übungen** - hier sind Vorschläge für Aufgabenstellungen an die Schüler.
 
-##Mitmachen!
+## Mitmachen!
 
 Die Plattform InstaHub und diese Dokumentation sind im Quelltext vollständig verfügbar. Durch die Creative Commons Lizenz [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) ist es möglich, sowohl die technische Plattform als auch diese Dokumentation nach eigenen Wünschen zu gestalten.
 
 In dieses Projekt ist bereits sehr viel Energie, Freude und viele Erfahrungen eingeflossen. Wenn Sie neue tolle Ideen oder auch nur einen Rechtschreibfehler gefunden haben, wäre es sehr schön wenn Sie diese einbringen würden. Das geht ganz einfach indem Sie Ihre Änderungen direkt als Push Request bei GitHub einreichen. Alternativ köenn Sie auch gerne eine E-Mail senden.
 
-##Nur möglich durch
+## Nur möglich durch
 
 * [MySQL](https://www.mysql.com/)
 * [php](http://php.net/)

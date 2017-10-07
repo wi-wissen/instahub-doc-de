@@ -15,7 +15,7 @@
 
 5. Gib jeden Wohnort nur einmal aus
 
-###Selektion (Auswahl)
+### Selektion (Auswahl)
 
 1.	Wähle alle Einträge aus der Tabelle users aus, bei denen das Geschlecht (gender) weiblich (female) ist.
   2.Wähle alle Einträge aus der Tabelle users aus, bei deren Nachname „Bauer“ ist.
@@ -29,26 +29,26 @@
 ### Logische Operatoren
 
 1.	Ermittle alle friendzoner welche Leon oder Luca heißen
-2.	Wie viele Namen beginnen mit einem "A" oder einem "B"?
-3.	Von welchem Mitgliedern beginnt der Name mit einem "B" und der Vorname mit einem "A"? Gib deren Name und Heimatstadt aus.
+  2.Wie viele Namen beginnen mit einem "A" oder einem "B"?
+  3.Von welchem Mitgliedern beginnt der Name mit einem "B" und der Vorname mit einem "A"? Gib deren Name und Heimatstadt aus.
 
 ## Verändern von Daten I
 
-###INSERT
+### INSERT
 1.  Füge zwei Datensätze mit Ihren oder Fantasywerten nach folgendem Muster ein: 
 ```mysql
 INSERT INTO users (username, email, password, name, bio, gender, birthday, city, country, centimeters, avatar, role, is_active, remember_token, created_at, updated_at) 
 VALUES ('guenther37', 'guenther@instahub.app', '12345', 'Günther Müller', 'Günther mag Kartoffelsalat.', 'male', '2006-06-06 00:00:00', 'Leipzig', 'Deutschland', '173', 'avatar.png', 'user', '0', NULL, now(), now());
 ```
     1.  Was bedeutet now()?
-  2.  Welche ID hat Ihr neuer Datensatz? Auf welche Arten könne diese ermitteln?
-  3.  Füge den User Mila Bach aus Hamburg hinzu. Sie können sich die fehlenden Attribute selbst ausdenken. *Hinweis: Sie können den SQL-Ausdruck aus 1. wieder verwenden.*
-  4.  Füge mithilfe der friendzone-Oberfläche (Knopf Add-Member) die hier angezeigte Person hinzu.
-  5.  Welche ID hat Ihr neuer Datensatz? Auf welche Arten könne diese ermitteln?
-  Expertenaufgabe: 
-  6.  Warum wird bei 3. die ID nicht in der friendzone-Oberfläche abgefragt? Sollte die ID dann nicht leer bleiben?
+    2.  Welche ID hat Ihr neuer Datensatz? Auf welche Arten könne diese ermitteln?
+    3.  Füge den User Mila Bach aus Hamburg hinzu. Sie können sich die fehlenden Attribute selbst ausdenken. *Hinweis: Sie können den SQL-Ausdruck aus 1. wieder verwenden.*
+    4.  Füge mithilfe der friendzone-Oberfläche (Knopf Add-Member) die hier angezeigte Person hinzu.
+    5.  Welche ID hat Ihr neuer Datensatz? Auf welche Arten könne diese ermitteln?
+      Expertenaufgabe: 
+    6.  Warum wird bei 3. die ID nicht in der friendzone-Oberfläche abgefragt? Sollte die ID dann nicht leer bleiben?
 
-###UPDATE
+### UPDATE
 1.  Ändre in dem zuletzt hinzugefügten Eintrag die Telefonnummer in +49 341 3939-150
 2.  Ersetze den Begriff "Germany" überall durch "Deutschland"
 3.  Ersetze die Körpergröße von allen friendzonern durch 160.
@@ -58,12 +58,12 @@ VALUES ('guenther37', 'guenther@instahub.app', '12345', 'Günther Müller', 'Gü
   1. Was hat dieser Befehl bewirkt?
   2. Klicke nach dem Ausführen auf die einzelnen Befehle (Öffnen im neuen Tab) und erschließe sich deren Bedeutung.
 
-###DELETE
+### DELETE
     1. Lösche den vorletzten Datensatz.
 
 
-##ERM
-###InstaHub
+## ERM
+### InstaHub
 Zeichne das Entity-Relationship-Modell deines InstaHubs
 
 ## Tabelle User
@@ -101,7 +101,7 @@ ALTER TABLE `photos`
 
 Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensatz](sql/photos.sql) einfügen.
 
-##Tabelle Tags
+## Tabelle Tags
 ```mysql
 CREATE TABLE `tags` (
   `id` int(10) UNSIGNED NOT NULL,
@@ -266,7 +266,7 @@ Helfen Sie dem Werksleiter ein erstes ERM für die die Werkshalle "Stahlfuchs" z
 
 ## Auswerten von Daten II
 
-###INNER JOIN
+### INNER JOIN
 
 A.id =B.id
 
@@ -279,7 +279,7 @@ A.id =B.id
 
 4. Finden Sie alle Blogeinträge aus München.
 
-###LEFT JOIN ON
+### LEFT JOIN ON
 
 is NULL
 

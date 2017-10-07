@@ -4,7 +4,7 @@ typora-copy-images-to: img
 
 # Bedienung
 
-##instahub.org
+## instahub.org
 
 Die Hauptseite des Projektes ermöglicht es sich als interessierter Besucher zu informieren. Bei Interesse können hier:
 
@@ -22,7 +22,7 @@ Wurde einer Lehrkraft ein InstaHub zugeordnet, so muss dieser ebenfalls erst akt
 
 
 
-###Verwaltung der Instahubs
+### Verwaltung der Instahubs
 
 Nach dem erfolgreichen Login mit einem Lehrer Account wird eine List mit allen zugeordneten hab's angezeigt. Folgende Aktionen sind möglich:
 
@@ -36,7 +36,7 @@ Delete - Hier kann der Instahub mitsamt der gesamten Datenbank vollständig gel�
 
 
 
-###Verwaltung eines Instahubs
+### Verwaltung eines Instahubs
 
 ![InstaHub Admin](img/hubadmin.png)
 
@@ -56,7 +56,7 @@ Dadurch ist es möglich auch zu einem späteren Zeitpunkt die Tabelle *Photo* ne
 
 
 
-##*hub*.instahub.org
+## *hub*.instahub.org
 
 Wird der Hauptdomain der InstaHub Name vorangestellt, so befindet sich der Benutzer in seinem eigenen InstaHub. Jeder InstaHub funktioniert vollkommen unabhängig von allen anderen InstaHub.
 
