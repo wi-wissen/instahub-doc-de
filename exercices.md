@@ -42,12 +42,12 @@ SELECT username FROM users LIMIT 25
 Du suchst nur das Extreme? Dann hilft dir der MAX Befehl weiter:
 
 ```sql
-SELECT name AS "unser Riese", MAX(centimeters) AS "ist so groß:" FROM users
+SELECT MAX(centimeters) AS "Maximale Körpergröße:" FROM users
 ```
 
-1. Zeige des kleinsten  Mitglieds an.
-2. Zeige des ältesten Mitglieds an.
-3. Zeige das Mitglieder an, welches sich zuletzt registriert hat.
+1. Zeige wie groß das kleinste  Mitglied ist.
+2. Zeige wie alt als das älteste Mitglied ist.
+3. Zeige an wann sich zuletzt ein Mitglied registriert hat.
 
 #### COUNT
 
