@@ -97,7 +97,7 @@ Hilf mit den Unterricht zu gestalten und [reiche eigene Fragen ein](https://goo.
 Neben dem bekannten `=` kannst du auch `<` und `>` verwenden, um Bereiche von Werten auszuwählen.
 
 1. Gib alle Mitglieder aus, die unter 1,80 Meter groß sind.
-2. Prüfe, ob es minderjährige Mitglieder gibt. (Beispiel `"2001-01-01 00:00:00"`)
+2. Prüfe, ob es minderjährige Mitglieder gibt. (Beispiel `"2001-01-01"`)
 
 #### Oder so ähnlich...
 
@@ -143,7 +143,7 @@ SELECT username, city FROM users where city = "Berlin" AND NOT name LIKE "Fabian
 2. Finde alle Berliner die *Marc* heißen.
 3. Finde alle Leipziger Frauen.
 4. Finde alle Linas und Lorenas. 
-5. Sortiere alle volljährigen Männer nach ihrer Körpergröße.
+5. Sortiere alle Männer nach ihrer Körpergröße, welche mindestens 16 Jahre alt sind.
 6. Zeige das Geburtsdatum und den Benutzernamen aller Frauen an, die kleiner als 1,60 Meter sind.
 7. Wähle alle Felix aus, die nicht aus Berlin kommen. 
 
@@ -188,16 +188,16 @@ Expertenaufgabe: Wieso wird in dem obigen SQL-Befehl die ID nicht mit übergeben
 
 3.  Welche ID hat Ihr neuer Datensatz? Auf welche Arten könne diese ermitteln?
 4.  Füge den User *Mila Bach* aus Hamburg hinzu. Du kannst dir die fehlenden Attribute selbst ausdenken. 
-5.  Registriere dich in deinem InstaHub als neues Mitglied. 
+5.  Registriere dich in deinem InstaHub ([https://*hub*.instahub.org/](#)) als neues Mitglied. 
 6.  Logge dich anschließend wieder als *admin* ein und prüfe die ID des neuen Mitglieds. 
 
 ### UPDATE
 1.  Setze die Körpergröße von allen Mitgliedern auf 160.
-2.  Ändere in dem zuletzt hinzugefügten Eintrag die Stadt auf Dresden.
+2.  Ändere in dem zuletzt hinzugefügten Eintrag die Stadt auf Dresden. (Du kannst die ID mit einem extra SELECT-Befehl ermitteln.)
 3.  Ersetze den Begriff "Germany" überall durch "Deutschland"
 4.  Ersetze die Körpergröße mit dem Wert `#!sql FLOOR(RAND()*45)+150`
   1. Was hat dieser Befehl bewirkt?
-  2. Klicke nach dem Ausführen auf die einzelnen Befehle (Öffnen im neuen Tab) und erschließe sich deren Bedeutung.
+  2. Recherschiere was die Befehle [FLOOR](https://www.w3schools.com/sql/func_mysql_floor.asp) und [RAND](https://www.w3schools.com/sql/func_sqlserver_rand.asp) bewirken.
 
 ### DELETE
 1. Lösche den vorletzten Datensatz.
