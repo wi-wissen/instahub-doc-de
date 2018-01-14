@@ -8,7 +8,7 @@ In dieser Phase wird das Ausgangniveau gesichert und Neugierde auf die technisch
 
 Anhand der Fragestellung, wie eine Webseite in meinem Browser gelangt, werden wichtige Inhalte aus dem Themenbereich Netzwerkewiederholt.
 
-Anschließend wird zu einer Schätzaufgabe moderiert, wie groß denn der Rechner sein müsste, worauf Facebook läuft. Die Auflösung findet durch ein [YouTube-Video](https://youtu.be/7d2JyaW9X34) statt, worin ein Rechenzentrum von Facebook gezeigt wird.Das Staunen kann durch das ergänzen von Fakten, dem Thematisieren von neuen Rechenzentrumsbestandteilen wie Notstromgeneratoren und in meinem Fall eigenen Erfahrungen aus der Wirtschaft gesteigert werden.
+Anschließend wird zu einer Schätzaufgabe moderiert, wie groß denn der Rechner sein müsste, worauf Facebook läuft. Die Auflösung findet durch ein [YouTube-Video](https://youtu.be/_r97qdyQtIk?t=2m14s) statt, worin ein Rechenzentrum von Facebook gezeigt wird.Das Staunen kann durch das ergänzen von Fakten, dem Thematisieren von neuen Rechenzentrumsbestandteilen wie Notstromgeneratoren und in meinem Fall eigenen Erfahrungen aus der Wirtschaft gesteigert werden.
 
 ## Erster Arbeitstag
 
