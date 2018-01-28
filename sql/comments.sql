@@ -1,7 +1,3 @@
---
--- Daten für Tabelle `comments`
---
-
 INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `updated_at`) VALUES
 (1, 81, 2, 'Erster Blogeintrag hätte dazu gesagt: \"Ich bin so aufgeregt.\"', '2017-09-22 06:32:28', '2017-09-22 06:32:28'),
 (2, 29, 279, 'Marilyn Monroe hätte dazu gesagt: \"Wo will man aber Weisheit finden, und wo ist die Stätte der Einsicht?\"', '2017-08-26 13:00:06', '2017-08-26 13:00:06'),
@@ -72,7 +68,7 @@ INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `upda
 (67, 156, 588, 'Adolf Hitler hätte dazu gesagt: \"Ermuntert einander mit Psalmen und Lobgesängen und geistlichen Liedern, singt und spielt dem Herrn in euren Herzen.\"', '2017-09-05 09:11:18', '2017-09-05 09:11:18'),
 (68, 151, 473, 'Sting hätte dazu gesagt: \"Das einzige Mittel, den Irrtum zu vermeiden, ist die Unwissenheit.\"', '2017-09-18 05:57:14', '2017-09-18 05:57:14'),
 (69, 116, 161, 'Mary Magdalene hätte dazu gesagt: \"Willst du fremde Fehler zählen, heb an deinen an zu zählen. Ist mir recht, wird dir die Weile zu den fremden Fehlern fehlen.\"', '2017-09-09 14:21:26', '2017-09-09 14:21:26'),
-(70, 170, 12, 'Alfred Hitchcock hätte dazu gesagt: \"Trau niemals einem Menschen, der sich die Haare färbt. Er färbt auch seine Gefühle.\"', '2017-09-15 15:12:20', '2017-09-15 15:12:20'),
+(70, 170, 13, 'Alfred Hitchcock hätte dazu gesagt: \"Trau niemals einem Menschen, der sich die Haare färbt. Er färbt auch seine Gefühle.\"', '2017-09-15 15:12:20', '2017-09-15 15:12:20'),
 (71, 1, 353, 'Michael Jackson hätte dazu gesagt: \"Treibt uns der Ehrgeiz zur Einsamkeit? Die Antwort muß lauten: Ja! Denn was ist ihm mehr zuwider als Gemeinsamkeit? Was ist ihm wichtiger als Bewegungsfreiheit?\"', '2017-09-11 08:30:37', '2017-09-11 08:30:37'),
 (72, 84, 60, 'Madonna hätte dazu gesagt: \"Was ein Leben an Länge gewinnt, verliert es meist an Tiefe.\"', '2017-09-11 13:51:12', '2017-09-11 13:51:12'),
 (73, 163, 457, 'Mata Hari hätte dazu gesagt: \"Die Vergangenheit und die Erinnerung haben eine unendliche Kraft, und wenn auch schmerzliche Sehnsucht daraus quillt, sich ihnen hinzugeben, so liegt darin doch ein unaussprechlich süßer Genuß.\"', '2017-09-13 08:42:47', '2017-09-13 08:42:47'),
@@ -283,8 +279,7 @@ INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `upda
 (278, 80, 474, 'Pope Francis hätte dazu gesagt: \"Was man heute politische Ansichten nennt, ist meist nur der Ausdruck wirtschaftlicher und sozialer Interessen.\"', '2017-09-02 09:19:25', '2017-09-02 09:19:25'),
 (279, 55, 486, 'Amelia Earhart hätte dazu gesagt: \"Und dann war da noch die Frustrierte, die sagte: \"Ich habe nie bekommen, was ich wollte. Ich wollte, ich hätte das bekommen, was ich wollte. Aber nicht einmal das will ich.\"', '2017-09-08 03:31:05', '2017-09-08 03:31:05'),
 (280, 195, 632, 'Adolf Hitler hätte dazu gesagt: \"In dem ehelichen Leben soll das vereinigte Paar gleichsam eine einzige moralische Person ausmachen, welche durch den Verstand des Mannes und den Geschmack der Frauen belebt und regiert wird.\"', '2017-09-10 08:45:16', '2017-09-10 08:45:16'),
-(281, 44, 462, 'Sting hätte dazu gesagt: \"Nichts ist schwerer zu ertragen als Reißverschluß auf vollen Magen.\"', '2017-09-15 07:18:18', '2017-09-15 07:18:18');
-INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `updated_at`) VALUES
+(281, 44, 462, 'Sting hätte dazu gesagt: \"Nichts ist schwerer zu ertragen als Reißverschluß auf vollen Magen.\"', '2017-09-15 07:18:18', '2017-09-15 07:18:18'),
 (282, 182, 495, 'Mary Magdalene hätte dazu gesagt: \"Das Gewissen ist der Puls der Vernunft.\"', '2017-09-14 22:30:25', '2017-09-14 22:30:25'),
 (283, 107, 324, 'Alfred Hitchcock hätte dazu gesagt: \"Wer mit dem Kopf durch die Wand will, holt sich nur Beulen.\"', '2017-09-23 18:40:58', '2017-09-23 18:40:58'),
 (284, 150, 529, 'Michael Jackson hätte dazu gesagt: \"Nur ein Tor zertrümmert den Spiegel, wenn ihm das Spiegelbild mißfällt.\"', '2017-09-14 10:31:59', '2017-09-14 10:31:59'),
@@ -565,8 +560,7 @@ INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `upda
 (559, 157, 330, 'Woodrow Wilson hätte dazu gesagt: \"Wer sich nicht schämt, etwas nicht zu können, und sich nicht ärgert, etwas nicht zu können, der kommt voran.\"', '2017-09-23 05:11:15', '2017-09-23 05:11:15'),
 (560, 43, 124, 'Mao Zedong hätte dazu gesagt: \"Werden die Eisheiligen im Hundertjährigen Eskimo-Kalender als heiße Jungs aufgeführt?\"', '2017-09-03 23:31:25', '2017-09-03 23:31:25'),
 (561, 15, 97, 'Katherine Hepburn hätte dazu gesagt: \"Viele verabschieden sich von dieser Welt, ohne jemals etwas gesagt zu haben.\"', '2017-09-16 20:35:23', '2017-09-16 20:35:23'),
-(562, 163, 214, 'Audrey Hepburn hätte dazu gesagt: \"Es ist weise, das Glück wahrzunehmen, das unser Herrgott einem zuschickt.\"', '2017-08-25 06:18:18', '2017-08-25 06:18:18');
-INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `updated_at`) VALUES
+(562, 163, 214, 'Audrey Hepburn hätte dazu gesagt: \"Es ist weise, das Glück wahrzunehmen, das unser Herrgott einem zuschickt.\"', '2017-08-25 06:18:18', '2017-08-25 06:18:18'),
 (563, 88, 149, 'David Beckham hätte dazu gesagt: \"Rache ist teuer.\"', '2017-09-14 21:09:41', '2017-09-14 21:09:41'),
 (564, 108, 481, 'Usain Bolt hätte dazu gesagt: \"Die Macht ist bei den Fröhlichen.\"', '2017-09-09 10:52:11', '2017-09-09 10:52:11'),
 (565, 120, 450, 'Carl Lewis hätte dazu gesagt: \"Wenn du ein Geheimnis nicht bewahren willst, dann sag es einer Frau.\"', '2017-09-15 06:30:27', '2017-09-15 06:30:27'),
@@ -852,8 +846,7 @@ INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `upda
 (845, 58, 484, 'Walt Disney hätte dazu gesagt: \"70% aller Zitate werden im Internet falsch zugeordnet.\"', '2017-09-03 16:51:17', '2017-09-03 16:51:17'),
 (846, 183, 202, 'Peter Sellers hätte dazu gesagt: \"70% aller Zitate werden im Internet falsch zugeordnet.\"', '2017-09-15 06:30:27', '2017-09-15 06:30:27'),
 (847, 3, 103, 'Barack Obama hätte dazu gesagt: \"70% aller Zitate werden im Internet falsch zugeordnet.\"', '2017-09-21 15:27:29', '2017-09-21 15:27:29'),
-(848, 2, 27, 'Malcolm X hätte dazu gesagt: \"70% aller Zitate werden im Internet falsch zugeordnet.\"', '2017-08-26 22:44:33', '2017-08-26 22:44:33');
-INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `updated_at`) VALUES
+(848, 2, 27, 'Malcolm X hätte dazu gesagt: \"70% aller Zitate werden im Internet falsch zugeordnet.\"', '2017-08-26 22:44:33', '2017-08-26 22:44:33'),
 (849, 14, 230, 'J.K.Rowling hätte dazu gesagt: \"70% aller Zitate werden im Internet falsch zugeordnet.\"', '2017-09-14 06:59:25', '2017-09-14 06:59:25'),
 (850, 12, 13, 'Richard Branson hätte dazu gesagt: \"70% aller Zitate werden im Internet falsch zugeordnet.\"', '2017-09-08 04:51:18', '2017-09-08 04:51:18'),
 (851, 137, 635, 'Pele hätte dazu gesagt: \"Ich bin so aufgeregt.\"', '2017-09-15 06:30:27', '2017-09-15 06:30:27'),

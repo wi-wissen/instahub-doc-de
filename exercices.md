@@ -229,14 +229,16 @@ CREATE TABLE `photos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 ALTER TABLE `photos`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1402;
-  
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `photos_id_unique` (`id`),
+  ADD KEY `photos_user_id_foreign` (`user_id`);
+
 ALTER TABLE `photos`
   ADD CONSTRAINT `photos_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
 ```
 
-1. Verstehe den obigen SQL-Befehl.
-2. Führe den obigen SQL-Befehl aus.
+1. Verstehe die obigen SQL-Befehl.
+2. Führe die obigen SQL-Befehl nacheinander aus.
 
 Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensatz](sql/photos.sql) einfügen.
 
@@ -251,13 +253,14 @@ CREATE TABLE `tags` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 ALTER TABLE `tags`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6869;
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `tags_photo_id_foreign` (`photo_id`);
   
 ALTER TABLE `tags`
   ADD CONSTRAINT `tags_photo_id_foreign` FOREIGN KEY (`photo_id`) REFERENCES `photos` (`id`) ON DELETE CASCADE;
 ```
-1. Verstehe den obigen SQL-Befehl.
-2. Führe den obigen SQL-Befehl aus.
+1. Verstehe die obigen SQL-Befehl.
+2. Führe die obigen SQL-Befehl nacheinander aus.
 
 Um aus den bestehenden Bildbeschreibungen die Tags zu extrahieren kannst du folgende Webadresse aufrufen: 
 [https://*hub*.instahub.org/dba/updateTags](#)
@@ -274,14 +277,16 @@ CREATE TABLE `comments` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 ALTER TABLE `comments`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=953;
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `comments_photo_id_foreign` (`photo_id`),
+  ADD KEY `comments_user_id_foreign` (`user_id`);
   
 ALTER TABLE `comments`
   ADD CONSTRAINT `comments_photo_id_foreign` FOREIGN KEY (`photo_id`) REFERENCES `photos` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `comments_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
 ```
-1. Verstehe den obigen SQL-Befehl.
-2. Führe den obigen SQL-Befehl aus.
+1. Verstehe die obigen SQL-Befehl.
+2. Führe die obigen SQL-Befehl nacheinander aus.
 
 Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensatz](sql/comments.sql) einfügen.
 
@@ -296,14 +301,17 @@ CREATE TABLE `follows` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 ALTER TABLE `follows`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1500;
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `follows_id_unique` (`id`),
+  ADD KEY `follows_following_id_foreign` (`following_id`),
+  ADD KEY `follows_follower_id_foreign` (`follower_id`);
   
 ALTER TABLE `follows`
   ADD CONSTRAINT `follows_follower_id_foreign` FOREIGN KEY (`follower_id`) REFERENCES `users` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `follows_following_id_foreign` FOREIGN KEY (`following_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
 ```
-1. Verstehe den obigen SQL-Befehl.
-2. Führe den obigen SQL-Befehl aus.
+1. Verstehe die obigen SQL-Befehl.
+2. Führe die obigen SQL-Befehl nacheinander aus.
 
 Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensatz](sql/follows.sql) einfügen.
 
@@ -318,14 +326,16 @@ CREATE TABLE `likes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 ALTER TABLE `likes`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4999;
-  
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `likes_photo_id_foreign` (`photo_id`),
+  ADD KEY `likes_user_id_foreign` (`user_id`);
+
 ALTER TABLE `likes`
   ADD CONSTRAINT `likes_photo_id_foreign` FOREIGN KEY (`photo_id`) REFERENCES `photos` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `likes_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
 ```
-1. Verstehe den obigen SQL-Befehl.
-2. Führe den obigen SQL-Befehl aus.
+1. Verstehe die obigen SQL-Befehl.
+2. Führe die obigen SQL-Befehl nacheinander aus.
 
 Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensatz](sql/likes.sql) einfügen.
 
