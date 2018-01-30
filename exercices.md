@@ -220,21 +220,16 @@ Um Passwörter im Klartext zu hashen, kannst du in deinem Browser die folgende A
 
 ```sql
 CREATE TABLE `photos` (
-  `id` int(10) UNSIGNED NOT NULL,
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `user_id` int(10) UNSIGNED NOT NULL,
   `description` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `url` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `photos_id_unique` (`id`),
+  FOREIGN KEY (`user_id`) REFERENCES `users`(`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
-ALTER TABLE `photos`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `photos_id_unique` (`id`),
-  ADD KEY `photos_user_id_foreign` (`user_id`);
-
-ALTER TABLE `photos`
-  ADD CONSTRAINT `photos_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
 ```
 
 1. Verstehe die obigen SQL-Befehl.
@@ -245,19 +240,14 @@ Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensat
 ## Tabelle Tags
 ```sql
 CREATE TABLE `tags` (
-  `id` int(10) UNSIGNED NOT NULL,
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `photo_id` int(10) UNSIGNED NOT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (id),
+  FOREIGN KEY (`photo_id`) REFERENCES `photos`(`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
-ALTER TABLE `tags`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `tags_photo_id_foreign` (`photo_id`);
-  
-ALTER TABLE `tags`
-  ADD CONSTRAINT `tags_photo_id_foreign` FOREIGN KEY (`photo_id`) REFERENCES `photos` (`id`) ON DELETE CASCADE;
 ```
 1. Verstehe die obigen SQL-Befehl.
 2. Führe die obigen SQL-Befehl nacheinander aus.
@@ -268,22 +258,16 @@ Um aus den bestehenden Bildbeschreibungen die Tags zu extrahieren kannst du folg
 ## Tabelle Comments 
 ```sql
 CREATE TABLE `comments` (
-  `id` int(10) UNSIGNED NOT NULL,
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `user_id` int(10) UNSIGNED NOT NULL,
   `photo_id` int(10) UNSIGNED NOT NULL,
   `body` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  FOREIGN KEY (`photo_id`) REFERENCES `photos`(`id`) ON DELETE CASCADE,
+  FOREIGN KEY (`user_id`) REFERENCES `users`(`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
-ALTER TABLE `comments`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `comments_photo_id_foreign` (`photo_id`),
-  ADD KEY `comments_user_id_foreign` (`user_id`);
-  
-ALTER TABLE `comments`
-  ADD CONSTRAINT `comments_photo_id_foreign` FOREIGN KEY (`photo_id`) REFERENCES `photos` (`id`) ON DELETE CASCADE,
-  ADD CONSTRAINT `comments_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
 ```
 1. Verstehe die obigen SQL-Befehl.
 2. Führe die obigen SQL-Befehl nacheinander aus.
@@ -293,22 +277,16 @@ Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensat
 ## Tabelle Follower
 ```sql
 CREATE TABLE `follows` (
-  `id` int(10) UNSIGNED NOT NULL,
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `following_id` int(10) UNSIGNED NOT NULL,
   `follower_id` int(10) UNSIGNED NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `follows_id_unique` (`id`),
+  FOREIGN KEY (`following_id`) REFERENCES `users`(`id`) ON DELETE CASCADE,
+  FOREIGN KEY (`follower_id`) REFERENCES `users`(`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
-ALTER TABLE `follows`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `follows_id_unique` (`id`),
-  ADD KEY `follows_following_id_foreign` (`following_id`),
-  ADD KEY `follows_follower_id_foreign` (`follower_id`);
-  
-ALTER TABLE `follows`
-  ADD CONSTRAINT `follows_follower_id_foreign` FOREIGN KEY (`follower_id`) REFERENCES `users` (`id`) ON DELETE CASCADE,
-  ADD CONSTRAINT `follows_following_id_foreign` FOREIGN KEY (`following_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
 ```
 1. Verstehe die obigen SQL-Befehl.
 2. Führe die obigen SQL-Befehl nacheinander aus.
@@ -318,21 +296,15 @@ Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensat
 ## Tabelle Likes
 ```sql
 CREATE TABLE `likes` (
-  `id` int(10) UNSIGNED NOT NULL,
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `photo_id` int(10) UNSIGNED NOT NULL,
   `user_id` int(10) UNSIGNED NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  FOREIGN KEY (`photo_id`) REFERENCES `photos`(`id`) ON DELETE CASCADE,
+  FOREIGN KEY (`user_id`) REFERENCES `users`(`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
-ALTER TABLE `likes`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `likes_photo_id_foreign` (`photo_id`),
-  ADD KEY `likes_user_id_foreign` (`user_id`);
-
-ALTER TABLE `likes`
-  ADD CONSTRAINT `likes_photo_id_foreign` FOREIGN KEY (`photo_id`) REFERENCES `photos` (`id`) ON DELETE CASCADE,
-  ADD CONSTRAINT `likes_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
 ```
 1. Verstehe die obigen SQL-Befehl.
 2. Führe die obigen SQL-Befehl nacheinander aus.
