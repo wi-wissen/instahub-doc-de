@@ -222,14 +222,13 @@ Um Passwörter im Klartext zu hashen, kannst du in deinem Browser die folgende A
 CREATE TABLE `photos` (
   `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `user_id` int(10) UNSIGNED NOT NULL,
-  `description` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `url` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `description` varchar(255) NOT NULL,
+  `url` varchar(255) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `photos_id_unique` (`id`),
   FOREIGN KEY (`user_id`) REFERENCES `users`(`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+)
 ```
 
 1. Verstehe die obigen SQL-Befehl.
@@ -242,12 +241,12 @@ Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensat
 CREATE TABLE `tags` (
   `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `photo_id` int(10) UNSIGNED NOT NULL,
-  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(255) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (id),
   FOREIGN KEY (`photo_id`) REFERENCES `photos`(`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+)
 ```
 1. Verstehe die obigen SQL-Befehl.
 2. Führe die obigen SQL-Befehl nacheinander aus.
@@ -261,13 +260,13 @@ CREATE TABLE `comments` (
   `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `user_id` int(10) UNSIGNED NOT NULL,
   `photo_id` int(10) UNSIGNED NOT NULL,
-  `body` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `body` varchar(255) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   FOREIGN KEY (`photo_id`) REFERENCES `photos`(`id`) ON DELETE CASCADE,
   FOREIGN KEY (`user_id`) REFERENCES `users`(`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) 
 ```
 1. Verstehe die obigen SQL-Befehl.
 2. Führe die obigen SQL-Befehl nacheinander aus.
@@ -283,10 +282,9 @@ CREATE TABLE `follows` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `follows_id_unique` (`id`),
   FOREIGN KEY (`following_id`) REFERENCES `users`(`id`) ON DELETE CASCADE,
   FOREIGN KEY (`follower_id`) REFERENCES `users`(`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+)
 ```
 1. Verstehe die obigen SQL-Befehl.
 2. Führe die obigen SQL-Befehl nacheinander aus.
@@ -304,7 +302,7 @@ CREATE TABLE `likes` (
   PRIMARY KEY (`id`),
   FOREIGN KEY (`photo_id`) REFERENCES `photos`(`id`) ON DELETE CASCADE,
   FOREIGN KEY (`user_id`) REFERENCES `users`(`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+)
 ```
 1. Verstehe die obigen SQL-Befehl.
 2. Führe die obigen SQL-Befehl nacheinander aus.
