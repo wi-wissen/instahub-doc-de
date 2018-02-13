@@ -12,7 +12,7 @@ Mit InstaHub können folgende Lernziele erreicht werden:
 
 * Datenbanken
   * SQL - SELECT, INSERT UPDATE DELETE in einer und mehreren Tabellen
-  * Anforderungen an ein Datenbankmanagementsystem
+  * Anforderungen an ein Datenbank-Managementsystem
 * ERM verstehen und zeichnen.
 * Datenschutz und Datensicherheit
 * Client Server Architektur einer Webanwendung
@@ -35,7 +35,7 @@ Diese Dokumentation richtet sich hauptsächlich an Lehrkräfte. Es werden folgen
 
 Die Plattform InstaHub und diese Dokumentation sind im Quelltext vollständig verfügbar. Durch die Creative Commons Lizenz [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) ist es möglich, sowohl die technische Plattform als auch diese Dokumentation nach eigenen Wünschen zu gestalten.
 
-In dieses Projekt ist bereits sehr viel Energie, Freude und viele Erfahrungen eingeflossen. Wenn Sie neue tolle Ideen oder auch nur einen Rechtschreibfehler gefunden haben, wäre es sehr schön wenn Sie diese einbringen würden. Das geht ganz einfach indem Sie Ihre Änderungen direkt als Push Request bei GitHub einreichen. Alternativ köenn Sie auch gerne eine E-Mail senden.
+In dieses Projekt ist bereits sehr viel Energie, Freude und viele Erfahrungen eingeflossen. Wenn Sie neue tolle Ideen oder auch nur einen Rechtschreibfehler gefunden haben, wäre es sehr schön wenn Sie diese einbringen würden. Das geht ganz einfach indem Sie Ihre Änderungen direkt als Push Request bei GitHub einreichen. Alternativ können Sie auch gerne eine E-Mail senden.
 
 ## Nur möglich durch
 

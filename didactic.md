@@ -4,21 +4,21 @@ Der hier vorgestellte Ansatz ist eine Abwandlung meines Vorgehens bei der friend
 
 ## Client-Server-Architektur
 
-In dieser Phase wird das Ausgangniveau gesichert und Neugierde auf die technische Realisierung von sozialen Netzwerken geweckt.
+In dieser Phase wird das Ausgangsniveau gesichert und Neugierde auf die technische Realisierung von sozialen Netzwerken geweckt.
 
-Anhand der Fragestellung, wie eine Webseite in meinem Browser gelangt, werden wichtige Inhalte aus dem Themenbereich Netzwerkewiederholt.
+Anhand der Fragestellung, wie eine Webseite in meinem Browser gelangt, werden wichtige Inhalte aus dem Themenbereich Netzwerke wiederholt.
 
-Anschließend wird zu einer Schätzaufgabe moderiert, wie groß denn der Rechner sein müsste, worauf Facebook läuft. Die Auflösung findet durch ein [YouTube-Video](https://youtu.be/_r97qdyQtIk?t=2m14s) statt, worin ein Rechenzentrum von Facebook gezeigt wird.Das Staunen kann durch das ergänzen von Fakten, dem Thematisieren von neuen Rechenzentrumsbestandteilen wie Notstromgeneratoren und in meinem Fall eigenen Erfahrungen aus der Wirtschaft gesteigert werden.
+Anschließend wird zu einer Schätzaufgabe moderiert, wie "groß" denn der Rechner sein müsste, auf dem Facebook läuft. Die Auflösung findet durch ein [YouTube-Video](https://youtu.be/_r97qdyQtIk?t=2m14s) statt, in dem ein Rechenzentrum von Facebook gezeigt wird. Das Staunen kann durch das Ergänzen von Fakten, dem Thematisieren von neuen Rechenzentrumsbestandteilen wie Notstromgeneratoren und in meinem Fall eigenen Erfahrungen aus der Wirtschaft gesteigert werden.
 
 ## Erster Arbeitstag
 
 Erläutern Sie allen Schülern, dass sie jetzt Datenbankadministratoren in einem Startup sind. Sie sind ein Dreierteam bestehend aus einem Schüler, Eva der Programmiererin (Anspielung auf das EVA-Prinzip) und der Chefin Lara (Der Name ist eine Anspielung auf das PHP-Framework Laravel).
 
-Beschreiben Sie das Ziel, ein soziales Netzwerk zu gründen und zeigen Sie Beispiele aus der bereits fertigen Webseite. Legen Sie den Account mit den Schülern an und stellen Sie fest, dass im Moment nur Benutzerprofile da sind, aber sich noch keine Photos hochladen lassen. 
+Beschreiben Sie das Ziel, ein soziales Netzwerk zu gründen und zeigen Sie Beispiele aus der bereits fertigen Webseite. Legen Sie den Account mit den Schülern an und stellen Sie fest, dass im Moment nur Benutzerprofile da sind, aber sich noch keine Fotos hochladen lassen. 
 
 ## Datenbanken allgemein
 
-Hier wird theoretisch erläutert, was Datenbanken sind. Jenach Lehrplan sollte zwischen hierarchischen und relationalen Datenbankenunterschieden und wichtige Begriffe für eine saubere Fachsprache eingeführtwerden.
+Hier wird theoretisch erläutert, was Datenbanken sind. Je nach Lehrplan sollte zwischen hierarchischen und relationalen Datenbanken unterschieden und wichtige Begriffe für eine saubere Fachsprache eingeführt werden.
 
 ## Auswerten von Daten I
 
@@ -26,29 +26,29 @@ Die Stärken des SQL-Select-Befehls werden hier durch das Gegenüberstellen der 
 
 ## Verändern von Daten
 
-Eva ist sehr traurig, dass durch einen Programmierfehlereinige Daten in Ihrer Datenbank fehlen oder geändert werden müssen. Die Schülerhelfen aus und verändern Daten mit Insert-, Update- und Delete-Befehlen.
+Eva ist sehr traurig, dass durch einen Programmierfehler einige Daten in ihrer Datenbank fehlen oder geändert werden müssen. Die Schüler helfen aus und verändern Daten mit Insert-, Update- und Delete-Befehlen.
 
-Schüler erhalten hier einen Einblick in die Mächtigkeit des Update-Befehles, wenn die Körpergrößen aller Mitglieder mit individuellzufällig gewählten Werten neu gesetzt werden. 
+Schüler erhalten hier einen Einblick in die Mächtigkeit des Update-Befehles, wenn die Körpergrößen aller Mitglieder mit individuell zufällig gewählten Werten neu gesetzt werden. 
 
 ## Datenschutz und -sicherheit
 
-Spätestens hier sollten die ersten Schüler laut gedachthaben und Ihre Sorgen oder Bewunderung über die Möglichkeiten zum Ausdruck gebrachthaben. Wenn nicht, sollte es jetzt durch Sie angesprochen werden.
+Spätestens hier sollten die ersten Schüler laut gedacht haben und Ihre Sorgen oder Bewunderung über die Möglichkeiten zum Ausdruck gebracht haben. Wenn nicht, sollte es jetzt durch Sie angesprochen werden.
 
 ## Photos im InstaHub – 1:n-Kardinalitäten
 
-Lara möchte nun endlich loslegen möchte das Hochladen von Photos ermöglichen. An der Tafel kann hier intuitiv gezeigt werden, dass sich dies nicht mehr in einer Tabelle darstellen lässt. Die Ergänzung um Normalformen und das klar strukturierte Normalisieren lässt sich später nachholen. Erfahrungsgemäß hilft Schülern die Hinführung an der Tafel sehr beim Verständnis.
+Lara möchte nun endlich loslegen, sie möchte das Hochladen von Fotos ermöglichen. An der Tafel kann hier intuitiv gezeigt werden, dass sich dies nicht mehr in einer Tabelle darstellen lässt. Die Ergänzung um Normalformen und das klar strukturierte Normalisieren lässt sich später nachholen. Erfahrungsgemäß hilft Schülern die Hinführung an der Tafel sehr beim Verständnis.
 
-Zur Übung werden Photos noch mit Tags angereichert. Diese waren auch schon vorher in der Weboberfläche möglich. Dazu wurde auf einen LIKE-Befehl zurückgeführt. Hiermit lässt sich schon die 1. Normalform (nur atomare Werte) gut aufzeigen.
+Zur Übung werden Fotos noch mit Tags angereichert. Dies war auch schon vorher in der Weboberfläche möglich. Dazu wurde auf einen LIKE-Befehl zurückgeführt. Hiermit lässt sich schon die 1. Normalform (nur atomare Werte) gut aufzeigen.
 
 ## Followers im Instahub – n:m-Kardinalitäten
 
-n:m-Kardinalitäten werden in lernschwachen Klassen durch Lehrervortrag eingeführt. In lernstarken Gruppen kann die Notwendigkeit derHilfstabelle teilweise selbst herausgearbeitet werden.
+n:m-Kardinalitäten werden in lernschwachen Klassen durch Lehrervortrag eingeführt. In lernstarken Gruppen kann die Notwendigkeit der Hilfstabelle teilweise selbst herausgearbeitet werden.
 
-So lassen sich n:m-Kardinalitäten mithilfe von Followern (User-User) oder Likes (User-Photo) erläutern bzw. üben.
+So lassen sich n:m-Kardinalitäten mit Hilfe von Followern (User-User) oder Likes (User-Photo) erläutern bzw. üben.
 
 ## Modellieren von Daten
 
-Zur besseren Übersicht und als Vorbereitung auf Komplexaufgaben wird das fertige Datenbankmodell als Entity Relationship Modellabgebildet.
+Zur besseren Übersicht und als Vorbereitung auf Komplexaufgaben wird das fertige Datenbankmodell als Entity Relationship Modell abgebildet.
 
 Anschließend sollen Datenbankmodelle selbst entworfen werden. Unabhängig vom eigenen InstaHub werden phantasievolle Aufgaben wie „Das Stahlwerk der Postapokalypse“ oder „Der Bibliothekar“ gestellt.
 
@@ -56,11 +56,11 @@ Anschließend sollen Datenbankmodelle selbst entworfen werden. Unabhängig vom e
 
 Es wird brisant: Die Polizei bittet um Mithilfe: Einzelne Photos wurden mit Adolf Hitler "Zitaten" verunstaltet! 
 
-Außer dem Namen Hitler sind selbstverständlich keine Zitate oder ähnliche Gedankengänge in den Blogeinträgen, es sind vielmehr falschzugeordnete Zitate berühmter und anerkannter Persönlichkeiten aus den letzten Jahrhunderten.
+Außer dem Namen Hitler sind selbstverständlich keine Zitate oder ähnliche Gedankengänge in den Blogeinträgen, es sind vielmehr falsch zugeordnete Zitate berühmter und anerkannter Persönlichkeiten aus den letzten Jahrhunderten.
 
 ## Die Macht verknüpfter Daten
 
-Die Macht verknüpfter Daten kann durch die bisherigenFallbeispiele diskutiert werden. Je nach Planung können schon hierweiterführende Betrachtungen durchgeführt werden. Bisher nur an anderer Stellewurde dazu eine Visualisierung der Bewegungsdaten von mit Malte Spitz von der [Wissensfabrik Deutschland](https://www.wissensfabrik-deutschland.de/portal/fep/de/dt.jsp?setCursor=1_554644) (von mir [fehlerbereinigte Version](https://blog.wi-wissen.de/post/mobilfunk-und-big-data)) als äußerst deutliche Visualisierung eingesetzt.
+Die Macht verknüpfter Daten kann durch die bisherigen Fallbeispiele diskutiert werden. Je nach Planung können schon hier weiterführende Betrachtungen durchgeführt werden. Bisher nur an anderer Stelle wurde dazu eine Visualisierung der Bewegungsdaten von mit Malte Spitz von der [Wissensfabrik Deutschland](https://www.wissensfabrik-deutschland.de/portal/fep/de/dt.jsp?setCursor=1_554644) (von mir [fehlerbereinigte Version](https://blog.wi-wissen.de/post/mobilfunk-und-big-data)) als äußerst deutliche Visualisierung eingesetzt.
 
 ## Komplexaufgaben
 
