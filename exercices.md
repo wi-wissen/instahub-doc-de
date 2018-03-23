@@ -366,41 +366,54 @@ Helfen Sie dem Werksleiter ein erstes ERM für die die Werkshalle "Stahlfuchs" z
 *In der Halle "Stahlfuchs" haben wir mehrere Öfen. An jeden Ofen arbeitet genau ein Heizer. Mehrere Träger bringen Brennstäbe zum Beheizen der verschiedenen Öfen. Jeder Heizer und Träger hat eine Personalnummer. Jeder Ofen ist über seinen Standort genau bestimmt.* 
 
 1. Erstellen Sie für obige Anforderungen das ERM.
-3. Ergänzen Sie alle Primär- und Sekundärschlüssel an der richtigen Stelle.
-4. Fügen Sie dem Träger weitere sinnvolle Attribute hinzu.
-5. Erstellen Sie nach Ihrem ERM Modell folgende SQL-Sätze:
+2. Ergänzen Sie alle Primär- und Sekundärschlüssel an der richtigen Stelle.
+3. Fügen Sie dem Träger weitere sinnvolle Attribute hinzu.
+4. Erstellen Sie nach Ihrem ERM Modell folgende SQL-Sätze:
    1. Erstellen Sie für alle CRUD-Operatoren auf die Tabelle Träger je ein 
       Beispiel. Dies können Sie sich entsprechend Ihres ERM frei aussuchen.
    2. Geben Sie alle Träger aus.
    3. Geben Sie die Träger aus, wessen Personalnummer mit 5 beginnt. 
    4. Zählen Sie alle Heizer 
-7. Zum Danke erhalten Sie ein Butterbrot und Pfefferminztee und ziehen sich für eine Pause auf das Dach der Halle zurück. Voller Stauen erblicken Sie, dass weitere Hallen bis an den Horizont reichen  Passen Sie Ihr ERM so an, dass statt der Halle Stahlfuchs die scheinbar unendlich vielen Hallen mit erfasst werden können.
+5. Zum Danke erhalten Sie ein Butterbrot und Pfefferminztee und ziehen sich für eine Pause auf das Dach der Halle zurück. Voller Stauen erblicken Sie, dass weitere Hallen bis an den Horizont reichen  Passen Sie Ihr ERM so an, dass statt der Halle Stahlfuchs die scheinbar unendlich vielen Hallen mit erfasst werden können.
 
 ## Auswerten von Daten II
 
 ### INNER JOIN
 
-1. Liste die Links zu allen Photos von *samina369* auf.
-2. Liste alle Follower von *luis52* auf.
-3. Gib aus, wem *mala452* folgt.
-4. Finde alle Kommentare aus München.
-5. Gib die Benutzernamen aller Mitglieder aus, deren Beschreibung den Hashtag *#meer* enthält.
+1. Mit welchem SQL-Befehl kann InstaHub alle Photos eines Mitglieds anzeigen? Liste die Links zu allen Photos von *samina369* auf.
 
-Expertenaufgabe: Ändere den Befehl der vorherigen Aufgabe so, dass der Hashtag aus der Tabelle *tags* genommen wird.
+2. Wer sind die 10 Follower *luis52*?
+  a. Ermittle die id von *luis52*.
+  b. Liste alle Follower *luis52* auf. Beachte das in der Datenbank der Nutzer in `following_id` dem Nutzer in `follower_id` folgt.
 
-6. Erstelle eine Liste, sie soll in absteigender Reihenfolge die Nutzer mit den meisten Fotos beinhalten. 
-7. Gib die 10 beliebtesten Photos aus.
-8. Der Verfassungsschutz bittet um Mithilfe: Wer hat Fotos mit Zitaten von *Adolf Hitler* zitiert? 
+3. Der Verfassungsschutz bittet um Mithilfe: Wer hat Fotos mit Zitaten von Adolf Hitler zitiert? Gib deren Email und den betreffenden Kommentar aus.
+
+4. Es soll Werbung an alle Strandurlauber verschickt werden. Finde alle Photos die den Hashtag *#meer* enthalten. Gib den Namen, die Emailadresse, den Geburtstag und die Stadt der zugehörigen Benutzer aus. 
+
+  Expertenaufgabe: Ändere den Befehl der vorherigen Aufgabe so, dass der hashtag aus der Tabelle `tags` genommen wird.
+
+5. Gib alle Kommentare und den zugehörigen Benutzernamen des Verfassers aus München an.
+
+6. Erstelle eine Liste, welche in absteigender Reihenfolge die Nutzer mit den meisten Photos beinhaltet. 
+
+7. Erstelle eine Liste, wo für jedes Leipziger Mitglied die Anzahl seiner Fotos aufgeführt ist.
+
+8. Gib die 10 beliebtesten Photos aus.
+
+Expertenaufgabe: In Aufgabe 2 hast du mit zwei Abfragen die Follower von *luis52* ermittelt. Das geht auch einfacher. Anstelle zweier getrennter Abfragen kannst du die Bedingung auch wie folgt schreiben:
+
+```sql
+WHERE follows.follower_id = (SELECT id FROM users WHERE username="luis52")
+```
+
+1. Formuliere die Abfrage aus Aufgabe 2 so um, dass sie mit einer Abfrage ausgeführt wird.
+
+2. Gib aus, wen *mala452* folgt.
 
 ### LEFT JOIN ON
 
 1. Lara würde gern allen Mitgliedern eine Mail schreiben, welche noch nie ein Foto kommentiert haben. Suche deren Mail-Adresse heraus.
 
-
-
-### Übungen
-
-1. Erstelle eine Liste, so dass für jedes Leipziger Mitglied die Anzahl seiner Fotos aufgeführt sind.
 
 ### Expertenaufgabe
 
