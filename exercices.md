@@ -21,14 +21,14 @@ Um die Ergebnisse zu sortieren, kannst du an deine Anfrage den Befehl `ORDER BY`
 
 #### DISTINCT
 
-Fügst du nach dem SELECT den Befehl DISTINCT ein, so wird jede Zeile nur einmal ausgegeben. Dies ist etwa praktisch, wenn du wissen möchtest, welche Arten von Büchern es gibt.
+Fügst du nach dem `SELECT` den Befehl `DISTINCT` ein, so wird jede Zeile nur einmal ausgegeben. Dies ist etwa praktisch, wenn du wissen möchtest, welche Arten von Büchern es gibt.
 
 1. Gib jeden Wohnort nur einmal aus.
 2. Gib jede Benutzerrolle nur einmal aus. Welche Benutzerrolle hat *admin*?
 
 #### LIMIT
 
-Wenn das Netzwerk sehr langsam ist dauert es eine Weile bis alle Mitglieder angezeigt werden. Um nur die ersten Einträge anzuzeigen kannst du den LIMIT Befehl verwenden: 
+Wenn das Netzwerk sehr langsam ist dauert es eine Weile bis alle Mitglieder angezeigt werden. Um nur die ersten Einträge anzuzeigen kannst du den `LIMIT` Befehl verwenden: 
 
 ```sql
 SELECT username FROM users LIMIT 25
@@ -51,7 +51,7 @@ SELECT MAX(centimeters) AS "Maximale Körpergröße:" FROM users
 
 #### COUNT
 
-Mit COUNT kannst du die Einträge aus der Tabelle zählen: 
+Mit `COUNT` kannst du die Einträge aus der Tabelle zählen: 
 
 ```sql
 SELECT COUNT(*) AS "Registrierte Mitglieder" FROM users
@@ -231,8 +231,8 @@ CREATE TABLE `photos` (
 )
 ```
 
-1. Verstehe die obigen SQL-Befehle.
-2. Führe die obigen SQL-Befehle nacheinander aus.
+1. Verstehe den obigen SQL-Befehl.
+2. Führe den obigen SQL-Befehl aus.
 
 Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensatz](sql/photos.sql) einfügen.
 
@@ -248,8 +248,8 @@ CREATE TABLE `tags` (
   FOREIGN KEY (`photo_id`) REFERENCES `photos`(`id`) ON DELETE CASCADE
 )
 ```
-1. Verstehe die obigen SQL-Befehle.
-2. Führe die obigen SQL-Befehle nacheinander aus.
+1. Verstehe den obigen SQL-Befehl.
+2. Führe den obigen SQL-Befehl aus.
 
 Um aus den bestehenden Bildbeschreibungen die Tags zu extrahieren kannst du folgende Webadresse aufrufen: 
 [https://*hub*.instahub.org/dba/updateTags](#)
@@ -268,8 +268,8 @@ CREATE TABLE `comments` (
   FOREIGN KEY (`user_id`) REFERENCES `users`(`id`) ON DELETE CASCADE
 ) 
 ```
-1. Verstehe die obigen SQL-Befehle.
-2. Führe die obigen SQL-Befehle nacheinander aus.
+1. Verstehe den obigen SQL-Befehl.
+2. Führe den obigen SQL-Befehl aus.
 
 Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensatz](sql/comments.sql) einfügen.
 
@@ -286,8 +286,8 @@ CREATE TABLE `follows` (
   FOREIGN KEY (`follower_id`) REFERENCES `users`(`id`) ON DELETE CASCADE
 )
 ```
-1. Verstehe die obigen SQL-Befehle.
-2. Führe die obigen SQL-Befehle nacheinander aus.
+1. Verstehe den obigen SQL-Befehl.
+2. Führe den obigen SQL-Befehl aus.
 
 Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensatz](sql/follows.sql) einfügen.
 
@@ -304,8 +304,8 @@ CREATE TABLE `likes` (
   FOREIGN KEY (`user_id`) REFERENCES `users`(`id`) ON DELETE CASCADE
 )
 ```
-1. Verstehe die obigen SQL-Befehle.
-2. Führe die obigen SQL-Befehle nacheinander aus.
+1. Verstehe den obigen SQL-Befehl.
+2. Führe den obigen SQL-Befehl aus.
 
 Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensatz](sql/likes.sql) einfügen.
 
@@ -313,24 +313,27 @@ Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensat
 
 ### Zootiere
 
-Erstellen Sie für folgendes Szenario ein Entity-Relationship-Modell:  
+1. Erstelle für folgendes Szenario ein Entity-Relationship-Modell:  
 
 In einem Zoo leben verschiedene Tierarten. Jede Tierart ist in einem eigenen Gehege untergebracht. Dabei kümmern sich verschiedene Tierpfleger teilweise um mehrere Tierarten. Eine Tierart, wie etwa der Elefant, wird von mehreren Tierpflegern betreut. Jede Tierart ist einem Kontinent zugeordnet, wodurch Themenführungen ermöglicht werden. 
 
-1. Wie lautet der SQL Befehl um alle Tierarten anzuzeigen.
-2. Wie lautet der SQL Befehl um alle Tierarten des Zoodirektors anzuzeigen?
+2. Notiere den SQL-Befehl, um alle Tierarten anzuzeigen.
+3. Notiere den SQL-Befehl, um alle Tierarten des Zoodirektors anzuzeigen.
 
-Zu  jeder Tierart gehören einzelne Exemplare dieser Art. Ergänze die einzelnen Tierexemplare und fügen für diese sinnvolle Attribute hinzu. 
+Zu  jeder Tierart gehören einzelne Exemplare dieser Art. 
 
-1. Während Pinguine nur 25 Jahre werden Elefanten bis 60 Jahre alt. Daher soll für jedes Tier das Geburts- und Sterbedatum festgehalten werden
-2. Wie  kann sich ein Pfleger alle aktuell lebenden Tiere ausgeben lassen? 
+1. Ergänze die einzelnen Tierexemplare und fügen für diese sinnvolle Attribute hinzu. Während Pinguine nur 25 Jahre werden Elefanten bis 60 Jahre alt. Daher soll für jedes Tier das Geburts- und Sterbedatum festgehalten werden.
+
+Mithilfe deiner Datenbank sollen folgende Probleme geklärt werden:
+
+1. Beschreibe, wie ein Pfleger alle aktuell lebenden Tiere ausgeben lassen kann. 
    ("<" bedeutet kleiner als und ">" größer als. Ein Datum wird so angegeben '2011/02/25')
-3. Wie findet der Direktor heraus, welche Tiere letztes Jahr gestorben sind?
+2. Der Direktor möchte ermitteln, welche Tiere letztes Jahr gestorben sind. Notiere den passenden SQL-Befehl.
 
-Manche  Tierpfleger gehen sehr brutal mit Ihren Tieren um. Es ist schon vorgekommen, dass ein Pfleger auf ein Kücken getreten ist. Der Direktor möchte nun herausfinden, bei welchem Tierpfleger die meisten Tiere sterben und diesen entlassen. 
+Manche  Tierpfleger gehen sehr brutal mit Ihren Tieren um. Es ist schon vorgekommen, dass ein Pfleger auf ein Küken getreten ist. Der Direktor möchte nun herausfinden, bei welchem Tierpfleger die meisten Tiere sterben und diesen entlassen. 
 
-1. Wie lautet der SQL Ausdruck dazu?
-2. Warum ist die Idee des Zoodirektors nicht zu Ende gedacht?
+1. Notiere den passenden SQL-Ausdruck dazu.
+2. Begründe, warum die Idee des Zoodirektors nicht zu Ende gedacht ist.
 
 ### Der Bibliothekar
 
@@ -340,41 +343,41 @@ Unter gelegentlichen Schnaufen und Glucksen berichtet er seine Anforderungen an 
 
 *Ein jedes Buch hat seinen Platz in einem Regal. Dabei wird der Platz in dem Regal durch das Regalbrett genauer bestimmt. Alle Regale befinden sich in diesem Saal. Die Bücher werden verschiedenen Genres zugeordnet. Beispielsweise ist das Werk "Der Frosch zu Gast bei Helmut" nicht nur eine Komödie, sondern auch ein Krimi.* 
 
-1. Erstellen Sie für obige Anforderungen das ERM.
+1. Erstelle für obige Anforderungen das ERM.
 
-2. Ergänzen Sie alle Primär- und Fremdschlüssel an der richtigen Stelle.
+2. Ergänze alle Primär- und Fremdschlüssel an der richtigen Stelle.
 
-3. Fügen Sie dem Büchern weitere sinnvolle Attribute hinzu.
+3. Füge dem Büchern weitere sinnvolle Attribute hinzu.
 
-4. Erstellen Sie nach Ihrem ERM Modell folgende SQL-Sätze:
+4. Erstelle nach deinem ERM folgende SQL-Sätze:
 
-5. 1. Erstellen Sie für alle CRUD-Operatoren auf die Tabelle Bücher je ein Beispiel. 
+5. 1. Erstelle für alle CRUD-Operatoren auf die Tabelle Bücher je ein Beispiel. 
       Dies können Sie sich entsprechend Ihres ERM frei aussuchen.
-   2. Geben Sie alle Bücher aus.
-   3. Geben Sie alle Bücher mit dem Titel "Der Frosch zu Gast bei Helmut" aus.
-   4. Finden Sie alle Bücher die im Titel "Helmut" tragen.
-   5. Zählen Sie alle Bücher.
+   2. Gib alle Bücher aus.
+   3. Gib alle Bücher mit dem Titel "Der Frosch zu Gast bei Helmut" aus.
+   4. Finde alle Bücher die im Titel "Helmut" tragen.
+   5. Zähle alle Bücher.
 
-6. Sie beschleicht ein schrecklicher Verdacht. Hinter einem verschlissenen Vorhang befindet sich eine weitere Kammer mit Büchern. Bücher von epochaler Bedeutung für die Zukunft des europäischen Schmiedehandwerks. Passen Sie Ihr ERM so an, dass statt dem einzelnen Saal auch die Kammer mit erfasst werden kann.
+6. Dich beschleicht ein schrecklicher Verdacht. Hinter einem verschlissenen Vorhang befindet sich eine weitere Kammer mit Büchern. Bücher von epochaler Bedeutung für die Zukunft des europäischen Schmiedehandwerks. Passe dein ERM so an, dass statt dem einzelnen Saal auch die Kammer mit erfasst werden kann.
 
 ### Das Stahlwerk der Postapokalypse
 
 Orientierungslos wachen Sie in einer Wüste aus Metall auf. Die Luft ist eiskalt klar. Der Boden besteht aus rostenden Stahl. Um Sie herum laufen orientierungslose Menschen, welche voller Panik versuchen kleine Stahlplatten und Stangen gegen belegte Butterbrote zu tauschen. Sie schleppen sich zu einer großen Halle aus der das Dröhnen von Hämmern zu vernehmen ist. Man erzählt Ihnen, dass dies vor dem Krieg das größte Stahlwerk der Welt war, aber bei einem Bombenangriff das vollständige ERM vernichtet wurde. Nun ist die Werksleitung außer Stande die Mitarbeiter in der Kantine mit Wurstbroten zu versorgen, da die Produktion am Boden liegt.
 
-Helfen Sie dem Werksleiter ein erstes ERM für die die Werkshalle "Stahlfuchs" zu entwerfen:
+Hilfe dem Werksleiter ein erstes ERM für die die Werkshalle "Stahlfuchs" zu entwerfen:
 
 *In der Halle "Stahlfuchs" haben wir mehrere Öfen. An jeden Ofen arbeitet genau ein Heizer. Mehrere Träger bringen Brennstäbe zum Beheizen der verschiedenen Öfen. Jeder Heizer und Träger hat eine Personalnummer. Jeder Ofen ist über seinen Standort genau bestimmt.* 
 
-1. Erstellen Sie für obige Anforderungen das ERM.
-2. Ergänzen Sie alle Primär- und Sekundärschlüssel an der richtigen Stelle.
-3. Fügen Sie dem Träger weitere sinnvolle Attribute hinzu.
-4. Erstellen Sie nach Ihrem ERM Modell folgende SQL-Sätze:
-   1. Erstellen Sie für alle CRUD-Operatoren auf die Tabelle Träger je ein 
-      Beispiel. Dies können Sie sich entsprechend Ihres ERM frei aussuchen.
-   2. Geben Sie alle Träger aus.
-   3. Geben Sie die Träger aus, wessen Personalnummer mit 5 beginnt. 
-   4. Zählen Sie alle Heizer 
-5. Zum Danke erhalten Sie ein Butterbrot und Pfefferminztee und ziehen sich für eine Pause auf das Dach der Halle zurück. Voller Stauen erblicken Sie, dass weitere Hallen bis an den Horizont reichen  Passen Sie Ihr ERM so an, dass statt der Halle Stahlfuchs die scheinbar unendlich vielen Hallen mit erfasst werden können.
+1. Erstelle für obige Anforderungen das ERM.
+2. Ergänze alle Primär- und Sekundärschlüssel an der richtigen Stelle.
+3. Füge dem Träger weitere sinnvolle Attribute hinzu.
+4. Erstelle nach deinem ERM folgende SQL-Sätze:
+   1. Erstelle für alle CRUD-Operatoren auf die Tabelle Träger je ein 
+      Beispiel. Dies kannst du dir entsprechend deines ERM frei aussuchen.
+   2. Gib alle Träger aus.
+   3. Gib die Träger aus, wessen Personalnummer mit 5 beginnt. 
+   4. Zähle alle Heizer 
+5. Zum Dank erhältst du ein Butterbrot und Pfefferminztee und ziehst dich damit für eine Pause auf das Dach der Halle zurück. Voller Stauen erblickst du, dass weitere Hallen bis an den Horizont reichen.  Passe dein ERM so an, dass statt der Halle Stahlfuchs die scheinbar unendlich vielen Hallen mit erfasst werden können.
 
 ## Auswerten von Daten II
 
@@ -429,7 +432,7 @@ Der Nutzer mit den meisten Kommentaren soll für sein letztes Bild einen Komment
 
 Nutzer, die ihre *Boote* fotografiert haben, möchten im Rahmen einer politischen Kundgebung ihre Heimatstadt durch *"auf hoher See"* ersetzen lassen.
 
-Aktualisiere den Slogan (*bio*) aller Leipziger Mitglieder, die noch keinen Slogan haben auf *"Meine Bilder auf InstaHub spiegeln die Seele der persitenten Schönheit im Spiegel der Güte wieder.*" 
+Aktualisiere den Slogan (*bio*) aller Leipziger Mitglieder, die noch keinen Slogan haben auf *"Meine Bilder auf InstaHub spiegeln die Seele der persistenten Schönheit im Spiegel der Güte wieder.*" 
 
 ### DELETE
 

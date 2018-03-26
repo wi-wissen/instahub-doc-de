@@ -2,6 +2,28 @@
 
 Der hier vorgestellte Ansatz ist eine Abwandlung meines Vorgehens bei der friendzone. Dieser Ansatz wurde bereits mit über 140 Schülern durchgeführt. 
 
+Überblick über die einzelnen Themen:
+
+| Thema                                    | Kurzbeschreibung                     | Dauer  |
+| ---------------------------------------- | ------------------------------------ | ------ |
+| Client-Server-Architektur                | Wdh. Netzwerke                       | 1/2 UE |
+| Erster Arbeitstag                        | Motivation und Account einrichten    | 1/2 UE |
+| Datenbanken allgemein                    | Grundlagen                           | 0-4 UE |
+| Auswerten von Daten I                    | SQL innerhalb einer Tabelle          | 4 UE   |
+| Verändern von Daten                      | CRUD-Befehle innerhalb einer Tabelle | 2 UE   |
+| Datenschutz und -sicherheit              | Gesellschaftliche Aspekte von DBs    | 2 UE   |
+| Photos und Tags im InstaHub              | 1:n-Kardinalitäten                   | 2 UE   |
+| Followers, Likes und Kommentare im Instahub | n:m-Kardinalitäten                   | 1 UE   |
+| Modellieren von Daten                    | Modelle mit klaren Anforderungen     | 2-4 UE |
+| Auswerten von Daten II                   | tabellenübergreifende SQL-Befehle    | 2 UE   |
+| Die Macht verknüpfter Daten              | tabellenübergreifende CRUD-Befehle   | 2 UE   |
+| Komplexaufgaben                          | Modelle mit offenen Anforderungen    | 2-4 UE |
+
+Die Zeitangaben sind sehr stark abhängig vom Vorwissen und von der Auffassungsgabe der SchülerInnen. Bitte betrachten Sie die Zeitangaben daher bitte nur als grobe Richtwerte.
+
+
+
+
 ## Client-Server-Architektur
 
 In dieser Phase wird das Ausgangsniveau gesichert und Neugierde auf die technische Realisierung von sozialen Netzwerken geweckt.
@@ -34,13 +56,13 @@ Schüler erhalten hier einen Einblick in die Mächtigkeit des Update-Befehles, w
 
 Spätestens hier sollten die ersten Schüler laut gedacht haben und Ihre Sorgen oder Bewunderung über die Möglichkeiten zum Ausdruck gebracht haben. Wenn nicht, sollte es jetzt durch Sie angesprochen werden.
 
-## Photos im InstaHub – 1:n-Kardinalitäten
+## Photos und Tags im InstaHub – 1:n-Kardinalitäten
 
 Lara möchte nun endlich loslegen, sie möchte das Hochladen von Fotos ermöglichen. An der Tafel kann hier intuitiv gezeigt werden, dass sich dies nicht mehr in einer Tabelle darstellen lässt. Die Ergänzung um Normalformen und das klar strukturierte Normalisieren lässt sich später nachholen. Erfahrungsgemäß hilft Schülern die Hinführung an der Tafel sehr beim Verständnis.
 
 Zur Übung werden Fotos noch mit Tags angereichert. Dies war auch schon vorher in der Weboberfläche möglich. Dazu wurde auf einen LIKE-Befehl zurückgeführt. Hiermit lässt sich schon die 1. Normalform (nur atomare Werte) gut aufzeigen.
 
-## Followers im Instahub – n:m-Kardinalitäten
+## Followers, Likes und Kommentare im Instahub – n:m-Kardinalitäten
 
 n:m-Kardinalitäten werden in lernschwachen Klassen durch Lehrervortrag eingeführt. In lernstarken Gruppen kann die Notwendigkeit der Hilfstabelle teilweise selbst herausgearbeitet werden.
 
@@ -64,4 +86,4 @@ Die Macht verknüpfter Daten kann durch die bisherigen Fallbeispiele diskutiert 
 
 ## Komplexaufgaben
 
-Hier sollen Schüler eine eigene Datenbank ohne spezifische Vorgaben wie bei Modellierung selbst entwerfen.
+Hier sollen Schüler auf Papier eine eigene Datenbank ohne spezifische Vorgaben, wie bei Modellierung, selbst entwerfen.

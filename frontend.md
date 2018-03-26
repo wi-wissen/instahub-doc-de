@@ -24,11 +24,19 @@ Wurde einer Lehrkraft ein InstaHub zugeordnet, so muss dieser ebenfalls erst akt
 
 ### Verwaltung der Instahubs
 
+![hubs](img/hubs.jpg)
+
 Nach dem erfolgreichen Login mit einem Lehrer Account wird eine List mit allen zugeordneten hab's angezeigt. Folgende Aktionen sind möglich:
 
-Aktivieren - Erst hierdurch wird der Instahub aktiviert.
+ * Aktivieren – Erst hierdurch wird der Instahub aktiviert.
 
-DB  Admin - siehe Verwaltung eines InstaHub
+ * DB Admin – siehe Verwaltung eines InstaHub
+
+ * Login as DBA – Hierdurch wird der Lehrer auf den ausgewählten InstaHubweitergeleitet und loggt sich automatisch - ohne Kenntnisse desBenutzerkennwortes - als der erste DBA-Benutzer ein. Dies ist in der Regel derSchüler Account.
+
+ * Deaktivieren – Hier kann ein InstaHub deaktiviert werden
+
+ * Delete – Hier kann der InstaHub mitsamt der gesamten Datenbank nachBeendigung der Lerneinheit vollständig gelöscht werden. (Achtung: Hierfür istkeine Bestätigung erforderlich.) 
 
 Login as DBA - Hierdurch wird der Lehrer auf den ausgewählten InstaHub weitergeleitet und loggt sich automatisch - ohne Kenntnisse des Benutzerkennwortes - als der erste DBA-Benutzer ein. Dies ist in der Regel der Schüler Account.
 
