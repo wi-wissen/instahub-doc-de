@@ -234,7 +234,7 @@ CREATE TABLE `photos` (
 1. Verstehe den obigen SQL-Befehl.
 2. Führe den obigen SQL-Befehl aus.
 
-Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensatz](sql/photos.sql) einfügen.
+Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensatz](https://wi-wissen.github.io/instahub-doc-de/sql/photos.sql) einfügen.
 
 ## Tabelle Tags
 ```sql
@@ -271,7 +271,7 @@ CREATE TABLE `comments` (
 1. Verstehe den obigen SQL-Befehl.
 2. Führe den obigen SQL-Befehl aus.
 
-Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensatz](sql/comments.sql) einfügen.
+Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensatz](https://wi-wissen.github.io/instahub-doc-de/sql/comments.sql) einfügen.
 
 ## Tabelle Follower
 ```sql
@@ -289,7 +289,7 @@ CREATE TABLE `follows` (
 1. Verstehe den obigen SQL-Befehl.
 2. Führe den obigen SQL-Befehl aus.
 
-Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensatz](sql/follows.sql) einfügen.
+Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensatz](https://wi-wissen.github.io/instahub-doc-de/sql/follows.sql) einfügen.
 
 ## Tabelle Likes
 ```sql
@@ -307,7 +307,7 @@ CREATE TABLE `likes` (
 1. Verstehe den obigen SQL-Befehl.
 2. Führe den obigen SQL-Befehl aus.
 
-Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensatz](sql/likes.sql) einfügen.
+Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensatz](https://wi-wissen.github.io/instahub-doc-de/sql/likes.sql) einfügen.
 
 ## Modellieren von Daten
 
