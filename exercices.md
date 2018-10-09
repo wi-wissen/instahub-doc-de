@@ -111,7 +111,7 @@ SELECT username FROM users WHERE username LIKE "ameli%"
 
 2. Welche Mitglieder haben einen Benutzernamen mit einem a?
 3. Von welchen Mitgliedern beginnt der Vorname mit einem B?
-4. Welche Mitglieder haben keine Emailadresse bei *instahub.app*?
+4. Welche Mitglieder haben keine Emailadresse bei *instahub.test*?
 
 #### Übungen
 
@@ -180,7 +180,7 @@ SELECT username, name FROM users where city = "Berlin" AND (gender = "male" OR g
 
 ```sql
 INSERT INTO users (username, email, password, name, bio, gender, birthday, city, country, centimeters, avatar, role, is_active, remember_token, created_at, updated_at) 
-VALUES ('guenther37', 'guenther@instahub.app', '12345', 'Günther Müller', 'Günther mag Kartoffelsalat.', 'male', '2006-06-06 00:00:00', 'Leipzig', 'Deutschland', '173', 'avatar.png', 'user', '0', NULL, now(), now());
+VALUES ('guenther37', 'guenther@instahub.test', '12345', 'Günther Müller', 'Günther mag Kartoffelsalat.', 'male', '2006-06-06 00:00:00', 'Leipzig', 'Deutschland', '173', 'avatar.png', 'user', '0', NULL, now(), now());
 ```
 2.  Was bedeutet `now()`?
 
@@ -195,7 +195,7 @@ Expertenaufgabe: Wieso wird in dem obigen SQL-Befehl die ID nicht mit übergeben
 1.  Setze die Körpergröße von allen Mitgliedern auf 160.
 2.  Ändere in dem zuletzt hinzugefügten Eintrag die Stadt auf Dresden. (Du kannst die ID mit einem extra SELECT-Befehl ermitteln.)
 3.  Ersetze den Begriff "Germany" überall durch "Deutschland"
-4.  Ersetze die Körpergröße mit dem Wert `#!sql FLOOR(RAND()*45)+150`
+4.  Ersetze die Körpergröße mit dem Wert `FLOOR(RAND()*45)+150`
   1. Was hat dieser Befehl bewirkt?
   2. Recherchiere was die Befehle [FLOOR](https://www.w3schools.com/sql/func_mysql_floor.asp) und [RAND](https://www.w3schools.com/sql/func_sqlserver_rand.asp) bewirken.
 
