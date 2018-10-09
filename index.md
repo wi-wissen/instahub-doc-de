@@ -30,7 +30,7 @@ Diese Dokumentation richtet sich hauptsächlich an Lehrkräfte. Es werden folgen
 
 # Mitmachen!
 
-Die Plattform InstaHub und diese Dokumentation sind im Quelltext vollständig verfügbar. Durch die [Mozilla Public License (MPL)](https://www.mozilla.org/en-US/MPL/1.1/) ist es möglich, sowohl die technische Plattform als auch diese Dokumentation nach eigenen Wünschen zu gestalten.
+Die Plattform InstaHub und diese Dokumentation sind im Quelltext vollständig verfügbar. Durch offene Lizenzen ist es möglich, sowohl die technische Plattform als auch diese Dokumentation nach eigenen Wünschen zu gestalten.
 
 In dieses Projekt ist bereits sehr viel Energie, Freude und viele Erfahrungen eingeflossen. Wenn Sie neue tolle Ideen oder auch nur einen Rechtschreibfehler gefunden haben, wäre es sehr schön wenn Sie diese einbringen würden. Das geht ganz einfach indem Sie Ihre Änderungen direkt als Push Request bei GitHub einreichen. Alternativ können Sie auch gerne eine E-Mail senden.
 
@@ -41,7 +41,6 @@ In dieses Projekt ist bereits sehr viel Energie, Freude und viele Erfahrungen ei
 * [Laravel](https://laravel.com/)
     * [laracasts/flash](https://github.com/laracasts/flash)
     * [orangehill/iseed](https://github.com/orangehill/iseed)
-    * [graham-campbell/exceptions](https://github.com/graham-campbell/exceptions)
     * [rap2hpoutre/laravel-log-viewer](https://github.com/rap2hpoutre/laravel-log-viewer)
     * [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar)
     * [hisorange/browser-detect](hisorange/browser-detect)
@@ -50,4 +49,5 @@ In dieses Projekt ist bereits sehr viel Energie, Freude und viele Erfahrungen ei
 * Photos by [pixabay](https://pixabay.com/) (CC0)
 * Splash images by [unsplash.com](https://unsplash.com/) (CC0)
 * Face images by [unsplash.com](https://unsplash.com/) (CC0)
+* Fake Ad images based on [unsplash.com](https://unsplash.com/) (CC0)
 
