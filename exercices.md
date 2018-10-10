@@ -222,8 +222,8 @@ Um Passwörter im Klartext zu hashen, kannst du in deinem Browser die folgende A
 CREATE TABLE `photos` (
   `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `user_id` int(10) UNSIGNED NOT NULL,
-  `description` varchar(255) NOT NULL,
-  `url` varchar(255) NOT NULL,
+  `description` varchar(191) NOT NULL,
+  `url` varchar(191) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
@@ -241,7 +241,7 @@ Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensat
 CREATE TABLE `tags` (
   `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `photo_id` int(10) UNSIGNED NOT NULL,
-  `name` varchar(255) NOT NULL,
+  `name` varchar(191) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (id),
@@ -260,7 +260,7 @@ CREATE TABLE `comments` (
   `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `user_id` int(10) UNSIGNED NOT NULL,
   `photo_id` int(10) UNSIGNED NOT NULL,
-  `body` varchar(255) NOT NULL,
+  `body` varchar(191) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
@@ -308,6 +308,55 @@ CREATE TABLE `likes` (
 2. Führe den obigen SQL-Befehl aus.
 
 Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensatz](https://wi-wissen.github.io/instahub-doc-de/sql/likes.sql) einfügen.
+
+## Tabelle Analytics (Tracking)
+
+```sql
+CREATE TABLE `analytics` (
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `ip` varchar(191) NOT NULL,
+  `device` varchar(191) NOT NULL,
+  `brand_family` varchar(191) NOT NULL,
+  `brand_model` varchar(191) NOT NULL,
+  `browser_family` varchar(191) NOT NULL,
+  `browser_version` varchar(191) NOT NULL,
+  `platform_family` varchar(191) NOT NULL,
+  `platform_version` varchar(191) NOT NULL,
+  `user_id` int(10) UNSIGNED NOT NULL,
+  `photo_id` int(10) UNSIGNED NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  FOREIGN KEY (`photo_id`) REFERENCES `photos`(`id`) ON DELETE CASCADE,
+  FOREIGN KEY (`user_id`) REFERENCES `users`(`id`) ON DELETE CASCADE  
+)
+```
+
+1. Verstehe den obigen SQL-Befehl.
+2. Führe den obigen SQL-Befehl aus.
+3. Rufe mehrere Bilder in der Einzelansicht auf und beobachte, welche Einträge in der Tabelle hinzugekommen sind.
+
+## Tabelle Ads (Werbung)
+
+```sql
+CREATE TABLE `ads` (
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `priority` int(11) NOT NULL,
+  `name` varchar(191) NOT NULL,
+  `type` enum('banner','photo') NOT NULL,
+  `url` varchar(191) NOT NULL,
+  `img` varchar(191) NOT NULL,
+  `query` longtext NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)  
+)
+```
+
+1. Verstehe den obigen SQL-Befehl.
+2. Führe den obigen SQL-Befehl aus.
+3. Erstelle eine Werbeanzeige nach [einem Beispiel](frontend?id=business)
+4. Erstelle eine selbstausgedachte Regel für eine Werbeanzeige (Die Bilder findest du im Menueintrag 'Business')
 
 ## Modellieren von Daten
 
