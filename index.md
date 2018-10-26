@@ -43,7 +43,7 @@ In dieses Projekt ist bereits sehr viel Energie, Freude und viele Erfahrungen ei
     * [orangehill/iseed](https://github.com/orangehill/iseed)
     * [rap2hpoutre/laravel-log-viewer](https://github.com/rap2hpoutre/laravel-log-viewer)
     * [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar)
-    * [hisorange/browser-detect](hisorange/browser-detect)
+    * [hisorange/browser-detect](https://github.com/hisorange/browser-detect)
 * [Bootstrap 3](http://bootstrap.com/)
 * [jQuery](https://jquery.com/) with [Backstretch](https://github.com/jquery-backstretch/jquery-backstretch)
 * Photos by [pixabay](https://pixabay.com/) (CC0)
