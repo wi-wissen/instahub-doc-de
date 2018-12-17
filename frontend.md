@@ -140,6 +140,26 @@ SELECT id FROM users WHERE id=$user
 
 In diesem Fall wird ja immer die User-ID zurückgegeben. Da diese größer als `0` ist, wird diese Anzeige immer als möglich betrachtet. Sie sollte daher mit einer sehr geringen Priorität (etwa `99`) als Fallback-Lösung eingerichtet werden.
 
+Der vollständige SQL-Befehl kann etwa so aussehen:
+
+```sql
+INSERT INTO ads (priority, name, type, url, img, query, created_at, updated_at) VALUES
+(1, 'default', 'photo', '/noad', 
+ '/img/ad/freizeitpark.jpg', 
+ 'SELECT 
+ 	CASE 
+ 		WHEN device = "desktop" 
+ 		THEN true 
+ 		ELSE false 
+ 		END 
+ FROM analytics WHERE user_id=$user 
+ ORDER BY id DESC 
+ LIMIT 1', 
+ '2018-10-06 22:00:00', '2018-10-06 22:00:00')
+```
+
+Wichtig ist, dass der eingebettete SQL-Befehl als Zeichenkette übergeben wird. Werden Anführungszeichen verwendet dürfen diese nicht mit den umschließenden Anführungszeichen übereinstimmen. (Hier werden `""` von `''` umschlossen.)
+
 
 
 ## Werbeblocker
