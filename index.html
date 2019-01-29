@@ -29,6 +29,38 @@
         },
         placeholder: 'Suche'
       },
+	  markdown: {
+        smartypants: true,
+        renderer: {
+          paragraph: function (text) {
+            var result;
+            if (/^!&gt;/.test(text)) {
+              result = helper('tip', text);
+            } else if (/^\?&gt;/.test(text)) {
+              result = helper('warn', text);
+            } else if (/^s&gt;/.test(text)) {
+              result = helper('alert alert-success', text);
+            } else if (/^i&gt;/.test(text)) {
+              result = helper('alert alert-info', text);
+            } else if (/^w&gt;/.test(text)) {
+              result = helper('alert alert-warning', text);
+            } else if (/^d&gt;/.test(text)) {
+              result = helper('alert alert-danger', text);
+            } else if (/^t&gt;/.test(text)) {
+              result = helper('alert alert-task', text);
+			} else if (/^h&gt;/.test(text)) {
+              result = helper('alert alert-help', text);
+            } else {
+              result = "<p>" + text + "</p>";
+            }
+            return result;
+
+            function helper(className, content) {
+			  return ("<p class=\"" + className + "\">" + (content.slice(5).trim()) + "</p>")
+			}
+          }
+        }
+      },
       formatUpdated: '{DD}.{MM}.{YYYY} {HH}:{mm}',
       plugins: [
         function (hook, vm) {
