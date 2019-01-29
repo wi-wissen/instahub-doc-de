@@ -208,13 +208,15 @@ Zeichne das Entity-Relationship-Modell deines InstaHubs
 
 ## Tabelle User
 
-Bereits vor deinem ersten Login in deinem InstaHub haben sich 196 User registriert!
+Bereits vor deinem ersten Login in deinem InstaHub haben sich 203 User registriert!
 
 Fügst du über einen SQL-Befehl einen neuen User hinzu, kann sich dieser nicht einloggen, da das Passwort gesichert in der Datenbank abgespeichert werden muss und nicht im Klartext verglichen werden kann.
 
 Um Passwörter im Klartext zu hashen, kannst du in deinem Browser die folgende Adresse aufrufen:
 
 [https://*hub*.instahub.org/dba/cryptPWs](#)
+
+w> Im Folgenden wird davon ausgegangen, dass noch alle User mit der `id` 1 bis 203 vorhanden sind. Ist dem nicht so, können die vorbereiteten Datensätze nicht eingefügt werden. Am besten erstellst du einfach die fehlenden Nutzer neu und weist denen anschließend per SQL eine passende `id` zu. Notfalls kann dein/e LehrerIn den Import auch erzwingen.
 
 ## Tabelle Photo
 
