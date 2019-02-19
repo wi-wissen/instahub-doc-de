@@ -103,9 +103,15 @@ Die Tabelle `ads` besitzt folgende Attribute, um eine Werbeanzeige zu definieren
 * `type` - `photo` oder `banner`. Photos werden nur im Newsfeed und Banner nur unter einzelen Photos in der Detailansicht angezeigt.
 * `url` - Ziellink, auf den der Nutzergeleitet wird. Es wird empfohlen `/noad` als Adresse zu verwenden, dann kommt der Nutzer auf eine eingerichtete Fehlerseite, dass die Werbekampagne bereits ausgelaufen sei. Die Schulhomepage als Adresse ist aber ebenfalls möglich
 * `img` - Anzuzeigendes Bild. Aktuell sind nur die unter Business angezeigten Werbebanner im System hinterlegt. Es ist aber auch möglich die Werbegrafik einfach als Photo hochzuladen oder einen absoluten Link auf eine Grafik im Internet zu verwenden (Beachte, dass du das nur machen darft, wenn das für den fremden Werbserverinhaber in Ordnung ist).
-* `query` - SQL Ausdruck, der ermittelt, ob die Anzeige geeignet ist. Im Ergebnis des Ausdrucks wird nur das erste Attribut mit dem ersten Attributwert geprüft. Ist das Ergebnis nicht `false`, `null` oder `0`, so wird die Anzeige als geeignet gewertet. Als Platzhalter können `$user` für die User-ID des Benutzers und wenn es vom `type` `banner` ist die dazugehörige Photo-ID `$photo` verwendet werden.
+* `query` - SQL Ausdruck, der ermittelt, ob die Anzeige geeignet ist. Als Platzhalter können `$user` für die User-ID des Benutzers und wenn es vom `type` `banner` ist die dazugehörige Photo-ID `$photo` verwendet werden.
 * `created_at` - aktueller Zeitstempel, wird aktuell nicht verwendet
 * `updated_at` - aktueller Zeitstempel, wird aktuell nicht verwendet
+
+Im Ergebnis der `query` können verschiedene Ergebnisse ausgewertet:
+
+* kein Ergebnis - die Anzeige wird als nicht geeignet gewertet.
+* Genau ein Ergebnis - Das erste Attribut mit dem ersten Attributwert geprüft. Ist das Ergebnis nicht `false`, `null` oder `0`, so wird die Anzeige als geeignet gewertet.
+* Eine Liste von `id`s. In diesem Fall wird geprüft, ob die Photo- bzw. User-ID in der Abfrage enthalten ist. Ist dem der fall wird die Anzeige als geeignet gewertet.
 
 Hier zwei Beispiele für eine `query`:
 
@@ -119,6 +125,16 @@ FROM users where id=$user
 ```
 
 Dieser Befehl gibt `true` zurück, wenn das Geschlecht des aktuellen Nutzers `male` ist. Ansonsten `false`.
+
+Alternativ kann auch der folgende Ausdruck geschrieben werden:
+
+```sql
+SELECT id
+FROM users
+WHERE gender = 'male'
+```
+
+Auch komplexere Abfragen lassen sich realisieren:
 
 ```sql
 SELECT 
