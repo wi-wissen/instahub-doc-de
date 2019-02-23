@@ -462,11 +462,12 @@ WHERE follows.follower_id = (SELECT id FROM users WHERE username="luis52")
 
 1. Formuliere die Abfrage aus Aufgabe 2 so um, dass sie mit einer Abfrage ausgeführt wird.
 
-2. Gib aus, wen *mala452* folgt.
+2. Gib aus, wem *mala452* folgt.
 
 ### LEFT JOIN ON
 
-1. Lara würde gern allen Mitgliedern eine Mail schreiben, welche noch nie ein Foto kommentiert haben. Suche deren Mail-Adresse heraus.
+1. Alle Mitglieder, die noch nie ein Foto hochgeladen haben, sollen per Push-Notification dazu ermutigt werden. Ermittle dafür deren Benutzer-ID. 
+2. Lara würde gern allen Mitgliedern eine Mail schreiben, welche noch nie ein Foto kommentiert haben. Suche deren Mail-Adresse heraus.
 
 
 ### Expertenaufgabe
