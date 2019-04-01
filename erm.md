@@ -31,8 +31,7 @@ Zur besseren Übersicht wurden im obigen ERM die Attribute weggelassen. Es hande
 | Entität       | Attribute                                                    |
 | ------------- | ------------------------------------------------------------ |
 | **ads**       | id, priority, name, type, url, img, query, created_at, updated_at |
-| **analytics** | id, ip, device, brand_family, brand_model, browser_family, browser_version, platform_family, platform_version, user_id, photo_id, 
-created_at, updated_at |
+| **analytics** | id, ip, device, brand_family, brand_model, browser_family, browser_version, platform_family, platform_version, user_id, photo_id, created_at, updated_at |
 
 In der Tabelle `analytics` wird vom System protokolliert, welcher Benutzer sich welches Photo in der Detailansicht angesehen hat. In der `ads`-Tabelle können einzelne Werbeanzeigen geschaltet werden.
 
