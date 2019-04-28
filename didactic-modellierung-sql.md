@@ -81,7 +81,7 @@ Außer dem Namen Hitler sind selbstverständlich keine Zitate oder ähnliche Ged
 
 ## Die Macht verknüpfter Daten
 
-Die Macht verknüpfter Daten kann durch die bisherigen Fallbeispiele diskutiert werden. Je nach Planung können schon hier weiterführende Betrachtungen durchgeführt werden. Bisher nur an anderer Stelle wurde dazu eine Visualisierung der Bewegungsdaten von mit Malte Spitz von der [Wissensfabrik Deutschland](https://www.wissensfabrik-deutschland.de/portal/fep/de/dt.jsp?setCursor=1_554644) (von mir [fehlerbereinigte Version](https://blog.wi-wissen.de/post/mobilfunk-und-big-data)) als äußerst deutliche Visualisierung eingesetzt.
+Die Macht verknüpfter Daten kann durch die bisherigen Fallbeispiele diskutiert werden. Je nach Planung können schon hier weiterführende Betrachtungen durchgeführt werden. Bisher nur an anderer Stelle wurde dazu eine Visualisierung der Bewegungsdaten von mit Malte Spitz als äußerst deutliche Visualisierung eingesetzt. Diese gibt es von der [Wissensfabrik Deutschland](https://portal.wissensfabrik.de/portal/fep/de/dt.jsp?setCursor=1_554644_567437) mit Processing oder von mir vollständig Online mit sehr einfacher Bedienung auf [apps.informatik.cc/tracking/](https://apps.informatik.cc/tracking/). Hier können auch Google-Smartphone-Daten ausgewertet werden (In nur einem Monat sind zehnmal mehr Daten als bei Malte Spitz in sechs Monaten angefallen.). 
 
 ## Komplexaufgaben
 
