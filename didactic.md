@@ -22,6 +22,8 @@ SchülerInnen ist oft nicht klar, wie verfügbar ihre persönlichen Daten abgesp
 
 Was passiert wenn mal wieder Nutzerdaten bei einem großen Anbieter verloren gegangen sind? Schaut euch gemeinsam an, wie Passwörter heut gespeichert werden (`bcrypt()` in PHP).
 
+Einen Ansatz für die Klassenstufe 5-6 hat Jan Savelsberg in seiner Masterarbeit **[Weiterentwicklung und Implementierung des Projekts "Instahub" für die Sekundarstufe I mit dem Themenschwerpunkt Datenschutz](https://kola.opus.hbz-nrw.de/frontdoor/index/index/searchtype/authorsearch/author/Jan+Savelsberg/docId/1892/start/0/rows/10)** entwickelt. Ergänzend dazu kann auch noch der graphische Abfrage-Editor verwendet werden.
+
 ### Perspektivenwechsel
 
 Ganz neu ist hinzugekommen, dass InstaHub die Aktivität derr Nutzer tracken kann und ihnen individuell zugeschnittene (fiktive) Werbung ausliefert. Endlich ist es für SchülerInen möcht zu verstehen wie Werbung und Tracking technisch funktionieren und können so fundiert über die gesellschaftliche Entwicklung diskutieren. Besonders im Rahmen des DSGVO kann hier nüchtern betrachtet werden, was eigentlich passiert.

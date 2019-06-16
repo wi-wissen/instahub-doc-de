@@ -16,7 +16,7 @@ Mit InstaHub können folgende Lernziele erreicht werden:
 * Bedeutung von Datenschutz und Datensicherheit erkennen
 * Client Server Architektur einer Webanwendung
 
-Der Vorgänger von InstaHub ist die [friendzone](https://blog.wi-wissen.de/post/friendzone). Diese wurde 2017 mit dem [Unterrichtspreis der Gesellschaft für Informatik](https://www.gi.de/aktuelles/meldungen/detailansicht/article/julian-dorn-erhaelt-unterrichtspreis-2017-der-gesellschaft-fuer-informatik-fuer-friendzone.html) ausgezeichnet.
+Der Vorgänger von InstaHub ist die [friendzone](https://blog.wi-wissen.de/post/friendzone). Diese wurde 2017 mit dem [Unterrichtspreis der Gesellschaft für Informatik](https://www.gi.de/aktuelles/meldungen/detailansicht/article/julian-dorn-erhaelt-unterrichtspreis-2017-der-gesellschaft-fuer-informatik-fuer-friendzone.html) ausgezeichnet. InstaHub selbst wurde 2019 mit dem [1. Platz im Wettbewerb Innovative MINT-Unterrichtsideen](https://www.mnu.de/blog/535-preis-fuer-innovative-mint-unterrichtsideen-2019) der MNU mit dem Klett-Verlag ausgezeichnet.
 
 # Gliederung der Dokumentation
 

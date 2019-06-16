@@ -10,7 +10,7 @@ Die Hauptseite des Projektes ermöglicht es sich als interessierter Besucher zu 
 
 Um sich als Lehrer zu registrieren, muss ein Account angelegt werden. Dabei ist es wichtig, dass die Emailadresse stimmt, da sonst kein Account geprüft und angelegt werden kann. 
 
-Um einen Lehreraccount zu aktivieren, kannst du entweder gleich deine Schulmailadresse verwenden [sendest](https://wi-wissen.de/contact.php) mir einen anderen geeigneten Nachweis mit Angabe deines Benutzernamen. Das ist wichtig, dass nur volljährige Lehrer Schüler administrieren können und auf die Einhaltung der Regelungen achten.
+Um einen Lehreraccount zu aktivieren, kannst du entweder gleich deine Schulmailadresse verwenden oder du [sendest](https://wi-wissen.de/contact.php) mir einen anderen geeigneten Nachweis mit Angabe deines Benutzernamen. Das ist wichtig, dass nur volljährige Lehrer Schüler administrieren können und auf die Einhaltung der Regelungen achten.
 
 Ein InstaHub kann nur angelegt werden, wenn dieser einem Lehrer zugeordnet wird. So ist sichergestellt, dass zum einen unter fachkundiger Anleitung ein Lernerfolg erzielt werden kann. 
 
@@ -38,7 +38,7 @@ Nach dem erfolgreichen Login mit einem Lehrer Account wird eine List mit allen z
 
 ![InstaHub Admin](img/hubadmin.png)
 
-Im oberen Bereich werden alle aktuell verfügbaren Tabellen mit der Anzahl aller Einträge angezeigt.
+Im oberen Bereich werden alle aktuell verfügbaren Tabellen mit der Anzahl aller Einträge angezeigt. Auch kannst du das Passwort für den Admin-Zugang zurücksetzen.
 
 Darunter befinden sich kopiert alle Tabellen es sind jeweils folgende Aktionen möglich:
 
@@ -81,7 +81,11 @@ Hier findet die eigentliche Besonderheit des eigenen InstaHubs statt: Es ist mö
 
 Da jeder Hub seine eigene Datebank hat können hierüber tatsächlich alle SQL-Befehle abgesendet werden. Auch das Löschen der eigenen `User`-Tabelle ist möglich. `SELECT`-Abfragen liefern das Ergebnis in einer Tabelle zurück. Andere Abfragen, ob sie erfolgreich ausgeführt wurden, oder welcher Fehler aufgetreten ist. Dabei wird immer der von MySQL gemeldete Fehler zurückgegeben.
 
+Für Schüler, ohne SQL-Kenntnisse steht ein graphischer Abfrage-Editor zur Verfügung:
 
+![sqlselecteditor](img/sqlselecteditor.png)
+
+In diesem Editor lassen sich zum Lernen auch der erzeugte SQL-Befehl anzeigen.
 
 ## Business
 
@@ -175,6 +179,10 @@ INSERT INTO ads (priority, name, type, url, img, query, created_at, updated_at) 
 ```
 
 Wichtig ist, dass der eingebettete SQL-Befehl als Zeichenkette übergeben wird. Werden Anführungszeichen verwendet dürfen diese nicht mit den umschließenden Anführungszeichen übereinstimmen. (Hier werden `""` von `''` umschlossen.)
+
+Wenn das zu komplex für die Schüler ist, kann auch das Formular zum Eintragen und Bearbeiten von Anzeigen verwendet werden:
+
+![adeditor](img/adeditor.png)
 
 
 
