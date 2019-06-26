@@ -10,11 +10,20 @@ Es bieten sich folgende grundsätzliche didaktische Ansätze an:
 
 ### Auswerten und Modellieren von Datenbanken 
 
-Dieser didaktische Ansatz wurde vom Autor bereits mit über 150 SchülerInnen erfolgreich durchgeführt. Es lässt sich damit nach dem sächsischen Lehrplan Informatik der gesamte Lernbereich Datenbanken in der Sekundarstufe II behandeln. Hier erlernen SchülerInnen Fähigkeiten im Modellieren (ERM, Kardinalitäten, Schlüssel etc.) und im Umgang mit SQL (CRUD-Abfragen in einer und verknüpften Tabellen, sowie Anlagen von Tabellen).
+#### [Julian Dorn](https://wi-wissen.de/)
+
+Dieser didaktische Ansatz wurde vom Autor bereits mit über 200 SchülerInnen erfolgreich durchgeführt. Es lässt sich damit nach dem sächsischen Lehrplan Informatik der gesamte Lernbereich Datenbanken in der Sekundarstufe II behandeln. Hier erlernen SchülerInnen Fähigkeiten im Modellieren (ERM, Kardinalitäten, Schlüssel etc.) und im Umgang mit SQL (CRUD-Abfragen in einer und verknüpften Tabellen, sowie Anlagen von Tabellen).
 
 **Den Ablaufplan findest du unter [Modellierung und SQL](                        didactic-modellierung-sql)**
 
 **Alle Aufgaben findest du vollständig unter [Übungen](exercices)**
+
+#### [Anja Eckstein](http://www.hans-sachs-gymnasium.de/joomla3/index.php)
+
+Für den Informatikunterricht in der 9. Klasse hat Anja Eckstein vom [Hans-Sachs-Gymnasium](http://www.hans-sachs-gymnasium.de/joomla3/index.php) in Nürnberg Unterrichtsmaterial für 5 Doppelstunden mit Präsentation
+und Arbeitsblättern erstellt. Es wird mit Ausnahme der Themen n:m-Beziehungen und zugehörige Abfragen der vollständige bayrische Lehrplan abgedeckt.
+
+**Präsentation und Aufgabenblätter (als PDF und DOCX/PPTX) findest du im [OneDrive](https://1drv.ms/f/s!AmAMmF4kxDW25iEKrhE5WlfBTDWl)**
 
 ### Datenschutz und -sicherheit
 
@@ -42,7 +51,7 @@ InstaHub mithilfe eines externen Werkzeugs wie etwa [Microsoft Access](https://d
 
 **Achtung: Dies ist aus sicherheitsgründen und Ressourcenmangel auf dem offiziellen [InstaHub.org](https://instahub.org/)-Server deaktiviert.**
 
-In der `.env` Konfiguration muss *vor* dem Anlagen dern Nutzer `ALLOW_PUBLIC_DB_ACCESS=true` gesetzt werden.  Nun können in der Database-Seite die Verbindungsdaten zum Server ausgelesen werden:
+In der `.env` Konfiguration muss *vor* dem Anlagen der Nutzer `ALLOW_PUBLIC_DB_ACCESS=true` gesetzt werden.  Nun können in der Database-Seite die Verbindungsdaten zum Server ausgelesen werden:
 
 ![database-connection](img/database-connection.png)
 
