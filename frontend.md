@@ -138,6 +138,8 @@ FROM users
 WHERE gender = 'male'
 ```
 
+Hier wird dann geprüft, ob die Benutzer-ID in der Liste vorkommt. Bitte beachte, dass im Newsfeed nach der Bgenutzer-ID und unter einem Photo nach der Photo-ID gesucht wird. Möchtest du das manuell steuern, verwende einfach einen der anderen Befehle.
+
 Auch komplexere Abfragen lassen sich realisieren:
 
 ```sql
