@@ -35,7 +35,7 @@ Einen Ansatz für die Klassenstufe 5-6 hat Jan Savelsberg in seiner Masterarbeit
 
 ### Perspektivenwechsel
 
-Ganz neu ist hinzugekommen, dass InstaHub die Aktivität derr Nutzer tracken kann und ihnen individuell zugeschnittene (fiktive) Werbung ausliefert. Endlich ist es für SchülerInen möcht zu verstehen wie Werbung und Tracking technisch funktionieren und können so fundiert über die gesellschaftliche Entwicklung diskutieren. Besonders im Rahmen des DSGVO kann hier nüchtern betrachtet werden, was eigentlich passiert.
+Ganz neu ist hinzugekommen, dass InstaHub die Aktivität der Nutzer tracken kann und ihnen individuell zugeschnittene (fiktive) Werbung ausliefert. Endlich ist es für SchülerInnen möglich zu verstehen, wie Werbung und Tracking technisch funktionieren. Sie können so fundiert über die gesellschaftliche Entwicklung diskutieren. Besonders im Rahmen des DSGVO kann hier nüchtern betrachtet werden, was eigentlich passiert.
 
 Diese Funktionalität ist sehr neu. Der Autor wird dies auch erst im Frühjahr ausprobieren können. **Es wäre großartig, wenn du hier didaktische Ideen und ggf. Material mit beitragen könntest.**
 
@@ -49,7 +49,7 @@ InstaHub ausschließlich über die "reguläre" Administratoroberfläche nutzen. 
 
 InstaHub mithilfe eines externen Werkzeugs wie etwa [Microsoft Access](https://de.wikipedia.org/wiki/Microsoft_Access), [LibreOffice Base](https://de.libreoffice.org/discover/base/) oder [phpMyAdmin](https://de.wikipedia.org/wiki/PhpMyAdmin) verwenden. Alle genannten Werkzeuge können sich mit entfernten Datenbanken verbinden. Damit eine Verbindung möglich ist, muss der InstaHub-Server entsprechend konfiguriert sein:
 
-**Achtung: Dies ist aus sicherheitsgründen und Ressourcenmangel auf dem offiziellen [InstaHub.org](https://instahub.org/)-Server deaktiviert.**
+**Achtung: Dies ist aus Sicherheitsgründen und Ressourcenmangel auf dem offiziellen [InstaHub.org](https://instahub.org/)-Server deaktiviert.**
 
 In der `.env` Konfiguration muss *vor* dem Anlagen der Nutzer `ALLOW_PUBLIC_DB_ACCESS=true` gesetzt werden.  Nun können in der Database-Seite die Verbindungsdaten zum Server ausgelesen werden:
 
