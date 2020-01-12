@@ -20,7 +20,7 @@ Dieser didaktische Ansatz wurde vom Autor bereits mit über 200 SchülerInnen er
 
 #### [Anja Eckstein](http://www.hans-sachs-gymnasium.de/joomla3/index.php)
 
-Für den Informatikunterricht in der 9. Klasse hat Anja Eckstein vom [Hans-Sachs-Gymnasium](http://www.hans-sachs-gymnasium.de/joomla3/index.php) in Nürnberg Unterrichtsmaterial für 5 Doppelstunden mit Präsentation
+Für den Informatikunterricht in der 9. Klasse hat Anja Eckstein vom [Hans-Sachs-Gymnasium](http://www.hans-sachs-gymnasium.de/) in Nürnberg Unterrichtsmaterial für 5 Doppelstunden mit Präsentation
 und Arbeitsblättern erstellt. Es wird mit Ausnahme der Themen n:m-Beziehungen und zugehörige Abfragen der vollständige bayrische Lehrplan abgedeckt.
 
 **Präsentation und Aufgabenblätter (als PDF und DOCX/PPTX) findest du im [OneDrive](https://1drv.ms/f/s!AmAMmF4kxDW25iEKrhE5WlfBTDWl)**
