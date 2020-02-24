@@ -436,7 +436,7 @@ Hilfe dem Werksleiter ein erstes ERM für die die Werkshalle "Stahlfuchs" zu ent
 
 1. Mit welchem SQL-Befehl kann InstaHub alle Photos eines Mitglieds anzeigen? Liste die Links zu allen Photos von *samina369* auf.
 
-2. Wer sind die 10 Follower *luis52*?
+2. Wer sind die 10 Follower von *luis52*?
   a. Ermittle die id von *luis52*.
   b. Liste alle Follower *luis52* auf. Beachte das in der Datenbank der Nutzer in `following_id` dem Nutzer in `follower_id` folgt.
 
@@ -446,7 +446,7 @@ Hilfe dem Werksleiter ein erstes ERM für die die Werkshalle "Stahlfuchs" zu ent
 
   Expertenaufgabe: Ändere den Befehl der vorherigen Aufgabe so, dass der hashtag aus der Tabelle `tags` genommen wird.
 
-5. Gib alle Kommentare und den zugehörigen Benutzernamen des Verfassers aus München an.
+5. Gib alle Kommentare und die zugehörigen Benutzernamen der Verfasser aus München an.
 
 6. Erstelle eine Liste, welche in absteigender Reihenfolge die Nutzer mit den meisten Photos beinhaltet. 
 
