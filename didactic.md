@@ -18,12 +18,16 @@ Dieser didaktische Ansatz wurde vom Autor bereits mit über 200 SchülerInnen er
 
 **Alle Aufgaben findest du vollständig unter [Übungen](exercices)**
 
+Das Material steht (wie auch diese Dokumentation) unter der [CC BY-NC-SA Lizenz](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
 #### [Anja Eckstein](http://www.hans-sachs-gymnasium.de/joomla3/index.php)
 
-Für den Informatikunterricht in der 9. Klasse hat Anja Eckstein vom [Hans-Sachs-Gymnasium](http://www.hans-sachs-gymnasium.de/joomla3/index.php) in Nürnberg Unterrichtsmaterial für 5 Doppelstunden mit Präsentation
+Für den Informatikunterricht in der 9. Klasse hat Anja Eckstein vom [Hans-Sachs-Gymnasium](http://www.hans-sachs-gymnasium.de/) in Nürnberg Unterrichtsmaterial für 5 Doppelstunden mit Präsentation
 und Arbeitsblättern erstellt. Es wird mit Ausnahme der Themen n:m-Beziehungen und zugehörige Abfragen der vollständige bayrische Lehrplan abgedeckt.
 
 **Präsentation und Aufgabenblätter (als PDF und DOCX/PPTX) findest du im [OneDrive](https://1drv.ms/f/s!AmAMmF4kxDW25iEKrhE5WlfBTDWl)**
+
+Das Material steht unter der [CC BY-SA Lizenz](https://creativecommons.org/licenses/by-sa/4.0/).
 
 ### Datenschutz und -sicherheit
 
@@ -33,11 +37,17 @@ Was passiert wenn mal wieder Nutzerdaten bei einem großen Anbieter verloren geg
 
 Einen Ansatz für die Klassenstufe 5-6 hat Jan Savelsberg in seiner Masterarbeit **[Weiterentwicklung und Implementierung des Projekts "Instahub" für die Sekundarstufe I mit dem Themenschwerpunkt Datenschutz](https://kola.opus.hbz-nrw.de/frontdoor/index/index/searchtype/authorsearch/author/Jan+Savelsberg/docId/1892/start/0/rows/10)** entwickelt. Ergänzend dazu kann auch noch der graphische Abfrage-Editor verwendet werden.
 
-### Perspektivenwechsel
+### Perspektivenwechsel mit Tracking und Werbung
 
-Ganz neu ist hinzugekommen, dass InstaHub die Aktivität der Nutzer tracken kann und ihnen individuell zugeschnittene (fiktive) Werbung ausliefert. Endlich ist es für SchülerInnen möglich zu verstehen, wie Werbung und Tracking technisch funktionieren. Sie können so fundiert über die gesellschaftliche Entwicklung diskutieren. Besonders im Rahmen des DSGVO kann hier nüchtern betrachtet werden, was eigentlich passiert.
+InstaHub kann die Aktivität der Nutzer tracken kann und ihnen individuell zugeschnittene (fiktive) Werbung ausliefert. Endlich ist es für SchülerInnen möglich zu verstehen, wie Werbung und Tracking technisch funktionieren. Sie können so fundiert über die gesellschaftliche Entwicklung diskutieren. Besonders im Rahmen des DSGVO kann hier nüchtern betrachtet werden, was eigentlich passiert.
 
 Diese Funktionalität ist sehr neu. Der Autor wird dies auch erst im Frühjahr ausprobieren können. **Es wäre großartig, wenn du hier didaktische Ideen und ggf. Material mit beitragen könntest.**
+
+### Sortierung und Gewichtung des Newsfeeds
+
+Ganz neu ist hinzugekommen, dass InstaHub den Newsfeed gewichten kann. Dafür wird der Edge Rank und die Affinität zu Inhalten verwendet, so ähnlich wie es auch bei Google und vermutlich auch sozialen Netzwerken wie Instagram verwendet wird.
+
+Implementiert und konzipiert wurde das von [Daniel Steil](https://twitter.com/danistl8). Dokumentiert hat er es in seiner Masterarbeit **[Weiterentwicklung des Newsfeeds von InstaHub und Entwicklung einer Unterrichtsreihe zum Thema „Algorithmen in sozialen Netzwerken“ für die Sekundarstufe II](https://kola.opus.hbz-nrw.de/frontdoor/index/index/start/0/rows/10/sortfield/score/sortorder/desc/searchtype/simple/query/Steil/docId/2013)**. 
 
 ## Werkzeuge
 
