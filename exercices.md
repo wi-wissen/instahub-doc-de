@@ -9,7 +9,7 @@
 3. Gib alle Benutzernamen (username) und echten Namen (name) aller Einträge aus users aus.
 4. Gib die Wohnorte aller Mitglieder aus.
 
-Expertenaufgabe: Gib alle Passwörter aus. Informiere dich [hier](https://de.wikipedia.org/wiki/Bcrypt) warum auch dein eigenes Passwort so komisch aussieht und warum das notwendig ist. 
+Expertenaufgabe: Gib alle Passwörter aus. Informiere dich [hier](https://de.wikipedia.org/wiki/Bcrypt), warum auch dein eigenes Passwort so komisch aussieht und warum das notwendig ist. 
 
 #### ORDER BY
 
@@ -28,7 +28,7 @@ Fügst du nach dem `SELECT` den Befehl `DISTINCT` ein, so wird jede Zeile nur ei
 
 #### LIMIT
 
-Wenn das Netzwerk sehr langsam ist dauert es eine Weile bis alle Mitglieder angezeigt werden. Um nur die ersten Einträge anzuzeigen kannst du den `LIMIT` Befehl verwenden: 
+Wenn das Netzwerk sehr langsam ist dauert es eine Weile bis alle Mitglieder angezeigt werden. Um nur die ersten Einträge anzuzeigen, kannst du den `LIMIT` Befehl verwenden: 
 
 ```sql
 SELECT username FROM users LIMIT 25
@@ -74,7 +74,7 @@ SELECT city, COUNT(*) AS "Mitglieder je Stadt" FROM users GROUP BY city
 
 1. Gib die Mitgliedernamen entgegen der alphabetischen Reihenfolge aus.
 2. Gib die Namen der 3 Städte mit den meisten Mitgliedern aus.
-3. Gib an aus wie vielen Ländern die Mitglieder kommen.
+3. Gib an, aus wie vielen Ländern die Mitglieder kommen.
 
 #### Expertenaufgabe
 
@@ -116,7 +116,7 @@ SELECT username FROM users WHERE username LIKE "ameli%"
 #### Übungen
 
 1. Gib die Namen aller Berliner Mitglieder aus.
-2. Wie viele Personen wohnen in München
+2. Wie viele Personen wohnen in München?
 3. Gib die Nutzernamen aller Mitglieder an, die kleiner sind als du.
 4. Gib die Stadtnamen aus, wo die meisten Mitglieder mit einem *a* im Namen wohnen.
 
@@ -163,14 +163,14 @@ SELECT username, name FROM users where city = "Berlin" AND gender = "male" OR ge
 
 1. Führe den Befehl aus und prüfe das Ergebnis, indem du die Abfrage ohne explizite Ausführung des Geschlechts erneut ausführst.
 
-Wenn du mehr als 2 Bedingungen hast ist es manchmal sinnvoll anzugeben, welche zuerst betrachtet werden müssen. Dazu kannst du Klammern verwenden:
+Wenn du mehr als 2 Bedingungen hast, ist es manchmal sinnvoll anzugeben, welche zuerst betrachtet werden müssen. Dazu kannst du Klammern verwenden:
 
 ```sql
 SELECT username, name FROM users where city = "Berlin" AND (gender = "male" OR gender = "female")
 ```
 
 2. Gib alle Männer aus Leipzig aus, die kleiner als 165 Zentimeter sind.
-3. Die Bundeswehr sucht Rekruten gib die Namen aller Männer über 165cm und alle Frauen über 160cm aus.
+3. Die Bundeswehr sucht Rekruten. Gib die Namen aller Männer über 165cm und alle Frauen über 160cm aus.
 4. Erna sucht eine Bekannte aus Berlin. Ihr Vorname war entweder *Bea* oder *Naomi*.
 
 ## Verändern von Daten I
@@ -194,7 +194,7 @@ Expertenaufgabe: Wieso wird in dem obigen SQL-Befehl die ID nicht mit übergeben
 ### UPDATE
 1.  Setze die Körpergröße von allen Mitgliedern auf 160.
 2.  Ändere in dem zuletzt hinzugefügten Eintrag die Stadt auf Dresden. (Du kannst die ID mit einem extra SELECT-Befehl ermitteln.)
-3.  Ersetze den Begriff "Germany" überall durch "Deutschland"
+3.  Ersetze den Begriff "Germany" überall durch "Deutschland".
 4.  Ersetze die Körpergröße mit dem Wert `FLOOR(RAND()*45)+150`
   1. Was hat dieser Befehl bewirkt?
   2. Recherchiere was die Befehle [FLOOR](https://www.w3schools.com/sql/func_mysql_floor.asp) und [RAND](https://www.w3schools.com/sql/func_sqlserver_rand.asp) bewirken.
@@ -204,7 +204,7 @@ Expertenaufgabe: Wieso wird in dem obigen SQL-Befehl die ID nicht mit übergeben
 
 
 ## ERM
-Zeichne das Entity-Relationship-Modell deines InstaHubs
+Zeichne das Entity-Relationship-Modell deines InstaHubs.
 
 ## Tabelle User
 
@@ -357,8 +357,8 @@ CREATE TABLE `ads` (
 
 1. Verstehe den obigen SQL-Befehl.
 2. Führe den obigen SQL-Befehl aus.
-3. Erstelle eine Werbeanzeige nach [einem Beispiel](frontend?id=business)
-4. Erstelle eine selbstausgedachte Regel für eine Werbeanzeige (Die Bilder findest du im Menueintrag 'Business')
+3. Erstelle eine Werbeanzeige nach [einem Beispiel](frontend?id=business).
+4. Erstelle eine selbstausgedachte Regel für eine Werbeanzeige (Die Bilder findest du im Menueintrag 'Business').
 
 ## Modellieren von Daten
 
