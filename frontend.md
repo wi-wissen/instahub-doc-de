@@ -106,7 +106,7 @@ Die Tabelle `ads` besitzt folgende Attribute, um eine Werbeanzeige zu definieren
 * `name` - Name der Werbeanzeige zum Wiederfinden, wird aktuell nicht verwendet
 * `type` - `photo` oder `banner`. Photos werden nur im Newsfeed und Banner nur unter einzelen Photos in der Detailansicht angezeigt.
 * `url` - Ziellink, auf den der Nutzergeleitet wird. Es wird empfohlen `/noad` als Adresse zu verwenden, dann kommt der Nutzer auf eine eingerichtete Fehlerseite, dass die Werbekampagne bereits ausgelaufen sei. Die Schulhomepage als Adresse ist aber ebenfalls möglich
-* `img` - Anzuzeigendes Bild. Aktuell sind nur die unter Business angezeigten Werbebanner im System hinterlegt. Es ist aber auch möglich die Werbegrafik einfach als Photo hochzuladen oder einen absoluten Link auf eine Grafik im Internet zu verwenden (Beachte, dass du das nur machen darft, wenn das für den fremden Werbserverinhaber in Ordnung ist).
+* `img` - Anzuzeigendes Bild. Aktuell sind nur die unter Business angezeigten Werbebanner im System hinterlegt. Es ist aber auch möglich die Werbegrafik einfach als Photo hochzuladen oder einen absoluten Link auf eine Grafik im Internet zu verwenden (Beachte, dass du das nur machen darfst, wenn das für den fremden Werbserverinhaber in Ordnung ist).
 * `query` - SQL Ausdruck, der ermittelt, ob die Anzeige geeignet ist. Als Platzhalter können `$user` für die User-ID des Benutzers und wenn es vom `type` `banner` ist die dazugehörige Photo-ID `$photo` verwendet werden.
 * `created_at` - aktueller Zeitstempel, wird aktuell nicht verwendet
 * `updated_at` - aktueller Zeitstempel, wird aktuell nicht verwendet
@@ -138,7 +138,7 @@ FROM users
 WHERE gender = 'male'
 ```
 
-Hier wird dann geprüft, ob die Benutzer-ID in der Liste vorkommt. Bitte beachte, dass im Newsfeed nach der Bgenutzer-ID und unter einem Photo nach der Photo-ID gesucht wird. Möchtest du das manuell steuern, verwende einfach einen der anderen Befehle.
+Hier wird dann geprüft, ob die Benutzer-ID in der Liste vorkommt. Bitte beachte, dass im Newsfeed nach der Benutzer-ID und unter einem Photo nach der Photo-ID gesucht wird. Möchtest du das manuell steuern, verwende einfach einen der anderen Befehle.
 
 Auch komplexere Abfragen lassen sich realisieren:
 
@@ -154,7 +154,7 @@ ORDER BY id DESC
 LIMIT 1
 ```
 
-Es können beliebige Befehle geschrieben werden. Bitte beachte aber, dass der dafür gut geeignete Befehl [`WITH`](https://mariadb.com/kb/en/library/with/) erst ab MariaDB 10.2.1 und in MySQL in Version 8 eingeführt wurd. Diese Versionen sind noch nicht auf allen Servern - wie etwa dem offiziellen InstaHub.org Server.
+Es können beliebige Befehle geschrieben werden. Bitte beachte aber, dass der dafür gut geeignete Befehl [`WITH`](https://mariadb.com/kb/en/library/with/) erst ab MariaDB 10.2.1 und in MySQL in Version 8 eingeführt wird. Diese Versionen sind noch nicht auf allen Servern - wie etwa dem offiziellen InstaHub.org Server.
 
 ```sql
 SELECT id FROM users WHERE id=$user
@@ -180,7 +180,7 @@ INSERT INTO ads (priority, name, type, url, img, query, created_at, updated_at) 
  '2018-10-06 22:00:00', '2018-10-06 22:00:00')
 ```
 
-Wichtig ist, dass der eingebettete SQL-Befehl als Zeichenkette übergeben wird. Werden Anführungszeichen verwendet dürfen diese nicht mit den umschließenden Anführungszeichen übereinstimmen. (Hier werden `""` von `''` umschlossen.)
+Wichtig ist, dass der eingebettete SQL-Befehl als Zeichenkette übergeben wird. Werden Anführungszeichen verwendet, dürfen diese nicht mit den umschließenden Anführungszeichen übereinstimmen. (Hier werden `""` von `''` umschlossen.)
 
 Wenn das zu komplex für die Schüler ist, kann auch das Formular zum Eintragen und Bearbeiten von Anzeigen verwendet werden:
 
@@ -192,11 +192,11 @@ Wenn das zu komplex für die Schüler ist, kann auch das Formular zum Eintragen 
 
 Kann Werbung nicht angezeigt werden, wird ein Hinweis angezeigt. In diesem Fall nutzt dein Browser einen Adblocker wie etwa [uBlock Origin](https://de.wikipedia.org/wiki/UBlock_Origin). Eine Filterung im Schulnetzwerk ist eher unwahrscheinlich, da die fiktiven Anzeigen ja vom selben Server kommen.
 
-Bei größeren SchülerInnen kann auch die Funktion eines [Anti-Adblock Killers](https://github.com/reek/anti-adblock-killer#anti-adblock-killer--reek) besprochen werden. Dieser unterdrückte nämlich zuerst die hier [implementierte Lösung](https://stackoverflow.com/a/20505898), um die Warnanzeige zu umgehen. Diese ist so weit oben bei Google zu finden, dass der Skript einfach auf Verdacht `var canRunAds = true;` in die Webseiten injected. Daher habe ich die Variable auf einen zufälligen Namen geändert und schon klapptes es wieder. Das kann natürlich auch ausgehebelt werden, aber dafür müsste dies individuell für die Seite gemacht werden. Sehr schwer wird es, wenn ich den Variablennamen serverseitig jedes Mal neu auswürfeln würde. Dann könnte man das `div`-Element mit einer speziellen CSS-Regel ausblenden oder mit JavaScript löschen, wodurch ich auch dessen `id` ändern müsste. Jetzt müsste man das Element anhand des CSS-Pfades bzw. XPath suchen, wodurch ich die Position variieren müsste. Du erkennst wohin die Reise geht?
+Bei größeren SchülerInnen kann auch die Funktion eines [Anti-Adblock Killers](https://github.com/reek/anti-adblock-killer#anti-adblock-killer--reek) besprochen werden. Dieser unterdrückte nämlich zuerst die hier [implementierte Lösung](https://stackoverflow.com/a/20505898), um die Warnanzeige zu umgehen. Diese ist so weit oben bei Google zu finden, dass der Skript einfach auf Verdacht `var canRunAds = true;` in die Webseiten injected. Daher habe ich die Variable auf einen zufälligen Namen geändert und schon klappte es wieder. Das kann natürlich auch ausgehebelt werden, aber dafür müsste dies individuell für die Seite gemacht werden. Sehr schwer wird es, wenn ich den Variablennamen serverseitig jedes Mal neu auswürfeln würde. Dann könnte man das `div`-Element mit einer speziellen CSS-Regel ausblenden oder mit JavaScript löschen, wodurch ich auch dessen `id` ändern müsste. Jetzt müsste man das Element anhand des CSS-Pfades bzw. XPath suchen, wodurch ich die Position variieren müsste. Du erkennst wohin die Reise geht?
 
 ## Sortierung und Gewichtung des Feeds
 
-InstaHub sortiert auf wunsch entweder nach den neusten oder den besten Ergebnissen. Im letzteren Fall erhalten Administratoren im Tooltip des jeweiligen Bildes auch das dazugehörige Scoring angezeigt:
+InstaHub sortiert auf Wunsch entweder nach den neusten oder den besten Ergebnissen. Im letzteren Fall erhalten Administratoren im Tooltip des jeweiligen Bildes auch das dazugehörige Scoring angezeigt:
 
 ![sort-scoring](img/sort-scoring.jpg)
 
@@ -212,13 +212,13 @@ Zusammengefasst passiert Folgendes:
 2. Der Wert wird je Kommentar um `2` und je Like um `1` erhöht.
 3. Je älter das Photo, desto kleiner der Faktor, mit dem das Ergebnis multipliziert wird (`0,96 * Alter in Sekunden / 900`. Mindestens aber `0,1`)
 
-Im zweiten Punkt wird versucht die Wichtigkeit des Photos anhand der Markmale Anzahl der Likes und Kommentare zu bestimmen. Es wären auch andere Parameter, die etwa die Anzahl der Aufrufe, die Anzahl von 5-Sternen oder eine inhaltliche Bewertung durch einen Moderator möglich.
+Im zweiten Punkt wird versucht, die Wichtigkeit des Photos anhand der Merkmale Anzahl der Likes und Kommentare zu bestimmen. Es wären auch andere Parameter, wie etwa die Anzahl der Aufrufe, die Anzahl von 5-Sternen oder eine inhaltliche Bewertung durch einen Moderator möglich.
 
-Hinweis: Dummy-Photos sind i.d.R. so alt, dass immer mit `0,1` multipliziert wird. Man kann das Datum im Feld `created_at` aktualisieren oder die Schüler\*innen laden eigene Photos hoch, die dann immer am höhsten gewichtet sind.
+Hinweis: Dummy-Photos sind i.d.R. so alt, dass immer mit `0,1` multipliziert wird. Man kann das Datum im Feld `created_at` aktualisieren oder die Schüler\*innen laden eigene Photos hoch, die dann immer am höchsten gewichtet sind.
 
 ### Gewichtung nach Edge-Rank im News-Feed
 
-Betrachtet die/der Nutzer\*in den der Personen, denen sie/er folgt, so erscheinen immer die neusten Photos zuerst. Folgt man aber vielen Nutzer\*innen, wäre dies sehr unübersichtlich. Viele Nutzer\*innen bei etwa Facebook oder Instagram kommen nicht dazu jeden Tag alle Neuigkeiten zu betrachten. Daher kann auch hier nach den besten Ergebnissen gewichtet werden (siehe dazu auch [Kapitel 3.3.3](https://kola.opus.hbz-nrw.de/opus45-kola/frontdoor/deliver/index/docId/2013/file/Masterarbeit.pdf)).
+Betrachtet die/der Nutzer\*in den Feed der Personen, denen sie/er folgt, so erscheinen immer die neusten Photos zuerst. Folgt man aber vielen Nutzer\*innen, wäre dies sehr unübersichtlich. Viele Nutzer\*innen bei etwa Facebook oder Instagram kommen nicht dazu jeden Tag alle Neuigkeiten zu betrachten. Daher kann auch hier nach den besten Ergebnissen gewichtet werden (siehe dazu auch [Kapitel 3.3.3](https://kola.opus.hbz-nrw.de/opus45-kola/frontdoor/deliver/index/docId/2013/file/Masterarbeit.pdf)).
 
 Edges (Kanten) sind Interaktionen mit einem Beitrag . Dies sind in diesem Fall weiterhin Likes und Kommentare. Nur werden die Kanten  jeden Beitrages jetzt gewichtet und aufsummiert. Die Gewichtung eines Likes oder Kommentars ist abhängig davon, wer es bzw. ihn vergeben hat. Stammt die Kante von einer/m Nutzer\*in, zu welche/r man selber eine hohe Affinität hat, so erhält der Beitrag auch mehr Punkte:
 
