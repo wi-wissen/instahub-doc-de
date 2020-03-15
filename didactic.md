@@ -29,6 +29,16 @@ und Arbeitsblättern erstellt. Es wird mit Ausnahme der Themen n:m-Beziehungen u
 
 Das Material steht unter der [CC BY-SA Lizenz](https://creativecommons.org/licenses/by-sa/4.0/).
 
+#### [Reinhard Nitzsche](https://twitter.com/RNitzsche2)
+
+Für den Unterricht an Berufsoberschulen und Beruflichen Gymnasien hat Reinhard Nitzsche in Elmshorn (Schleswig-Holstein) ein digitales Schulbuch für ein Schulhalbjahr mit 1 Doppelstunde je Woche entwickelt. Es lässt sich auch an allgemeinbildenden Gymnasien in der Sek II  einsetzen.
+
+**Digitales Schulbuch im Browser auf [rnitzsche.github.io](https://rnitzsche.github.io/instahub-doc-de/#/) ansehen.**
+
+**Download als PDF, EPUB und Markdown bei [GitHub](https://github.com/RNitzsche/instahub-doc-de).**
+
+Das Material steht unter der [CC BY-NC Lizenz](https://creativecommons.org/licenses/by-nc/3.0/de/).
+
 ### Datenschutz und -sicherheit
 
 SchülerInnen ist oft nicht klar, wie verfügbar ihre persönlichen Daten abgespeichert werden und wie leicht sie gefunden und geclustert werden können. Dies zu erzählen ist das eine, aber tatsächlich alle "Nazis" in einem sozialen Netzwerk zu finden, ist ein sehr nachhaltiges Erlebnis, welches bereits schon zu drastischen Reaktionen geführt hat.
