@@ -16,7 +16,10 @@ Ein InstaHub kann nur angelegt werden, wenn dieser einem Lehrer zugeordnet wird.
 
 Wurde einer Lehrkraft ein InstaHub zugeordnet, so muss dieser ebenfalls erst aktiviert werden. Dies kann durch die Lehrkraft selbst durchgeführt werden.
 
-
+<div class="plyr__video-embed" id="player">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/llkjwhUdbtw?origin=https://buch.informatik.cc&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<figcaption>Video aus Online-Workshop bei <a href="https://youtu.be/llkjwhUdbtw">YouTube</a> ansehen </figcaption>
 
 ### Verwaltung der Instahubs
 
@@ -73,7 +76,7 @@ Die Besonderheit des sozialen Netzwerkes sind hier seine zwei Rollen:
 
 
 
-### Database
+### Datenbank
 
 Hier findet die eigentliche Besonderheit des eigenen InstaHubs statt: Es ist möglich mit SQL-Befehlen die Datenbank nach Belieben zu verändern. Ergebnisse werden dabei in einer Übersicht präsentiert:
 
@@ -87,9 +90,35 @@ Für Schüler, ohne SQL-Kenntnisse steht ein graphischer Abfrage-Editor zur Verf
 
 In diesem Editor lassen sich zum Lernen auch der erzeugte SQL-Befehl anzeigen.
 
-## Business
+## Tracking
 
-Mit der Tabelle `Ads` aktiviert InstaHub die Werbeanzeigen. Alle mitgelieferten Anzeigen sind selbstverständlich frei erfunden. Werbung findet auf den einzelnen Photoseiten
+Mit der Tabelle `analytics` beginnt InstaHub das Verhalten der Besucher\*innen zu überwachen. Dabei wird der Besuch von Photo-Detailansichten mit folgenden Werten dokumentiert:
+
+* id - Primärschlüssel, fortlaufende Nummer
+* ip - Die ersten drei Blöcke der IPv4-Adresse
+* device - `desktop`, `mobile`, `tablet` oder `bot`
+* brand_family - wird oft nur bei Smartphones mitgesendet, etwa `Apple` oder `Samsung`
+* brand_model - wird oft nur bei Smartphones mitgesendet, etwa `GALAXY S5`
+* browser_family - oft `Firefox`, `Chrome` oder `Safari`
+* browser_version
+* platform_family - oft `Windows`, `Mac`, `GNU/Linux`, `iOS` oder `Android`
+* platform_version
+* user_id - Benutzer\*in der sich das Photo angesehen hat
+* photo_id - angesehenes Photo
+* created_at - Zeitpunkt als das Photo sich angesehen wurde
+* updated_at - i.d.R. wie `created_at` nur anders, wenn manuell geändert
+
+Die IP-Adresse wird aus Datenschutzgründen eingekürzt und muss real sein, da dahin die Antwort (das Photo) geschickt wird. Der Client/Benutzer\*in kann bei allen anderen Eigenschaften beliebige Werte senden. So kann ein Bot etwa als User-Agent `Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0` senden und signalisiert, dass er ein Firefox-Browser unter Windows 10 in der Version 76 sei. [Das](https://www.whatismybrowser.com/detect/what-is-my-user-agent) ist dein User-Agent. Und hier ist eine Liste von weiteren möglichen [User-Agents](https://deviceatlas.com/blog/list-of-user-agent-strings).
+
+## personalisierte Werbung
+
+<div class="plyr__video-embed" id="player">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/thTCt7dSHT4?origin=https://buch.informatik.cc&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<figcaption>Video bei <a href="https://youtu.be/thTCt7dSHT4">YouTube</a> ansehen </figcaption>
+
+Mit der Tabelle `ads` aktiviert InstaHub die Werbeanzeigen. Alle mitgelieferten Anzeigen sind selbstverständlich frei erfunden. Werbung findet auf den einzelnen Photoseiten
 
 ![Banner Ad](img/ad-banner.png)
 

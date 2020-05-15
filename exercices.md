@@ -357,8 +357,17 @@ CREATE TABLE `ads` (
 
 1. Verstehe den obigen SQL-Befehl.
 2. Führe den obigen SQL-Befehl aus.
-3. Erstelle eine Werbeanzeige nach [einem Beispiel](frontend?id=business).
-4. Erstelle eine selbstausgedachte Regel für eine Werbeanzeige (Die Bilder findest du im Menueintrag 'Business').
+3. Erstelle mit dem folgenden SQL-Befehl zwei Werbeanzeigen
+
+```sql
+INSERT INTO `ads` (`id`, `priority`, `name`, `type`, `url`, `img`, `query`, `created_at`, `updated_at`) VALUES
+(7, 99, 'andromeda ', 'photo', '/noad', '/img/ad/smoothie.jpg', 'SELECT id FROM users WHERE id=$user', '2020-05-15 21:58:59', '2020-05-15 21:58:59'),
+(8, 99, 'burgerhaus', 'banner', '/noad', '/img/ad/brokkolie.jpg', 'SELECT id FROM photos WHERE id=$photo', '2020-05-15 21:58:59', '2020-05-15 21:58:59');
+```
+
+4. Erstelle eine selbstausgedachte Regel für eine Werbeanzeige.
+
+[Hier](frontend?id=personalisierte-werbung) findest du in der Dokumentation eine Erklärung, wie die Werbeanzeigen funktionieren. Du kannst vorgegebenen Werbeanzeigen aus dem Menueintrag *Kampagnen* umsetzen oder dir selbst eine Anzeige ausdenken. Dazu entwirfst du die Werbung auf deinem Rechner und lädst diese anschließend als Photo hoch. Jetzt kannst du den Link zu diesem Bild (nicht der Photo-Seite!) verwenden.
 
 ## Modellieren von Daten
 

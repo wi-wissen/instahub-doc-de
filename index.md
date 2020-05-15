@@ -4,6 +4,12 @@ InstaHub ist ein soziales Netzwerk ähnlich Instagram, welches im  Unterricht zu
 
 Schüler sind in InstaHub nicht Nutzer, sondern selbst  Administratoren. Sie haben so vollen Zugriff auf alle Funktionen des  sozialen Netzwerks, die in echten Netzwerken verborgen sind. 
 
+<div class="plyr__video-embed" id="player">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/J3WAaPNjANE?origin=https://buch.informatik.cc&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<figcaption>Video bei <a href="https://youtu.be/J3WAaPNjANE">YouTube</a> ansehen </figcaption>
+
 Mit InstaHub können folgende Lernziele erreicht werden:
 
 * Datenbanken
@@ -44,8 +50,8 @@ In dieses Projekt ist bereits sehr viel Energie, Freude und viele Erfahrungen ei
     * [rap2hpoutre/laravel-log-viewer](https://github.com/rap2hpoutre/laravel-log-viewer)
     * [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar)
     * [hisorange/browser-detect](https://github.com/hisorange/browser-detect)
-* [Bootstrap 3](http://bootstrap.com/)
-* [jQuery](https://jquery.com/) with [Backstretch](https://github.com/jquery-backstretch/jquery-backstretch)
+* [Bootstrap 4](https://getbootstrap.com/)
+* [Vue](https://vuejs.org/)
 * Photos by [pixabay](https://pixabay.com/) (CC0)
 * Splash images by [unsplash.com](https://unsplash.com/) (CC0)
 * Face images by [unsplash.com](https://unsplash.com/) (CC0)

@@ -6,12 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="css/plyr.css" />
   <link rel="stylesheet" href="css/vue.css">
   <link rel="stylesheet" href="css/vue-boxes.css">
+  <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
   <noscript>Your browser does not support JavaScript!</noscript>
   <div id="app"></div>
+  <script src="js/plyr.js"></script>
   <script>
     window.$docsify = {
       name: 'InstaHub',
@@ -70,7 +73,11 @@
             return "<p style='text-align:right;'>{docsify-updated}<p>\n\n" + html 
               + '\n\n----\n'
               + editHtml
-          })
+          });
+		  
+		  hook.doneEach(function() {
+			const players = Plyr.setup('.plyr__video-embed');
+		  });
         }
       ],
     }

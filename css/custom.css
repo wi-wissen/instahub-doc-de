@@ -1,0 +1,24 @@
+.markdown-section iframe {
+	margin: 0 auto;
+	display:block;
+}
+
+.markdown-section img {
+	margin: 0 auto;
+	display:block;
+}
+
+.markdown-section tr:nth-child(2n) {
+    background-color: #ffffff;
+}
+
+figcaption{
+	text-align: center;
+	margin-top: 0.2em;
+	margin-bottom: 1.2em;
+	font-size: 0.9em !important;
+}
+
+.plyr {
+	margin-top: 1.2em;
+}
