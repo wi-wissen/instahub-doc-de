@@ -14,7 +14,7 @@ Es bieten sich folgende grundsätzliche didaktische Ansätze an:
 
 Dieser didaktische Ansatz wurde vom Autor bereits mit über 200 SchülerInnen erfolgreich durchgeführt. Es lässt sich damit nach dem sächsischen Lehrplan Informatik der gesamte Lernbereich Datenbanken in der Sekundarstufe II behandeln. Hier erlernen SchülerInnen Fähigkeiten im Modellieren (ERM, Kardinalitäten, Schlüssel etc.) und im Umgang mit SQL (CRUD-Abfragen in einer und verknüpften Tabellen, sowie Anlagen von Tabellen).
 
-**Den Ablaufplan findest du unter [Modellierung und SQL](                        didactic-modellierung-sql)**
+**Den Ablaufplan findest du unter [Modellierung und SQL](didactic-modellierung-sql)**
 
 **Alle Aufgaben findest du vollständig unter [Übungen](exercices)**
 
@@ -22,8 +22,7 @@ Das Material steht (wie auch diese Dokumentation) unter der [CC BY-NC-SA Lizenz]
 
 #### [Anja Eckstein](http://www.hans-sachs-gymnasium.de/joomla3/index.php)
 
-Für den Informatikunterricht in der 9. Klasse hat Anja Eckstein vom [Hans-Sachs-Gymnasium](http://www.hans-sachs-gymnasium.de/) in Nürnberg Unterrichtsmaterial für 5 Doppelstunden mit Präsentation
-und Arbeitsblättern erstellt. Es wird mit Ausnahme der Themen n:m-Beziehungen und zugehörige Abfragen der vollständige bayrische Lehrplan abgedeckt.
+Für den Informatikunterricht in der 9. Klasse hat Anja Eckstein vom [Hans-Sachs-Gymnasium](http://www.hans-sachs-gymnasium.de/) in Nürnberg Unterrichtsmaterial für 5 Doppelstunden mit Präsentationund Arbeitsblättern erstellt. Es wird mit Ausnahme der Themen n:m-Beziehungen und zugehörige Abfragen der vollständige bayrische Lehrplan abgedeckt.
 
 **Präsentation und Aufgabenblätter (als PDF und DOCX/PPTX) findest du im [OneDrive](https://1drv.ms/f/s!AmAMmF4kxDW25iEKrhE5WlfBTDWl)**
 
@@ -31,13 +30,21 @@ Das Material steht unter der [CC BY-SA Lizenz](https://creativecommons.org/licen
 
 #### [Reinhard Nitzsche](https://twitter.com/RNitzsche2)
 
-Für den Unterricht an Berufsoberschulen und Beruflichen Gymnasien hat Reinhard Nitzsche in Elmshorn (Schleswig-Holstein) ein digitales Schulbuch für ein Schulhalbjahr mit 1 Doppelstunde je Woche entwickelt. Es lässt sich auch an allgemeinbildenden Gymnasien in der Sek II  einsetzen.
+Für den Unterricht an Berufsoberschulen und Beruflichen Gymnasien hat Reinhard Nitzsche in Elmshorn (Schleswig-Holstein) ein digitales Schulbuch für ein Schulhalbjahr mit 1 Doppelstunde je Woche entwickelt. Es lässt sich auch an allgemeinbildenden Gymnasien in der Sek II einsetzen.
 
 **Digitales Schulbuch im Browser auf [rnitzsche.github.io](https://rnitzsche.github.io/instahub-doc-de/#/) ansehen.**
 
 **Download als PDF, EPUB und Markdown bei [GitHub](https://github.com/RNitzsche/instahub-doc-de).**
 
 Das Material steht unter der [CC BY-NC Lizenz](https://creativecommons.org/licenses/by-nc/3.0/de/).
+
+#### [Oliver Kilthau](https://informatikkeller.de/)
+
+In der Zeit der Corna-Schul(teil)schließung hat Oliver Kilthau für die 12. Klasse des Beruflichen Gymnasiums (WG/EG/SG) in Baden-Württemberg Aufgabenblätter und Videoerklärungen und -anleitungen erstellt. Diese können in Form von Selbstorganisierten Lernen (SOL) verwendet oder auch in den eher traditionellen Unterricht integriert werden. Das Material ist für 5 Doppelstunden geplant und deckt den Lernbereich "Relationale Datenbanken" ab.
+
+**Aufgabenblätter und Video findest du auf [informatikkeller.de/instahub](https://informatikkeller.de/instahub/)**
+
+Das Material steht unter [CC BY 4.0 Lizenz](https://creativecommons.org/licenses/by/4.0/).
 
 ### Datenschutz und -sicherheit
 
