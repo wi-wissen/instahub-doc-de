@@ -17,7 +17,7 @@ Mit InstaHub können folgende Lernziele erreicht werden:
   * Anforderungen an ein Datenbank-Managementsystem
 * Entity-Relationship-Modell verstehen und zeichnen.
 * Einblick in Benutzertracking
-* Erstellen von personalisierte Werbung 
+* Erstellen von personalisierter Werbung 
 * Einblick in die Funktion von Werbeblockern
 * Bedeutung von Datenschutz und Datensicherheit erkennen
 * Client Server Architektur einer Webanwendung
