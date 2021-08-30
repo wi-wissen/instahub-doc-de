@@ -6,13 +6,13 @@ Online: https://wi-wissen.github.io/instahub-doc-de/
 
 ## Über
 
-Diese Dokumentation dienst dazu Lehrkräften einen Überblick über InstaHub zu geben.
+Diese Dokumentation dient dazu, Lehrkräften einen Überblick über InstaHub zu geben.
 
 Es wird ein Vorschlag für das didaktische Vorgehen gemacht. Außerdem werden alle dazu benötigten Aufgaben beigefügt.
 
-Die Dokumentation ist aus dem Git [InstaHub](https://github.com/wi-wissen/InstaHub) ausgegliedert, da sie zum einen nur in deutscher Sprache ist und zum anderen vermutlicher vom Projekt unabhängige Commits erhalten wird.
+Die Dokumentation ist aus dem Git [InstaHub](https://github.com/wi-wissen/InstaHub) ausgegliedert, da sie zum einen nur in deutscher Sprache ist und zum anderen vermutlich vom Projekt unabhängige Commits erhalten wird.
 
-Sie sind sehr gern eingeladen, eigene Aufgaben beizustuern oder bestehende Inhalte zu verbessern! 
+Sie sind sehr gern eingeladen, eigene Aufgaben beizusteuern oder bestehende Inhalte zu verbessern! 
 
 
 
