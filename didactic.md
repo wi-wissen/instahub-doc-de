@@ -20,11 +20,11 @@ Dieser didaktische Ansatz wurde vom Autor bereits mit über 200 SchülerInnen er
 
 Das Material steht (wie auch diese Dokumentation) unter der [CC BY-NC-SA Lizenz](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-#### [Anja Eckstein](http://www.hans-sachs-gymnasium.de/joomla3/index.php)
+#### [Anja Eckstein](https://www.hans-sachs-gymnasium.de/unsere-schule/menschen-am-hsg/kollegium)
 
-Für den Informatikunterricht in der 9. Klasse hat Anja Eckstein vom [Hans-Sachs-Gymnasium](http://www.hans-sachs-gymnasium.de/) in Nürnberg Unterrichtsmaterial für 5 Doppelstunden mit Präsentationund Arbeitsblättern erstellt. Es wird mit Ausnahme der Themen n:m-Beziehungen und zugehörige Abfragen der vollständige bayrische Lehrplan abgedeckt.
+Für den Informatikunterricht in der 9. und 10. Klasse hat Anja Eckstein vom [Hans-Sachs-Gymnasium](https://www.hans-sachs-gymnasium.de/) in Nürnberg (Bayern) Unterrichtsmaterial mit ausführlicher Präsentation und Arbeitsblättern erstellt. Es werden die Teilbereiche der Jahrgangsstufe 9 (Inf 9.2) und der Jahrgangsstufe 10 (Inf 10.1) des neuen bayerischen Lehrplans (LehrplanPLUS) vollständig abgedeckt.
 
-**Präsentation und Aufgabenblätter (als PDF und DOCX/PPTX) findest du im [OneDrive](https://1drv.ms/f/s!AmAMmF4kxDW25iEKrhE5WlfBTDWl)**
+**Präsentation und Aufgabenblätter (als PDF und DOCX/PPTX) findest du im [OneDrive](https://1drv.ms/u/s!ApfPaKVWuCu4lgBenD4Yqg7cM9Nj?e=8307Ej)**
 
 Das Material steht unter der [CC BY-SA Lizenz](https://creativecommons.org/licenses/by-sa/4.0/).
 
