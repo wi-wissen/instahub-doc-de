@@ -66,6 +66,8 @@ Mit Microtargeting sollen Botschaften zielgerichtet transportiert werden. Für d
 
 **Präsentation, Verlaufsplan und Arbeitsblätter zum Download bei [Dropbox](https://www.dropbox.com/sh/lk97neye2vw5ffy/AADu87Lzf7xKK8Dy8SSwmtZsa?dl=0)**
 
+Das Material steht unter [CC BY 4.0 Lizenz](https://creativecommons.org/licenses/by/4.0/).
+
 ### Sortierung und Gewichtung des Newsfeeds
 
 Ganz neu ist hinzugekommen, dass InstaHub den Newsfeed gewichten kann. Dafür wird der Edge Rank und die Affinität zu Inhalten verwendet, so ähnlich wie es auch bei Google und vermutlich auch sozialen Netzwerken wie Instagram verwendet wird.
