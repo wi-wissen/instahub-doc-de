@@ -58,7 +58,13 @@ Einen Ansatz für die Klassenstufe 5-6 hat Jan Savelsberg in seiner Masterarbeit
 
 InstaHub kann die Aktivität der Nutzer tracken kann und ihnen individuell zugeschnittene (fiktive) Werbung ausliefert. Endlich ist es für SchülerInnen möglich zu verstehen, wie Werbung und Tracking technisch funktionieren. Sie können so fundiert über die gesellschaftliche Entwicklung diskutieren. Besonders im Rahmen des DSGVO kann hier nüchtern betrachtet werden, was eigentlich passiert.
 
-Diese Funktionalität ist sehr neu. Der Autor wird dies auch erst im Frühjahr ausprobieren können. **Es wäre großartig, wenn du hier didaktische Ideen und ggf. Material mit beitragen könntest.**
+#### [Simon Blankenagel](https://twitter.com/Mathelehrer3)
+
+Mit Microtargeting sollen Botschaften zielgerichtet transportiert werden. Für den Unterricht in der Sekundarstufe II des Landes Nordrhein-Westfalen hat Simon Blankenagel dazu eine Unterrichtsstunde entwickelt. Dabei werden die Schüler:innen innerhalb eines Planspiels in Gruppen eingeteilt, welche übergreifend eine Aufgabe bearbeiten sollen.
+
+**Digitale Aufgaben als Webseite: [hackmd.okfn.de/s/r11OmbisY](https://hackmd.okfn.de/s/r11OmbisY)**
+
+**Präsentation, Verlaufsplan und Arbeitsblätter zum Download bei [Dropbox](https://www.dropbox.com/sh/lk97neye2vw5ffy/AADu87Lzf7xKK8Dy8SSwmtZsa?dl=0)**
 
 ### Sortierung und Gewichtung des Newsfeeds
 

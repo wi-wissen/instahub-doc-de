@@ -139,3 +139,29 @@ INSERT INTO `ads` (`id`, `priority`, `name`, `type`, `url`, `img`, `query`, `cre
 (8, 99, 'burgerhaus', 'banner', '/noad', '/img/ad/brokkolie.jpg', 'SELECT id FROM photos WHERE id=$photo', '2020-05-15 21:58:59', '2020-05-15 21:58:59');
 ```
 
+## Tabelle User (Benutzer:innen)
+
+Diese Tabelle ist in jedem neuen Hub vorhanden und muss nicht angelegt werden. Sie ist dokumentiert, falls eine lokale Datenbank gebaut werden soll.
+
+```sql
+CREATE TABLE `users` (
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `username` varchar(191) NOT NULL UNIQUE,
+  `email` varchar(191)NOT NULL UNIQUE,
+  `password` varchar(191) NOT NULL,
+  `name` varchar(191) NOT NULL,
+  `bio` varchar(191) DEFAULT NULL,
+  `gender` enum('male','female') DEFAULT NULL,
+  `birthday` datetime DEFAULT NULL,
+  `city` varchar(191) DEFAULT NULL,
+  `country` varchar(191) DEFAULT NULL,
+  `centimeters` int(11) DEFAULT NULL,
+  `avatar` varchar(191) NOT NULL DEFAULT 'avatar.png',
+  `role` enum('user','dba','teacher','admin') NOT NULL DEFAULT 'user',
+  `is_active` tinyint(1) NOT NULL DEFAULT 0,
+  `remember_token` varchar(100) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+);
+```
+
