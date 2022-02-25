@@ -446,10 +446,10 @@ Hilfe dem Werksleiter ein erstes ERM für die die Werkshalle "Stahlfuchs" zu ent
 1. Mit welchem SQL-Befehl kann InstaHub alle Photos eines Mitglieds anzeigen? Liste die Links zu allen Photos von *samina369* auf.
 
 2. Wer sind die 10 Follower von *luis52*?
-  a. Ermittle die id von *luis52*.
-  b. Liste alle Follower *luis52* auf. Beachte das in der Datenbank der Nutzer in `following_id` dem Nutzer in `follower_id` folgt.
+    a. Ermittle die id von *luis52*.
+    b. Liste alle Follower *luis52* auf. Beachte das in der Datenbank der Nutzer in `following_id` dem Nutzer in `follower_id` folgt.
 
-3. Der Verfassungsschutz bittet um Mithilfe: Wer hat Fotos mit Zitaten von Adolf Hitler zitiert? Gib deren Email und den betreffenden Kommentar aus.
+3. Der Verfassungsschutz bittet um Mithilfe: Wer hat in Kommentaren zu Fotos Adolf Hitler erwähnt? Gib deren Email und den betreffenden Kommentar aus.
 
 4. Es soll Werbung an alle Strandurlauber verschickt werden. Finde alle Photos die den Hashtag *#meer* enthalten. Gib den Namen, die Emailadresse, den Geburtstag und die Stadt der zugehörigen Benutzer aus. 
 

@@ -70,9 +70,15 @@ Das Material steht unter [CC BY 4.0 Lizenz](https://creativecommons.org/licenses
 
 ### Sortierung und Gewichtung des Newsfeeds
 
-Ganz neu ist hinzugekommen, dass InstaHub den Newsfeed gewichten kann. Dafür wird der Edge Rank und die Affinität zu Inhalten verwendet, so ähnlich wie es auch bei Google und vermutlich auch sozialen Netzwerken wie Instagram verwendet wird.
+InstaHub kann den Newsfeed gewichten. Dafür wird der Edge Rank und die Affinität zu Inhalten verwendet, so ähnlich wie es auch bei Google und vermutlich auch sozialen Netzwerken wie Instagram verwendet wird.
 
 Implementiert und konzipiert wurde das von [Daniel Steil](https://twitter.com/danistl8). Dokumentiert hat er es in seiner Masterarbeit **[Weiterentwicklung des Newsfeeds von InstaHub und Entwicklung einer Unterrichtsreihe zum Thema „Algorithmen in sozialen Netzwerken“ für die Sekundarstufe II](https://kola.opus.hbz-nrw.de/frontdoor/index/index/start/0/rows/10/sortfield/score/sortorder/desc/searchtype/simple/query/Steil/docId/2013)**. 
+
+### Gewichtung und Bewertung von Profilen
+
+Ganz neu ist hinzugekommen, dass InstaHub Benutzer:innen gewichten kann. Dadurch ist es möglich personalisierte  Vorschläge zu erstellen, wen man folgen könne.
+
+Peter Braunschädel hat das konzipiert und die Implementierung vorbereitet. Mehr dazu in seiner Masterarbeit [Entwicklung und Umsetzung von Follow-Vorschlägen für InstaHub und Entwicklung einer entsprechenden Unterrichtsreihe zum Thema "**Relationen in sozialen Netzwerken und Gefahren der Erzeugung und Verarbeitung von personenbezogenen Daten" für die Sekundarstufe II**](https://kola.opus.hbz-nrw.de/frontdoor/index/index/searchtype/latest/rows/100/docId/2184/start/3)
 
 ## Werkzeuge
 

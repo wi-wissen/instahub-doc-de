@@ -239,7 +239,7 @@ Zusammengefasst passiert Folgendes:
 
 1. Jedes Photo erwählt den Wert `1`
 2. Der Wert wird je Kommentar um `2` und je Like um `1` erhöht.
-3. Je älter das Photo, desto kleiner der Faktor, mit dem das Ergebnis multipliziert wird (`0,96 * Alter in Sekunden / 900`. Mindestens aber `0,1`)
+3. Je älter das Photo, desto kleiner der Faktor, mit dem das Ergebnis multipliziert wird (`0,96 ^ (Alter in Sekunden / 900)`. Mindestens aber `0,1`)
 
 Im zweiten Punkt wird versucht, die Wichtigkeit des Photos anhand der Merkmale Anzahl der Likes und Kommentare zu bestimmen. Es wären auch andere Parameter, wie etwa die Anzahl der Aufrufe, die Anzahl von 5-Sternen oder eine inhaltliche Bewertung durch einen Moderator möglich.
 
@@ -258,3 +258,23 @@ Die Affinität zu einer/m Nutzer\*in errechnet sich wiederum durch die  Interakt
 Obiges Vorgehen hat noch den Nachteil, dass einmalig sehr populäre Beiträge bis zum Überbieten ganz oben im Feed stehen würden. So ließe sich etwa bei [YouTube Gangnam Style](https://www.youtube.com/watch?v=9bZkp7q19f0) schwer übertreffen, da der über die Zeit gesammelte Wert so hoch ist. Dennoch hat dieses Video heute nicht mehr die Bedeutung von früher.
 
 Daher beziehen wir die Aktualität mit ein. Dies geschieht durch eine Multiplikation mit einem  Wert zwischen `1` (ganz neu) und `0,1` (sehr alt). Die Berechnung der Aktualität erfolgt mit der Formel: `t(x)= 0,96^x` , wobei `x` in  Viertelstunden angegeben ist (`x=1` entspricht 15 Minuten, usw.). Der Aktualitätswert von `0,1` bildet allerdings das Minimum.
+
+
+
+## Interessante Profile finden
+
+Wem folgen? Auf einer Party kann man sich gut umschauen, aber was mache ich bei 1,3 Milliarden Mitgliedern auf der Party? Hier sind intelligente Suchstrategien gefragt. Benutzer:innen erhalten auf ziemlich jeden sozialen Netzwerk Vorschläge, wem sie folgen Könnten. Der genaue Algorithmus ist dabei immer Geschäftsgeheimnis. Klar ist es hat etwas mit Gemeinsamkeiten und Graphentheorie mit den Ansätzen Prestige und Zentralität individuelle Vorschläge bestimmt werden können.
+
+In InstaHub steht ein einfacher Algorithmus zur Verfügung.
+
+![user-recomended](img/user-recomended.png)
+
+Für die Vorschläge werden drei Kriterien mit verschiedener Gewichtung rausgesucht:
+
+* Gleiche Interessen (oder Freunde) (4-fach) - Anzahl der Überschneidungen von gefolgten Profilen zwischen dem angemeldeten Nutzer und jedem anderen Nutzer.
+* Gemeinsame Freunde (1-fach) - Bei normalen Profilen deuten Überschneidungen der Follower auf einen gleichen Freundeskreis hin. Bei sehr beliebten Profilen (etwa Künstler*innen), würde dieser Ansatz nicht gut funktionieren.
+* Generell wirken aktive Accounts spannend (0,1-fach) - Anzahl der vom jeweiligen Nutzer hochgeladenen Fotos
+
+Bei allen drei Kriterien wird sofern im Hub vorhanden die Anzahl der zutreffenden Profile gesucht, gezählt und mit dem genannten Faktor multipliziert.
+
+Das Gesamtergebnis wird dann limitiert auf die zehn Profile mit den meisten Punkten ausgegeben.
