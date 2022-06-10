@@ -17,7 +17,7 @@ Ein InstaHub kann nur angelegt werden, wenn dieser einem Lehrer zugeordnet wird.
 Wurde einer Lehrkraft ein InstaHub zugeordnet, so muss dieser ebenfalls erst aktiviert werden. Dies kann durch die Lehrkraft selbst durchgeführt werden.
 
 <div class="plyr__video-embed" id="player">
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/llkjwhUdbtw?origin=https://buch.informatik.cc&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/llkjwhUdbtw?origin=https://buch.informatik.cc&iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <figcaption>Video aus Online-Workshop bei <a href="https://youtu.be/llkjwhUdbtw">YouTube</a> ansehen </figcaption>
 
@@ -27,15 +27,13 @@ Wurde einer Lehrkraft ein InstaHub zugeordnet, so muss dieser ebenfalls erst akt
 
 Nach dem erfolgreichen Login mit einem Lehrer Account wird eine List mit allen zugeordneten Hubs angezeigt. Folgende Aktionen sind möglich:
 
- * **Aktivieren** – Erst hierdurch wird der Instahub aktiviert.
- * **DB Admin** – siehe Verwaltung eines InstaHub
- * **Login as DBA** – Hierdurch wird der Lehrer auf den ausgewählten InstaHubweitergeleitet und loggt sich automatisch - ohne Kenntnisse desBenutzerkennwortes - als der erste DBA-Benutzer ein. Dies ist in der Regel der Schüler Account.
- * **Fill all Tables** - Um alle Funktionalitäten des Hubs zu aktivieren können hierüber alle Tabellen angelegt und mit Dummy-Daten gefüllt werden. Je nach [didaktischen Vorgehen]() kann dies sinnvoll sein.
- * **Maintenance** – Ist dieser Modus aktiviert kann nur noch lesend auf die Datenbank zugegriffen werden. Ausnahme davon ist die `Analytics`-Tabelle, welche weiterhin neue Einträge hinzufügt. Der ausschließliche Lesezugriff greift sofort wird im Hub aber erst angezeigt, wenn man sich abmeldet.
- * **Deaktivieren** – Hier kann ein InstaHub deaktiviert werden. Es ist dann kein Login mehr möglich.
- * **Delete** – Hier kann der InstaHub mitsamt der gesamten Datenbank nachBeendigung der Lerneinheit vollständig gelöscht werden. (Achtung: Hierfür ist keine Bestätigung erforderlich.). Bitte lösche nicht mehr benötigte Hubs, um Speicherplatz auf dem Server zu sparen. 
-
-
+* **Aktivieren** – Erst hierdurch wird der Instahub aktiviert.
+* **DB Admin** – siehe Verwaltung eines InstaHub
+* **Login as DBA** – Hierdurch wird der Lehrer auf den ausgewählten InstaHubweitergeleitet und loggt sich automatisch - ohne Kenntnisse desBenutzerkennwortes - als der erste DBA-Benutzer ein. Dies ist in der Regel der Schüler Account.
+* **Fill all Tables** - Um alle Funktionalitäten des Hubs zu aktivieren können hierüber alle Tabellen angelegt und mit Dummy-Daten gefüllt werden. Je nach [didaktischen Vorgehen]() kann dies sinnvoll sein.
+* **Maintenance** – Ist dieser Modus aktiviert kann nur noch lesend auf die Datenbank zugegriffen werden. Ausnahme davon ist die `Analytics`-Tabelle, welche weiterhin neue Einträge hinzufügt. Der ausschließliche Lesezugriff greift sofort wird im Hub aber erst angezeigt, wenn man sich abmeldet.
+* **Deaktivieren** – Hier kann ein InstaHub deaktiviert werden. Es ist dann kein Login mehr möglich.
+* **Delete** – Hier kann der InstaHub mitsamt der gesamten Datenbank nachBeendigung der Lerneinheit vollständig gelöscht werden. (Achtung: Hierfür ist keine Bestätigung erforderlich.). Bitte lösche nicht mehr benötigte Hubs, um Speicherplatz auf dem Server zu sparen. 
 
 ### Verwaltung eines Instahubs
 
@@ -55,8 +53,6 @@ Sicher ist Ihnen schon aufgefallen, dass das Löschen etwa der Tabelle `Photo` k
 
 Dadurch ist es möglich auch zu einem späteren Zeitpunkt die Tabelle `Photo` neu aufzubauen, ohne dass bisherige Errungenschaften in den darauf aufbauenden Tabellen vernichtet werden. Natürlich können dadurch Inkonsistenzen in der Datenbank entstehen, welche aber nicht zu einem Absturz des Systems führen werden. Ist es dennoch notwendig diese Inkonsistenzen aufzulösen, so kann dies entweder manuell geschehen oder die abhängigen Tabellen werden ebenfalls neu aufgebaut.
 
-
-
 ## *hub*.instahub.org
 
 Wird der Hauptdomain der InstaHub Name vorangestellt, so befindet sich der Benutzer in seinem eigenen InstaHub. Jeder InstaHub funktioniert vollkommen unabhängig von allen anderen InstaHub.
@@ -73,8 +69,6 @@ Die Besonderheit des sozialen Netzwerkes sind hier seine zwei Rollen:
 
 * `User` - Dies sind alle regulären Benutzer des sozialen Netzwerkes. Ähnlich wie es der Schüler auf seinen sozialen Netzwerken wie etwa Facebook oder Instagram ist.
 * `DBA` - hier hat der Schüler zusätzliche Rechte: Dazu zählt etwa fremde Bilder und Kommentare zu löschen. Fremde Profile zu editieren (und damit auch das vollständige Geburtsdatum und E-Mail zu sehen) und der Menüeintrag Database
-
-
 
 ### Datenbank
 
@@ -113,7 +107,7 @@ Die IP-Adresse wird aus Datenschutzgründen eingekürzt und muss real sein, da d
 ## personalisierte Werbung
 
 <div class="plyr__video-embed" id="player">
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/thTCt7dSHT4?origin=https://buch.informatik.cc&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/thTCt7dSHT4?origin=https://buch.informatik.cc&iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 <figcaption>Video bei <a href="https://youtu.be/thTCt7dSHT4">YouTube</a> ansehen </figcaption>
@@ -150,10 +144,10 @@ Hier zwei Beispiele für eine `query`:
 
 ```sql
 SELECT 
-	CASE gender 
-		WHEN 'male' THEN true 
-		ELSE false 
-	END 
+    CASE gender 
+        WHEN 'male' THEN true 
+        ELSE false 
+    END 
 FROM users where id=$user
 ```
 
@@ -173,10 +167,10 @@ Auch komplexere Abfragen lassen sich realisieren:
 
 ```sql
 SELECT 
-	CASE 
-		WHEN device = 'desktop' THEN true 
-		ELSE false 
-	END 
+    CASE 
+        WHEN device = 'desktop' THEN true 
+        ELSE false 
+    END 
 FROM analytics
 WHERE user_id=$user
 ORDER BY id DESC
@@ -198,11 +192,11 @@ INSERT INTO ads (priority, name, type, url, img, query, created_at, updated_at) 
 (1, 'default', 'photo', '/noad', 
  '/img/ad/freizeitpark.jpg', 
  'SELECT 
- 	CASE 
- 		WHEN device = "desktop" 
- 		THEN true 
- 		ELSE false 
- 		END 
+     CASE 
+         WHEN device = "desktop" 
+         THEN true 
+         ELSE false 
+         END 
  FROM analytics WHERE user_id=$user 
  ORDER BY id DESC 
  LIMIT 1', 
@@ -214,8 +208,6 @@ Wichtig ist, dass der eingebettete SQL-Befehl als Zeichenkette übergeben wird. 
 Wenn das zu komplex für die Schüler ist, kann auch das Formular zum Eintragen und Bearbeiten von Anzeigen verwendet werden:
 
 ![adeditor](img/adeditor.png)
-
-
 
 ## Werbeblocker
 
@@ -229,8 +221,6 @@ InstaHub sortiert auf Wunsch entweder nach den neusten oder den besten Ergebniss
 
 ![sort-scoring](img/sort-scoring.jpg)
 
-
-
 ### Gewichtung nach Affinität und Aktualität bei Themen-Feeds
 
 Über die Auswahl eines einzelnen Hashtags können Photos zu nur einem Thema betrachtet werden. Das geht etwa über `http://public.instahub.org/tag/natur`. Diese werden bei den besten Ergebnissen nach Affinität und Aktualität sortiert (siehe dazu auch [Kapitel 3.3.2](https://kola.opus.hbz-nrw.de/opus45-kola/frontdoor/deliver/index/docId/2013/file/Masterarbeit.pdf)).
@@ -239,11 +229,11 @@ Zusammengefasst passiert Folgendes:
 
 1. Jedes Photo erwählt den Wert `1`
 2. Der Wert wird je Kommentar um `2` und je Like um `1` erhöht.
-3. Je älter das Photo, desto kleiner der Faktor, mit dem das Ergebnis multipliziert wird (`0,96 ^ (Alter in Sekunden / 900)`. Mindestens aber `0,1`)
+3. Je älter das Photo, desto kleiner der Faktor, mit dem das Ergebnis multipliziert wird (`0,995 ^ (Alter in Sekunden / 900)`. Mindestens aber `0,01`)
 
 Im zweiten Punkt wird versucht, die Wichtigkeit des Photos anhand der Merkmale Anzahl der Likes und Kommentare zu bestimmen. Es wären auch andere Parameter, wie etwa die Anzahl der Aufrufe, die Anzahl von 5-Sternen oder eine inhaltliche Bewertung durch einen Moderator möglich.
 
-Hinweis: Dummy-Photos sind i.d.R. so alt, dass immer mit `0,1` multipliziert wird. Man kann das Datum im Feld `created_at` aktualisieren oder die Schüler\*innen laden eigene Photos hoch, die dann immer am höchsten gewichtet sind.
+Hinweis: Dummy-Photos sind i.d.R. so alt, dass immer mit `0,01` multipliziert wird. Man kann das Datum im Feld `created_at` aktualisieren oder die Schüler\*innen laden eigene Photos hoch, die dann immer am höchsten gewichtet sind.
 
 ### Gewichtung nach Edge-Rank im News-Feed
 
@@ -257,9 +247,7 @@ Die Affinität zu einer/m Nutzer\*in errechnet sich wiederum durch die  Interakt
 
 Obiges Vorgehen hat noch den Nachteil, dass einmalig sehr populäre Beiträge bis zum Überbieten ganz oben im Feed stehen würden. So ließe sich etwa bei [YouTube Gangnam Style](https://www.youtube.com/watch?v=9bZkp7q19f0) schwer übertreffen, da der über die Zeit gesammelte Wert so hoch ist. Dennoch hat dieses Video heute nicht mehr die Bedeutung von früher.
 
-Daher beziehen wir die Aktualität mit ein. Dies geschieht durch eine Multiplikation mit einem  Wert zwischen `1` (ganz neu) und `0,1` (sehr alt). Die Berechnung der Aktualität erfolgt mit der Formel: `t(x)= 0,96^x` , wobei `x` in  Viertelstunden angegeben ist (`x=1` entspricht 15 Minuten, usw.). Der Aktualitätswert von `0,1` bildet allerdings das Minimum.
-
-
+Daher beziehen wir die Aktualität mit ein. Dies geschieht durch eine Multiplikation mit einem  Wert zwischen `1` (ganz neu) und `0,01` (sehr alt). Die Berechnung der Aktualität erfolgt mit der Formel: `t(x)= 0,995 ^ (x / 900)` , wobei `x` in  Viertelstunden angegeben ist (`x=1` entspricht 15 Minuten, usw.). Der Aktualitätswert von `0,01` bildet allerdings das Minimum.
 
 ## Interessante Profile finden
 
