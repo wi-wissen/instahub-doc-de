@@ -16,9 +16,14 @@ Ein InstaHub kann nur angelegt werden, wenn dieser einem Lehrer zugeordnet wird.
 
 Wurde einer Lehrkraft ein InstaHub zugeordnet, so muss dieser ebenfalls erst aktiviert werden. Dies kann durch die Lehrkraft selbst durchgeführt werden.
 
-<div class="plyr__video-embed" id="player">
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/llkjwhUdbtw?origin=https://buch.informatik.cc&iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="player-schule" style="max-width: 1280px; margin: 0 auto;">
+  <iframe
+  src="https://player.schule/youtube/llkjwhUdbtw?embed=1"
+  style="width:100%; aspect-ratio: 1280/720"
+  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen allowTransparency
+  ></iframe>
 </div>
+
 <figcaption>Video aus Online-Workshop bei <a href="https://youtu.be/llkjwhUdbtw">YouTube</a> ansehen </figcaption>
 
 ### Verwaltung der Instahubs
@@ -106,8 +111,12 @@ Die IP-Adresse wird aus Datenschutzgründen eingekürzt und muss real sein, da d
 
 ## personalisierte Werbung
 
-<div class="plyr__video-embed" id="player">
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/thTCt7dSHT4?origin=https://buch.informatik.cc&iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="player-schule" style="max-width: 1280px; margin: 0 auto;">
+  <iframe
+  src="https://player.schule/youtube/thTCt7dSHT4?embed=1"
+  style="width:100%; aspect-ratio: 1280/720"
+  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen allowTransparency
+  ></iframe>
 </div>
 
 <figcaption>Video bei <a href="https://youtu.be/thTCt7dSHT4">YouTube</a> ansehen </figcaption>
