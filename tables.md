@@ -141,7 +141,7 @@ INSERT INTO `ads` (`id`, `priority`, `name`, `type`, `url`, `img`, `query`, `cre
 
 ## Tabelle User (Benutzer:innen)
 
-Diese Tabelle ist in jedem neuen Hub vorhanden und muss nicht angelegt werden. Sie ist dokumentiert, falls eine lokale Datenbank gebaut werden soll.
+Diese Tabelle ist in jedem neuen Hub vorhanden und muss nicht angelegt werden. Sie ist hier dokumentiert, falls eine lokale Datenbank gebaut werden soll.
 
 ```sql
 CREATE TABLE `users` (
@@ -165,3 +165,4 @@ CREATE TABLE `users` (
 );
 ```
 
+Die Dummydaten sind in [diesem Datensatz](https://wi-wissen.github.io/instahub-doc-de/sql/users.sql) enthalten. Wichtig ist, dass hier das Admin-Nutzerkonto nicht dabei ist, da dies beim Registrieren angelegt wird.
