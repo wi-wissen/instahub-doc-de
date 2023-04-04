@@ -266,12 +266,12 @@ In InstaHub steht ein einfacher Algorithmus zur Verfügung.
 
 ![user-recomended](img/user-recomended.png)
 
-Für die Vorschläge werden drei Kriterien mit verschiedener Gewichtung rausgesucht:
+Zu Beginn wird jedem Profil ein Nähegrad von `0` zugewiesen. Anschließend werden die folgenden Kriterien in der angegebenen Gewichtung summiert:
 
-* Gleiche Interessen (oder Freunde) (4-fach) - Anzahl der Überschneidungen von gefolgten Profilen zwischen dem angemeldeten Nutzer und jedem anderen Nutzer.
-* Gemeinsame Freunde (1-fach) - Bei normalen Profilen deuten Überschneidungen der Follower auf einen gleichen Freundeskreis hin. Bei sehr beliebten Profilen (etwa Künstler*innen), würde dieser Ansatz nicht gut funktionieren.
-* Generell wirken aktive Accounts spannend (0,1-fach) - Anzahl der vom jeweiligen Nutzer hochgeladenen Fotos
+- Gemeinsame Interessen (oder hier gefolgten Personen) (`4`-fach) - Hierbei wird die Anzahl der Profile gezählt, denen sowohl der eigene als auch der zu vergleichende Benutzer folgen.
+- Gemeinsame Freunde (oder hier gemeinsamen Followern) (`1`-fach) - Bei normalen Profilen deuten Überschneidungen der Follower auf einen gemeinsamen Freundeskreis hin. Bei sehr beliebten Profilen, wie z.B. Künstler\*innen, ist dieser Ansatz jedoch weniger aussagekräftig.
+- Anzahl hochgeladener Photos (`0,1`-fach) - Aktive Accounts mit vielen hochgeladenen Photos wirken oft besonders spannend.
 
-Bei allen drei Kriterien wird sofern im Hub vorhanden die Anzahl der zutreffenden Profile gesucht, gezählt und mit dem genannten Faktor multipliziert.
+Fehlt für eines der genannten Kriterien die benötigte Tabelle im Hub, so wird das Kriterium übersprungen.
 
-Das Gesamtergebnis wird dann limitiert auf die zehn Profile mit den meisten Punkten ausgegeben.
+Das Gesamtergebnis wird auf die zehn Profile mit den höchsten Nähegradwerten beschränkt und ausgegeben.
