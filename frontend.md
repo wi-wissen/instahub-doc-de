@@ -121,60 +121,74 @@ Die IP-Adresse wird aus Datenschutzgründen eingekürzt und muss real sein, da d
 
 <figcaption>Video bei <a href="https://youtu.be/thTCt7dSHT4">YouTube</a> ansehen </figcaption>
 
-Mit der Tabelle `ads` aktiviert InstaHub die Werbeanzeigen. Alle mitgelieferten Anzeigen sind selbstverständlich frei erfunden. Werbung findet auf den einzelnen Photoseiten
+Mit der Tabelle `ads` aktiviert InstaHub die Werbeanzeigen. Alle mitgelieferten Anzeigen sind selbstverständlich frei erfunden. Werbung vom Typ `banner` wird auf den einzelnen Photoseiten:
 
 ![Banner Ad](img/ad-banner.png)
 
-oder als dritter Eintrag im Newsfeed statt:
+und vom Typ `photo` als dritter Eintrag im Newsfeed angezeigt:
 
 ![Banner Ad](img/ad-photo.png)
 
-Werbeanzeigen werden dabei personalisiert ausgeliefert. Wie diese geschieht, kann mit SQL-Kenntnissen vollständig selbst bestimmt werden:
+Werbeanzeigen werden dabei personalisiert ausgeliefert. Wie diese geschieht, kann mit SQL-Kenntnissen oder der graphischen Suche beim Erstellen der Anzeige selbst bestimmt werden:
 
-Die Tabelle `ads` besitzt folgende Attribute, um eine Werbeanzeige zu definieren:
+![adeditor](img/adeditor.png)
 
-* `id` - fortlaufende Nummer als Primärschlüssel
-* `priority` - Wenn mehrere Bedingungen zutreffen wird die Anzeige mit der niedrigsten Zahl ausgewählt (Priorität 1 ist als die höchste)
-* `name` - Name der Werbeanzeige zum Wiederfinden, wird aktuell nicht verwendet
-* `type` - `photo` oder `banner`. Photos werden nur im Newsfeed und Banner nur unter einzelen Photos in der Detailansicht angezeigt.
-* `url` - Ziellink, auf den der Nutzergeleitet wird. Es wird empfohlen `/noad` als Adresse zu verwenden, dann kommt der Nutzer auf eine eingerichtete Fehlerseite, dass die Werbekampagne bereits ausgelaufen sei. Die Schulhomepage als Adresse ist aber ebenfalls möglich
-* `img` - Anzuzeigendes Bild. Aktuell sind nur die unter Business angezeigten Werbebanner im System hinterlegt. Es ist aber auch möglich die Werbegrafik einfach als Photo hochzuladen oder einen absoluten Link auf eine Grafik im Internet zu verwenden (Beachte, dass du das nur machen darfst, wenn das für den fremden Werbserverinhaber in Ordnung ist).
-* `query` - SQL Ausdruck, der ermittelt, ob die Anzeige geeignet ist. Als Platzhalter können `$user` für die User-ID des Benutzers und wenn es vom `type` `banner` ist die dazugehörige Photo-ID `$photo` verwendet werden.
-* `created_at` - aktueller Zeitstempel, wird aktuell nicht verwendet
-* `updated_at` - aktueller Zeitstempel, wird aktuell nicht verwendet
+Je kleiner die Zahl bei `Priorität` ist, desto wichtiger ist die Anzeige und wird eher geprüft.
 
-Im Ergebnis der `query` können verschiedene Ergebnisse ausgewertet:
+Als Bild kann eine der Beispielanzeigen verwendet werden, ein selbst hochgeladenes Photo, oder wenn die Erlaubnis vorliegt, auch ein Bild von einem anderen Server.
 
-* kein Ergebnis - die Anzeige wird als nicht geeignet gewertet.
-* Genau ein Ergebnis - Das erste Attribut mit dem ersten Attributwert geprüft. Ist das Ergebnis nicht `false`, `null` oder `0`, so wird die Anzeige als geeignet gewertet.
-* Eine Liste von `id`s. In diesem Fall wird geprüft, ob die Photo- bzw. User-ID in der Abfrage enthalten ist. Ist dem der fall wird die Anzeige als geeignet gewertet.
+Um zu prüfen, ob die Anzeige angezeigt werden soll, wird die `SQL-Abfrage` ausgeführt. Diese kann entweder selbst geschrieben und im SQL-Editor ausprobiert oder über die graphische Suche erstellt werden.
 
-Hier zwei Beispiele für eine `query`:
+So wird das Ergebnis interpretiert:
+
+**Einfach**: Es wird geprüft, ob die `id` des Nutzers oder des Photos im Ergebnis enthalten ist. Bei Werbeanzeigen vom Typ `banner` wird nach der `id` des Photos und beim Typ `photo` nach der `id` der Nutzer:in gesehen. Dabei wird zuerst die Spalte `user_id` bzw. `photo_id`  und wenn diese nicht vorhanden sind in der Spalte `id` nachgesehen.
 
 ```sql
-SELECT 
-    CASE gender 
-        WHEN 'male' THEN true 
-        ELSE false 
-    END 
-FROM users where id=$user
-```
-
-Dieser Befehl gibt `true` zurück, wenn das Geschlecht des aktuellen Nutzers `male` ist. Ansonsten `false`.
-
-Alternativ kann auch der folgende Ausdruck geschrieben werden:
-
-```sql
+# Werbeanzeige vom typ `photo` nur für männliche Nutzer.
 SELECT id
 FROM users
 WHERE gender = 'male'
 ```
 
-Hier wird dann geprüft, ob die Benutzer-ID in der Liste vorkommt. Bitte beachte, dass im Newsfeed nach der Benutzer-ID und unter einem Photo nach der Photo-ID gesucht wird. Möchtest du das manuell steuern, verwende einfach einen der anderen Befehle.
-
-Auch komplexere Abfragen lassen sich realisieren:
+```sql
+# Werbeanzeige vom typ `banner` nur für Photos mit 'wasser' in der Beschreibung.
+SELECT id # wichtig, dass kein `*` genommen wird
+FROM photos
+WHERE description LIKE '%wasser%'
+```
 
 ```sql
+# Werbeanzeige nur für männliche Nutzer.
+SELECT id as `user_id`
+FROM users
+WHERE gender = 'male'
+```
+
+**Platzhalter**: Mit Platzhaltern kann die Anfrage so eingeschränkt werden, dass nur noch geprüft wird, ob es überhaupt ein Ergebnis gibt. Beim Typ `photo` kann hier der Platzhalter `$user`  für die aktuelle Nutzer:innen-ID und beim Typ `banner` der Platzhalter `$photo`  für die aktuelle Photo-ID verwendet werden.
+
+```sql
+# Werbeanzeige für Nutzer:innen, die mindestens einen Kommentar geschrieben haben.
+SELECT *
+FROM comments
+WHERE user_id = $user
+```
+
+```sql
+# Werbeanzeige vom Typ `banner` deren Photo mindestens einen Like erhalten hat.
+SELECT *
+FROM likes
+WHERE photo_id = $photo
+```
+
+```sql
+# Werbeanzeige wird immer angezeigt.
+SELECT id FROM users WHERE id=$user
+```
+
+**Case**: Mit dem SQL-Schlüssel `CASE` können Spaltenwerte etwa in `true` und `false` umgewandelt werden. Wenn ein Platzhalter verwendet wird und das Ergebnis aus genau einer Zelle (eine Zeile und eine Spalte) besteht, dann wird diese auf Wahrheit geprüft.
+
+```sql
+# Werbeanzeige für Nutzer:innen, die mindestens einmal mit einem PC/Laptop auf der Seite waren.
 SELECT 
     CASE 
         WHEN device = 'desktop' THEN true 
@@ -185,38 +199,6 @@ WHERE user_id=$user
 ORDER BY id DESC
 LIMIT 1
 ```
-
-Es können beliebige Befehle geschrieben werden. Bitte beachte aber, dass der dafür gut geeignete Befehl [`WITH`](https://mariadb.com/kb/en/library/with/) erst ab MariaDB 10.2.1 und in MySQL in Version 8 eingeführt wird. Diese Versionen sind noch nicht auf allen Servern - wie etwa dem offiziellen InstaHub.org Server.
-
-```sql
-SELECT id FROM users WHERE id=$user
-```
-
-In diesem Fall wird ja immer die User-ID zurückgegeben. Da diese größer als `0` ist, wird diese Anzeige immer als möglich betrachtet. Sie sollte daher mit einer sehr geringen Priorität (etwa `99`) als Fallback-Lösung eingerichtet werden.
-
-Der vollständige SQL-Befehl kann etwa so aussehen:
-
-```sql
-INSERT INTO ads (priority, name, type, url, img, query, created_at, updated_at) VALUES
-(1, 'default', 'photo', '/noad', 
- '/img/ad/freizeitpark.jpg', 
- 'SELECT 
-     CASE 
-         WHEN device = "desktop" 
-         THEN true 
-         ELSE false 
-         END 
- FROM analytics WHERE user_id=$user 
- ORDER BY id DESC 
- LIMIT 1', 
- '2018-10-06 22:00:00', '2018-10-06 22:00:00')
-```
-
-Wichtig ist, dass der eingebettete SQL-Befehl als Zeichenkette übergeben wird. Werden Anführungszeichen verwendet, dürfen diese nicht mit den umschließenden Anführungszeichen übereinstimmen. (Hier werden `""` von `''` umschlossen.)
-
-Wenn das zu komplex für die Schüler ist, kann auch das Formular zum Eintragen und Bearbeiten von Anzeigen verwendet werden:
-
-![adeditor](img/adeditor.png)
 
 ## Werbeblocker
 
