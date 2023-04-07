@@ -144,14 +144,14 @@ So wird das Ergebnis interpretiert:
 **Einfach**: Es wird geprüft, ob die `id` des Nutzers oder des Photos im Ergebnis enthalten ist. Bei Werbeanzeigen vom Typ `banner` wird nach der `id` des Photos und beim Typ `photo` nach der `id` der Nutzer:in gesehen. Dabei wird zuerst die Spalte `user_id` bzw. `photo_id`  und wenn diese nicht vorhanden sind in der Spalte `id` nachgesehen.
 
 ```sql
-# Werbeanzeige vom typ `photo` nur für männliche Nutzer.
+# Werbeanzeige vom Typ `photo` nur für männliche Nutzer.
 SELECT id
 FROM users
 WHERE gender = 'male'
 ```
 
 ```sql
-# Werbeanzeige vom typ `banner` nur für Photos mit 'wasser' in der Beschreibung.
+# Werbeanzeige vom Typ `banner` nur für Photos mit 'wasser' in der Beschreibung.
 SELECT id # wichtig, dass kein `*` genommen wird
 FROM photos
 WHERE description LIKE '%wasser%'
@@ -188,7 +188,7 @@ SELECT id FROM users WHERE id=$user
 **Case**: Mit dem SQL-Schlüssel `CASE` können Spaltenwerte etwa in `true` und `false` umgewandelt werden. Wenn ein Platzhalter verwendet wird und das Ergebnis aus genau einer Zelle (eine Zeile und eine Spalte) besteht, dann wird diese auf Wahrheit geprüft.
 
 ```sql
-# Werbeanzeige für Nutzer:innen, die mindestens einmal mit einem PC/Laptop auf der Seite waren.
+# Werbeanzeige für Nutzer:innen, die beim zuletzt angesehen Bild mit einem PC/Laptop auf der Seite waren.
 SELECT 
     CASE 
         WHEN device = 'desktop' THEN true 
