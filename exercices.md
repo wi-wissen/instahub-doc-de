@@ -28,7 +28,7 @@ Fügst du nach dem `SELECT` den Befehl `DISTINCT` ein, so wird jede Zeile nur ei
 
 #### LIMIT
 
-Wenn das Netzwerk sehr langsam ist dauert es eine Weile bis alle Mitglieder angezeigt werden. Um nur die ersten Einträge anzuzeigen, kannst du den `LIMIT` Befehl verwenden: 
+Wenn das Netzwerk sehr langsam ist, dauert es eine Weile, bis alle Mitglieder angezeigt werden. Um nur die ersten Einträge anzuzeigen, kannst du den `LIMIT` Befehl verwenden: 
 
 ```sql
 SELECT username FROM users LIMIT 25
@@ -45,9 +45,9 @@ Du suchst nur das Extreme? Dann hilft dir der `MAX` Befehl weiter:
 SELECT MAX(centimeters) AS "Maximale Körpergröße:" FROM users
 ```
 
-1. Zeige wie groß das kleinste  Mitglied ist.
-2. Zeige wie alt als das älteste Mitglied ist.
-3. Zeige an wann sich zuletzt ein Mitglied registriert hat.
+1. Zeige, wie groß das kleinste  Mitglied ist.
+2. Zeige, wie alt das älteste Mitglied ist.
+3. Zeige an, wann sich zuletzt ein Mitglied registriert hat.
 
 #### COUNT
 
@@ -68,7 +68,7 @@ SELECT city, COUNT(*) AS "Mitglieder je Stadt" FROM users GROUP BY city
 ```
 
 1. Gib die Mitglieder je Stadt aus.
-2. Prüfe, ob es Mitglieder gibt, die am gleichen Tag geboren wurden.
+2. Prüfe, ob es Mitglieder gibt, die am selben Tag geboren wurden.
 
 #### Übungen
 
@@ -78,7 +78,7 @@ SELECT city, COUNT(*) AS "Mitglieder je Stadt" FROM users GROUP BY city
 
 #### Expertenaufgabe
 
-Hilf mit den Unterricht zu gestalten und [reiche eigene Fragen ein](https://goo.gl/forms/xy29cLImYj4jrpFy1).
+Hilf mir, den Unterricht zu gestalten und [reiche eigene Fragen ein](https://goo.gl/forms/xy29cLImYj4jrpFy1).
 
 ### Selektion (Auswahl)
 
@@ -90,7 +90,7 @@ Hilf mit den Unterricht zu gestalten und [reiche eigene Fragen ein](https://goo.
 4. Zeige nur *Emily Faber* an.
 5. Wähle alle Mitglieder mit der Rolle *user* aus.
 6. Ersetze in Aufgabe 5 `=` durch `!=`.
-7. Notiere was `!=` bedeutet.
+7. Notiere, was `!=` bedeutet.
 
 #### Größer und Kleiner
 
@@ -109,20 +109,20 @@ SELECT username FROM users WHERE username LIKE "ameli%"
 
 1. Notiere dir anhand [dieser Erklärung](http://www.w3schools.com/Sql/sql_like.asp ), wie der `LIKE`-Befehl arbeitet.
 
-2. Welche Mitglieder haben einen Benutzernamen mit einem a?
+2. Welche Mitglieder haben einen Benutzernamen mit einem A?
 3. Von welchen Mitgliedern beginnt der Vorname mit einem B?
-4. Welche Mitglieder haben keine Emailadresse bei *instahub.test*?
+4. Welche Mitglieder haben keine E-Mail-Adresse bei *instahub.test*?
 
 #### Übungen
 
 1. Gib die Namen aller Berliner Mitglieder aus.
 2. Wie viele Personen wohnen in München?
 3. Gib die Nutzernamen aller Mitglieder an, die kleiner sind als du.
-4. Gib die Stadtnamen aus, wo die meisten Mitglieder mit einem *a* im Namen wohnen.
+4. Gib die Stadtnamen aus, wo die meisten Mitglieder mit einem *A* im Namen wohnen.
 
 #### Expertenaufgabe
 
-Hilf mit den Unterricht zu gestalten und [reiche eigene Fragen ein](https://goo.gl/forms/xy29cLImYj4jrpFy1).
+Hilf mir, den Unterricht zu gestalten und [reiche eigene Fragen ein](https://goo.gl/forms/xy29cLImYj4jrpFy1).
 
 ### Logische Operatoren
 
@@ -140,7 +140,7 @@ SELECT username, city FROM users where city = "Berlin" OR name LIKE "Fabian%"
 SELECT username, city FROM users where city = "Berlin" AND NOT name LIKE "Fabian%"
 ```
 
-2. Finde alle Berliner die *Marc* heißen.
+2. Finde alle Berliner, die *Marc* heißen.
 3. Finde alle Leipziger Frauen.
 4. Finde alle Linas und Lorenas. 
 5. Sortiere alle Männer nach ihrer Körpergröße, welche mindestens 16 Jahre alt sind.
@@ -149,7 +149,7 @@ SELECT username, city FROM users where city = "Berlin" AND NOT name LIKE "Fabian
 
 #### Expertenaufgabe
 
-Hilf mit den Unterricht zu gestalten und [reiche eigene Fragen ein](https://goo.gl/forms/xy29cLImYj4jrpFy1).
+Hilf mir, den Unterricht zu gestalten und [reiche eigene Fragen ein](https://goo.gl/forms/xy29cLImYj4jrpFy1).
 
 
 
@@ -170,7 +170,7 @@ SELECT username, name FROM users where city = "Berlin" AND (gender = "male" OR g
 ```
 
 2. Gib alle Männer aus Leipzig aus, die kleiner als 165 Zentimeter sind.
-3. Die Bundeswehr sucht Rekruten. Gib die Namen aller Männer über 165cm und alle Frauen über 160cm aus.
+3. Die Bundeswehr sucht Rekruten. Gib die Namen aller Männer über 165 cm und alle Frauen über 160 cm aus.
 4. Erna sucht eine Bekannte aus Berlin. Ihr Vorname war entweder *Bea* oder *Naomi*.
 
 ## Verändern von Daten I
@@ -197,7 +197,7 @@ Expertenaufgabe: Wieso wird in dem obigen SQL-Befehl die ID nicht mit übergeben
 3.  Ersetze den Begriff "Germany" überall durch "Deutschland".
 4.  Ersetze die Körpergröße mit dem Wert `FLOOR(RAND()*45)+150`
   1. Was hat dieser Befehl bewirkt?
-  2. Recherchiere was die Befehle [FLOOR](https://www.w3schools.com/sql/func_mysql_floor.asp) und [RAND](https://www.w3schools.com/sql/func_sqlserver_rand.asp) bewirken.
+  2. Recherchiere, was die Befehle [FLOOR](https://www.w3schools.com/sql/func_mysql_floor.asp) und [RAND](https://www.w3schools.com/sql/func_sqlserver_rand.asp) bewirken.
 
 ### DELETE
 1. Lösche den vorletzten Datensatz.
@@ -208,15 +208,15 @@ Zeichne das Entity-Relationship-Modell deines InstaHubs.
 
 ## Tabelle User
 
-Bereits vor deinem ersten Login in deinem InstaHub haben sich 203 User registriert!
+Bereits vor deinem ersten Log-in in deinem InstaHub haben sich 203 User registriert!
 
-Fügst du über einen SQL-Befehl einen neuen User hinzu, kann sich dieser nicht einloggen. Wenn der User versucht sich einzuloggen, dann wird von dem eingegebenen Passwort ein sogenannter Hashwert berechnet. Wenn dieser Wert mit dem in der Datenbank hinterlegten Wert übereinstimmt, wird der User eingeloggt. Wenn du das Passwort in der Datenbank im Klartext speicherst, schlägt der Login-Prozess also fehl.
+Fügst du über einen SQL-Befehl einen neuen User hinzu, kann sich dieser nicht einloggen. Wenn der User versucht, sich einzuloggen, dann wird von dem eingegebenen Passwort ein sogenannter Hashwert berechnet. Wenn dieser Wert mit dem in der Datenbank hinterlegten Wert übereinstimmt, wird der User eingeloggt. Wenn du das Passwort in der Datenbank im Klartext speicherst, schlägt der Log-in-Prozess also fehl.
 
 Um alle Passwörter, die im Klartext gespeichert sind, durch ihren Hashwert zu ersetzen, kannst du in deinem Browser die folgende Adresse aufrufen:
 
 `https://<hub>.instahub.org/dba/cryptPWs`
 
-w> Im Folgenden wird davon ausgegangen, dass noch alle User mit der `id` 1 bis 203 vorhanden sind. Ist dem nicht so, können die vorbereiteten Datensätze nicht eingefügt werden. Am besten erstellst du einfach die fehlenden Nutzer neu und weist denen anschließend per SQL eine passende `id` zu. Notfalls kann dein/e LehrerIn den Import auch erzwingen.
+w> Im Folgenden wird davon ausgegangen, dass noch alle User mit der `id` 1 bis 203 vorhanden sind. Ist das nicht so, können die vorbereiteten Datensätze nicht eingefügt werden. Am besten erstellst du einfach die fehlenden Nutzer neu und weist denen anschließend per SQL eine passende `id` zu. Notfalls kann dein/e LehrerIn den Import auch erzwingen.
 
 ## Tabelle Photo
 
@@ -253,7 +253,7 @@ CREATE TABLE `tags` (
 1. Verstehe den obigen SQL-Befehl.
 2. Führe den obigen SQL-Befehl aus.
 
-Um aus den bestehenden Bildbeschreibungen die Tags zu extrahieren kannst du folgende Webadresse aufrufen: 
+Um aus den bestehenden Bildbeschreibungen die Tags zu extrahieren, kannst du folgende Webadresse aufrufen: 
 [https://*hub*.instahub.org/dba/updateTags](#)
 
 ## Tabelle Comments 
@@ -365,9 +365,9 @@ INSERT INTO `ads` (`id`, `priority`, `name`, `type`, `url`, `img`, `query`, `cre
 (8, 99, 'burgerhaus', 'banner', '/noad', '/img/ad/brokkolie.jpg', 'SELECT id FROM photos WHERE id=$photo', '2020-05-15 21:58:59', '2020-05-15 21:58:59');
 ```
 
-4. Erstelle eine selbstausgedachte Regel für eine Werbeanzeige.
+4. Erstelle eine selbst ausgedachte Regel für eine Werbeanzeige.
 
-[Hier](frontend?id=personalisierte-werbung) findest du in der Dokumentation eine Erklärung, wie die Werbeanzeigen funktionieren. Du kannst vorgegebenen Werbeanzeigen aus dem Menueintrag *Kampagnen* umsetzen oder dir selbst eine Anzeige ausdenken. Dazu entwirfst du die Werbung auf deinem Rechner und lädst diese anschließend als Photo hoch. Jetzt kannst du den Link zu diesem Bild (nicht der Photo-Seite!) verwenden.
+[Hier](frontend?id=personalisierte-werbung) findest du in der Dokumentation eine Erklärung, wie die Werbeanzeigen funktionieren. Du kannst vorgegebene Werbeanzeigen aus dem Menüeintrag *Kampagnen* umsetzen oder dir selbst eine Anzeige ausdenken. Dazu entwirfst du die Werbung auf deinem Rechner und lädst diese anschließend als Photo hoch. Jetzt kannst du den Link zu diesem Bild (nicht der Photo-Seite!) verwenden.
 
 ## Modellieren von Daten
 
@@ -380,9 +380,9 @@ In einem Zoo leben verschiedene Tierarten. Jede Tierart ist in einem eigenen Geh
 2. Notiere den SQL-Befehl, um alle Tierarten anzuzeigen.
 3. Notiere den SQL-Befehl, um alle Tierarten des Zoodirektors anzuzeigen.
 
-Zu  jeder Tierart gehören einzelne Exemplare dieser Art. 
+Zu jeder Tierart gehören einzelne Exemplare dieser Art. 
 
-1. Ergänze die einzelnen Tierexemplare und fügen für diese sinnvolle Attribute hinzu. Während Pinguine nur 25 Jahre werden Elefanten bis 60 Jahre alt. Daher soll für jedes Tier das Geburts- und Sterbedatum festgehalten werden.
+1. Ergänze die einzelnen Tierexemplare und füge für diese sinnvollen Attribute hinzu. Während Pinguine nur 25 Jahre werden Elefanten bis 60 Jahre alt. Daher soll für jedes Tier das Geburts- und Sterbedatum festgehalten werden.
 
 Mithilfe deiner Datenbank sollen folgende Probleme geklärt werden:
 
@@ -390,54 +390,54 @@ Mithilfe deiner Datenbank sollen folgende Probleme geklärt werden:
    ("<" bedeutet kleiner als und ">" größer als. Ein Datum wird so angegeben '2011/02/25')
 2. Der Direktor möchte ermitteln, welche Tiere letztes Jahr gestorben sind. Notiere den passenden SQL-Befehl.
 
-Manche  Tierpfleger gehen sehr brutal mit Ihren Tieren um. Es ist schon vorgekommen, dass ein Pfleger auf ein Küken getreten ist. Der Direktor möchte nun herausfinden, bei welchem Tierpfleger die meisten Tiere sterben und diesen entlassen. 
+Manche Tierpfleger gehen sehr brutal mit ihren Tieren um. Es ist schon vorgekommen, dass ein Pfleger auf ein Küken getreten ist. Der Direktor möchte nun herausfinden, bei welchem Tierpfleger die meisten Tiere sterben und diese entlassen. 
 
 1. Notiere den passenden SQL-Ausdruck dazu.
 2. Begründe, warum die Idee des Zoodirektors nicht zu Ende gedacht ist.
 
 ### Der Bibliothekar
 
-Sie sind in einer dunklen Gasse falsch abgebogen und finden sich unversehens in einer großen Halle voller Bücher wieder. Gerade als Sie beschließen zu gehen, erhebt sich hinter einem Stapel veralteter Lexika ein alter Mann und blickt Sie mit traurigen, grauen Augen an. Schon lang ist es her, dass sich ein Besucher in seine Bibliothek verirrt hat. Mit reißender Stimme bittet er Sie ihn bei seinem ERM zu helfen, damit er bald die Bibliothek für junge Menschen erschließen kann.
+Sie sind in einer dunklen Gasse falsch abgebogen und finden sich unversehens in einer großen Halle voller Bücher wieder. Gerade als Sie beschließen zu gehen, erhebt sich hinter einem Stapel veralteter Lexika ein alter Mann und blickt Sie mit traurigen, grauen Augen an. Schon lange ist es her, dass sich ein Besucher in seiner Bibliothek verwirrt hat. Mitreißender Stimme bittet er Sie, ihm bei seinem ERM zu helfen, damit er bald die Bibliothek für junge Menschen erschließen kann.
 
-Unter gelegentlichen Schnaufen und Glucksen berichtet er seine Anforderungen an die Datenbank:
+Unter gelegentlichen Schnaufen und Glucksen berichtet er über seine Anforderungen an die Datenbank:
 
-*Ein jedes Buch hat seinen Platz in einem Regal. Dabei wird der Platz in dem Regal durch das Regalbrett genauer bestimmt. Alle Regale befinden sich in diesem Saal. Die Bücher werden verschiedenen Genres zugeordnet. Beispielsweise ist das Werk "Der Frosch zu Gast bei Helmut" nicht nur eine Komödie, sondern auch ein Krimi.* 
+*Jedes Buch hat seinen Platz in einem Regal. Dabei wird der Platz in dem Regal durch das Regalbrett genauer bestimmt. Alle Regale befinden sich in diesem Saal. Die Bücher werden verschiedenen Genres zugeordnet. Beispielsweise ist das Werk "Der Frosch zu Gast bei Helmut" nicht nur eine Komödie, sondern auch ein Krimi.* 
 
 1. Erstelle für obige Anforderungen das ERM.
 
 2. Ergänze alle Primär- und Fremdschlüssel an der richtigen Stelle.
 
-3. Füge dem Büchern weitere sinnvolle Attribute hinzu.
+3. Füge den Büchern weitere sinnvolle Attribute hinzu.
 
 4. Erstelle nach deinem ERM folgende SQL-Sätze:
 
-5. 1. Erstelle für alle CRUD-Operatoren auf die Tabelle Bücher je ein Beispiel. 
-      Dies können Sie sich entsprechend Ihres ERM frei aussuchen.
+5. 1. Erstelle für alle CRUD-Operatoren auf den Tabellenbüchern je ein Beispiel. 
+      Dies können Sie sich entsprechend Ihrem ERM frei aussuchen.
    2. Gib alle Bücher aus.
    3. Gib alle Bücher mit dem Titel "Der Frosch zu Gast bei Helmut" aus.
-   4. Finde alle Bücher die im Titel "Helmut" tragen.
+   4. Finde alle Bücher, die im Titel "Helmut" tragen.
    5. Zähle alle Bücher.
 
-6. Dich beschleicht ein schrecklicher Verdacht. Hinter einem verschlissenen Vorhang befindet sich eine weitere Kammer mit Büchern. Bücher von epochaler Bedeutung für die Zukunft des europäischen Schmiedehandwerks. Passe dein ERM so an, dass statt dem einzelnen Saal auch die Kammer mit erfasst werden kann.
+6. Dich beschleicht ein schrecklicher Verdacht. Hinter einem verschlissenen Vorhang befindet sich eine weitere Kammer mit Büchern. Bücher von epochaler Bedeutung für die Zukunft des europäischen Schmiedehandwerks. Passe dein ERM so an, dass statt des einzelnen Saals auch die Kammer mit erfasst werden kann.
 
 ### Das Stahlwerk der Postapokalypse
 
-Orientierungslos wachen Sie in einer Wüste aus Metall auf. Die Luft ist eiskalt klar. Der Boden besteht aus rostenden Stahl. Um Sie herum laufen orientierungslose Menschen, welche voller Panik versuchen kleine Stahlplatten und Stangen gegen belegte Butterbrote zu tauschen. Sie schleppen sich zu einer großen Halle aus der das Dröhnen von Hämmern zu vernehmen ist. Man erzählt Ihnen, dass dies vor dem Krieg das größte Stahlwerk der Welt war, aber bei einem Bombenangriff das vollständige ERM vernichtet wurde. Nun ist die Werksleitung außer Stande die Mitarbeiter in der Kantine mit Wurstbroten zu versorgen, da die Produktion am Boden liegt.
+Orientierungslos wachen Sie in einer Wüste aus Metall auf. Die Luft ist eiskalt, klar. Der Boden besteht aus rostendem Stahl. Um Sie herum laufen orientierungslose Menschen, welche voller Panik versuchen, kleine Stahlplatten und Stangen gegen belegte Butterbrote zu tauschen. Sie schleppen sich zu einer großen Halle, aus der das Dröhnen von Hämmern zu vernehmen ist. Man erzählt Ihnen, dass dies vor dem Krieg das größte Stahlwerk der Welt war, aber bei einem Bombenangriff das vollständige ERM vernichtet wurde. Nun ist die Werksleitung außerstande, die Mitarbeiter in der Kantine mit Wurstbroten zu versorgen, da die Produktion am Boden liegt.
 
-Hilfe dem Werksleiter ein erstes ERM für die die Werkshalle "Stahlfuchs" zu entwerfen:
+Hilfe dem Werksleiter, ein erstes ERM für die Werkshalle "Stahlfuchs" zu entwerfen:
 
-*In der Halle "Stahlfuchs" haben wir mehrere Öfen. An jeden Ofen arbeitet genau ein Heizer. Mehrere Träger bringen Brennstäbe zum Beheizen der verschiedenen Öfen. Jeder Heizer und Träger hat eine Personalnummer. Jeder Ofen ist über seinen Standort genau bestimmt.* 
+*In der Halle "Stahlfuchs" haben wir mehrere Öfen. An jedem Ofen arbeitet genau ein Heizer. Mehrere Träger bringen Brennstäbe zum Beheizen der verschiedenen Öfen. Jeder Heizer und Träger hat eine Personalnummer. Jeder Ofen ist über seinen Standort genau bestimmt.* 
 
 1. Erstelle für obige Anforderungen das ERM.
 2. Ergänze alle Primär- und Sekundärschlüssel an der richtigen Stelle.
 3. Füge dem Träger weitere sinnvolle Attribute hinzu.
 4. Erstelle nach deinem ERM folgende SQL-Sätze:
    1. Erstelle für alle CRUD-Operatoren auf die Tabelle Träger je ein 
-      Beispiel. Dies kannst du dir entsprechend deines ERM frei aussuchen.
+      Beispiel. Dies kannst du dir entsprechend deinem ERM frei aussuchen.
    2. Gib alle Träger aus.
-   3. Gib die Träger aus, wessen Personalnummer mit 5 beginnt. 
+   3. Gib die Träger aus, dessen Personalnummer mit 5 beginnt. 
    4. Zähle alle Heizer 
-5. Zum Dank erhältst du ein Butterbrot und Pfefferminztee und ziehst dich damit für eine Pause auf das Dach der Halle zurück. Voller Stauen erblickst du, dass weitere Hallen bis an den Horizont reichen.  Passe dein ERM so an, dass statt der Halle Stahlfuchs die scheinbar unendlich vielen Hallen mit erfasst werden können.
+5. Zum Dank erhältst du ein Butterbrot und Pfefferminztee und ziehst dich damit für eine Pause auf das Dach der Halle zurück. Voller Stauen erblickst du, dass weitere Hallen bis zum Horizont reichen.  Passe dein ERM so an, dass statt der Halle Stahlfuchs die scheinbar unendlich vielen Hallen mit erfasst werden können.
 
 ## Auswerten von Daten II
 
@@ -446,14 +446,14 @@ Hilfe dem Werksleiter ein erstes ERM für die die Werkshalle "Stahlfuchs" zu ent
 1. Mit welchem SQL-Befehl kann InstaHub alle Photos eines Mitglieds anzeigen? Liste die Links zu allen Photos von *samina369* auf.
 
 2. Wer sind die 10 Follower von *luis52*?
-    a. Ermittle die id von *luis52*.
-    b. Liste alle Follower *luis52* auf. Beachte das in der Datenbank der Nutzer in `following_id` dem Nutzer in `follower_id` folgt.
+    A. Ermittele die ID von *luis52*.
+    b. Liste alle Follower *luis52* auf. Beachte, dass in der Datenbank der Nutzer in `following_id` dem Nutzer in `follower_id` folgt.
 
-3. Der Verfassungsschutz bittet um Mithilfe: Wer hat in Kommentaren zu Fotos Adolf Hitler erwähnt? Gib deren Email und den betreffenden Kommentar aus.
+3. Der Verfassungsschutz bittet um Mithilfe: Wer hat in Kommentaren zu Fotos Adolf Hitler erwähnt? Gib deren E-Mail und den betreffenden Kommentar aus.
 
-4. Es soll Werbung an alle Strandurlauber verschickt werden. Finde alle Photos die den Hashtag *#meer* enthalten. Gib den Namen, die Emailadresse, den Geburtstag und die Stadt der zugehörigen Benutzer aus. 
+4. Es soll Werbung an alle Strandurlauber verschickt werden. Finde alle Photos, die den Hashtag *#meer* enthalten. Gib den Namen, die E-Mail-Adresse, den Geburtstag und die Stadt des zugehörigen Benutzers aus. 
 
-  Expertenaufgabe: Ändere den Befehl der vorherigen Aufgabe so, dass der hashtag aus der Tabelle `tags` genommen wird.
+  Expertenaufgabe: Ändere den Befehl der vorherigen Aufgabe so, dass der Hashtag aus der Tabelle `tags` genommen wird.
 
 5. Gib alle Kommentare und die zugehörigen Benutzernamen der Verfasser aus München an.
 
@@ -463,7 +463,7 @@ Hilfe dem Werksleiter ein erstes ERM für die die Werkshalle "Stahlfuchs" zu ent
 
 8. Gib die 10 beliebtesten Photos aus.
 
-Expertenaufgabe: In Aufgabe 2 hast du mit zwei Abfragen die Follower von *luis52* ermittelt. Das geht auch einfacher. Anstelle zweier getrennter Abfragen kannst du die Bedingung auch wie folgt schreiben:
+Expertenaufgabe: In Aufgabe 2 hast du mit zwei Abfragen, die Follower von *luis52* ermittelt. Das geht auch einfacher. Anstelle zweier getrennter Abfragen kannst du die Bedingung auch wie folgt schreiben:
 
 ```sql
 WHERE follows.follower_id = (SELECT id FROM users WHERE username="luis52")
@@ -475,13 +475,13 @@ WHERE follows.follower_id = (SELECT id FROM users WHERE username="luis52")
 
 ### LEFT JOIN ON
 
-1. Alle Mitglieder, die noch nie ein Foto hochgeladen haben, sollen per Push-Notification dazu ermutigt werden. Ermittle dafür deren Benutzer-ID. 
+1. Alle Mitglieder, die noch nie ein Foto hochgeladen haben, sollen per Push-Notification dazu ermutigt werden. Ermittele dafür deren Benutzer-ID. 
 2. Lara würde gern allen Mitgliedern eine Mail schreiben, welche noch nie ein Foto kommentiert haben. Suche deren Mail-Adresse heraus.
 
 
 ### Expertenaufgabe
 
-Hilf mit den Unterricht zu gestalten und [reiche eigene Fragen ein](https://goo.gl/forms/xy29cLImYj4jrpFy1).
+Hilf mir, den Unterricht zu gestalten und [reiche eigene Fragen ein](https://goo.gl/forms/xy29cLImYj4jrpFy1).
 
 ## Verändern von Daten II
 
@@ -493,7 +493,7 @@ Der Nutzer mit den meisten Kommentaren soll für sein letztes Bild einen Komment
 
 Nutzer, die ihre *Boote* fotografiert haben, möchten im Rahmen einer politischen Kundgebung ihre Heimatstadt durch *"auf hoher See"* ersetzen lassen.
 
-Aktualisiere den Slogan (*bio*) aller Leipziger Mitglieder, die noch keinen Slogan haben auf *"Meine Bilder auf InstaHub spiegeln die Seele der persistenten Schönheit im Spiegel der Güte wieder.*" 
+Aktualisiere den Slogan (*bio*) aller Leipziger Mitglieder, die noch keinen Slogan haben, auf *"Meine Bilder auf InstaHub spiegeln die Seele der persistenten Schönheit im Spiegel der Güte wider.*" 
 
 ### DELETE
 
@@ -501,16 +501,16 @@ In der Vergangenheit wurden aus *Oberreichenbach* wiederholt Fotos von streng ge
 
 ### Expertenaufgabe
 
-Hilf mit den Unterricht zu gestalten und [reiche eigene Fragen ein](https://goo.gl/forms/xy29cLImYj4jrpFy1).
+Hilf mir, den Unterricht zu gestalten und [reiche eigene Fragen ein](https://goo.gl/forms/xy29cLImYj4jrpFy1).
 
 
 ## Komplexaufgaben
 
 ### Ein eigener Webshop
 
-Ihre Schülervertretung druckt eigene T-Shirts, welche mittlerweile deutschlandweit sehr gefragt sind. Um noch mehr Schüler und Lehrer mit T-Shirts, wie "Schule ist do....ch toll", "10/8 Lehrer haben Probleme in Mathe" und "Ich bin Leerer" zu erfreuen, wollen Sie einen eigenen Shop entwickeln.
+Ihre Schülervertretung druckt eigene T-Shirts, welche mittlerweile deutschlandweit sehr gefragt sind. Um noch mehr Schüler und Lehrer mit T-Shirts, wie "Schule ist do....ch toll", "10/8 Lehrer haben Probleme in Mathematik" und "Ich bin leerer" zu erfreuen, wollen Sie einen eigenen Shop entwickeln.
 
 1. Hast du schon einmal online eingekauft? Öffne deinen Lieblingsshop.
-2. Versuche anhand der Webseite die darunter liegende Datenbank abzuleiten. Dies ist sehr, sehr schwer, da die Datenbank vermutlich äußerst groß ist. Es reicht, wenn du einige Bereiche aufnimmst. 
+2. Versuche anhand der Webseite, die darunter liegende Datenbank abzuleiten. Dies ist sehr, schwierig, da die Datenbank vermutlich äußerst groß ist. Es reicht, wenn du einige Bereiche aufnimmst. 
 3. Zeichne die Datenbank als Entity-Relationship-Modell. 
 4. Notiere für jede CRUD-Operation je einen SQL-Ausdruck für eine von dir ausgewählte Tabelle.
