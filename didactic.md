@@ -72,7 +72,7 @@ SchülerInnen ist oft nicht klar, wie verfügbar ihre persönlichen Daten abgesp
 
 Was passiert wenn mal wieder Nutzerdaten bei einem großen Anbieter verloren gegangen sind? Schaut euch gemeinsam an, wie Passwörter heut gespeichert werden (`bcrypt()` in PHP).
 
-## Jan Savelsberg
+### Jan Savelsberg
 
 ::: warning
 Basiert auf dem Datensatz von 2017
