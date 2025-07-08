@@ -54,6 +54,8 @@ export default defineConfig({
       next: 'weiter'
     },
 	
+    cleanUrls: true,
+	
     darkModeSwitchLabel: 'Aussehen',
     
     returnToTopLabel: 'nach oben',
