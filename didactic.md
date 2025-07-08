@@ -17,7 +17,7 @@ Dieser didaktische Ansatz wurde vom Autor bereits mit über 200 SchülerInnen er
 ### [Julian Dorn](https://wi-wissen.de/)
 
 ::: warning
-Basiert auf dem Datensatz von 2019
+Basiert auf dem Datensatz von 2017
 :::
 
 Dieser didaktische Ansatz wurde vom Autor bereits mit über 200 SchülerInnen erfolgreich durchgeführt. Es lässt sich damit nach dem sächsischen Lehrplan Informatik der gesamte Lernbereich Datenbanken in der Sekundarstufe II behandeln. Hier erlernen SchülerInnen Fähigkeiten im Modellieren (ERM, Kardinalitäten, Schlüssel etc.) und im Umgang mit SQL (CRUD-Abfragen in einer und verknüpften Tabellen, sowie Anlagen von Tabellen).
@@ -31,7 +31,7 @@ Das Material steht (wie auch diese Dokumentation) unter der [CC BY-NC-SA Lizenz]
 ### [Anja Eckstein](https://www.hans-sachs-gymnasium.de/unsere-schule/menschen-am-hsg/kollegium)
 
 ::: warning
-Basiert auf dem Datensatz von 2019
+Basiert auf dem Datensatz von 2017
 :::
 
 Für den Informatikunterricht in der 9. und 10. Klasse hat Anja Eckstein vom [Hans-Sachs-Gymnasium](https://www.hans-sachs-gymnasium.de/) in Nürnberg (Bayern) Unterrichtsmaterial mit ausführlicher Präsentation und Arbeitsblättern erstellt. Es werden die Teilbereiche der Jahrgangsstufe 9 (Inf 9.2) und der Jahrgangsstufe 10 (Inf 10.1) des neuen bayerischen Lehrplans (LehrplanPLUS) vollständig abgedeckt.
@@ -43,7 +43,7 @@ Das Material steht unter der [CC BY-SA Lizenz](https://creativecommons.org/licen
 ### [Reinhard Nitzsche](https://twitter.com/RNitzsche2)
 
 ::: warning
-Basiert auf dem Datensatz von 2019
+Basiert auf dem Datensatz von 2017
 :::
 
 Für den Unterricht an Berufsoberschulen und Beruflichen Gymnasien hat Reinhard Nitzsche in Elmshorn (Schleswig-Holstein) ein digitales Schulbuch für ein Schulhalbjahr mit 1 Doppelstunde je Woche entwickelt. Es lässt sich auch an allgemeinbildenden Gymnasien in der Sek II einsetzen.
@@ -57,7 +57,7 @@ Das Material steht unter der [CC BY-NC Lizenz](https://creativecommons.org/licen
 ### [Oliver Kilthau](https://informatikkeller.de/)
 
 ::: warning
-Basiert auf dem Datensatz von 2019
+Basiert auf dem Datensatz von 2017
 :::
 
 In der Zeit der Corna-Schul(teil)schließung hat Oliver Kilthau für die 12. Klasse des Beruflichen Gymnasiums (WG/EG/SG) in Baden-Württemberg Aufgabenblätter und Videoerklärungen und -anleitungen erstellt. Diese können in Form von Selbstorganisierten Lernen (SOL) verwendet oder auch in den eher traditionellen Unterricht integriert werden. Das Material ist für 5 Doppelstunden geplant und deckt den Lernbereich "Relationale Datenbanken" ab.
@@ -75,7 +75,7 @@ Was passiert wenn mal wieder Nutzerdaten bei einem großen Anbieter verloren geg
 ## Jan Savelsberg
 
 ::: warning
-Basiert auf dem Datensatz von 2019
+Basiert auf dem Datensatz von 2017
 :::
 
 Einen Ansatz für die Klassenstufe 5-6 hat Jan Savelsberg in seiner Masterarbeit **[Weiterentwicklung und Implementierung des Projekts "InstaHub" für die Sekundarstufe I mit dem Themenschwerpunkt Datenschutz](https://kola.opus.hbz-nrw.de/frontdoor/index/index/searchtype/authorsearch/author/Jan+Savelsberg/docId/1892/start/0/rows/10)** entwickelt. Ergänzend dazu kann auch noch der graphische Abfrage-Editor verwendet werden.
@@ -87,7 +87,7 @@ InstaHub kann die Aktivität der Nutzer tracken kann und ihnen individuell zuges
 ### [Simon Blankenagel](https://twitter.com/Mathelehrer3)
 
 ::: warning
-Basiert auf dem Datensatz von 2019
+Basiert auf dem Datensatz von 2017
 :::
 
 Mit Microtargeting sollen Botschaften zielgerichtet transportiert werden. Für den Unterricht in der Sekundarstufe II des Landes Nordrhein-Westfalen hat Simon Blankenagel dazu eine Unterrichtsstunde entwickelt. Dabei werden die Schüler:innen innerhalb eines Planspiels in Gruppen eingeteilt, welche übergreifend eine Aufgabe bearbeiten sollen.
@@ -105,7 +105,7 @@ InstaHub kann den Newsfeed gewichten. Dafür wird der Edge Rank und die Affinit�
 ### Daniel Steil
 
 ::: warning
-Basiert auf dem Datensatz von 2019
+Basiert auf dem Datensatz von 2017
 :::
 
 Implementiert und konzipiert wurde das von [Daniel Steil](https://twitter.com/danistl8). Dokumentiert hat er es in seiner Masterarbeit **[Weiterentwicklung des Newsfeeds von InstaHub und Entwicklung einer Unterrichtsreihe zum Thema „Algorithmen in sozialen Netzwerken“ für die Sekundarstufe II](https://kola.opus.hbz-nrw.de/frontdoor/index/index/start/0/rows/10/sortfield/score/sortorder/desc/searchtype/simple/query/Steil/docId/2013)**. 
@@ -117,7 +117,7 @@ Ganz neu ist hinzugekommen, dass InstaHub Benutzer:innen gewichten kann. Dadurch
 ### Peter Braunschädel
 
 ::: warning
-Basiert auf dem Datensatz von 2019
+Basiert auf dem Datensatz von 2017
 :::
 
 Peter Braunschädel hat das konzipiert und die Implementierung vorbereitet. Mehr dazu in seiner Masterarbeit [Entwicklung und Umsetzung von Follow-Vorschlägen für InstaHub und Entwicklung einer entsprechenden Unterrichtsreihe zum Thema "**Relationen in sozialen Netzwerken und Gefahren der Erzeugung und Verarbeitung von personenbezogenen Daten" für die Sekundarstufe II**](https://kola.opus.hbz-nrw.de/frontdoor/index/index/searchtype/latest/rows/100/docId/2184/start/3)
