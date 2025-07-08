@@ -1,0 +1,16 @@
+.VPImage.image-src {
+  max-width: 90% !important;
+  width: auto !important;
+}
+
+@media (min-width: 960px) {
+  .VPHome .image-container {
+    transform: translate(0, -32px);
+  }
+}
+
+main figcaption {
+  margin-top: 2px;
+  text-align: center;
+  font-size: 80%;
+}

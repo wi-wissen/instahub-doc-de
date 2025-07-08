@@ -8,8 +8,8 @@ Zu Beginn gibt es nur die `user`-Tabelle, sodass InstaHub wie ein Telefonbuch wi
 CREATE TABLE `photos` (
   `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `user_id` int(10) UNSIGNED NOT NULL,
-  `description` varchar(191) NOT NULL,
-  `url` varchar(191) NOT NULL,
+  `description` varchar(255) NOT NULL,
+  `url` varchar(255) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
@@ -17,7 +17,7 @@ CREATE TABLE `photos` (
 )
 ```
 
-Dummydaten mit [diesem Datensatz](https://wi-wissen.github.io/instahub-doc-de/sql/photos.sql) importieren.
+Dummydaten mit <a href="/sql/photos.sql" download>diesem Datensatz</a> importieren.
 
 ## Tabelle Tags (Schlagworte mit `#` beginnend)
 
@@ -27,7 +27,7 @@ Diese Tabelle dient nur der Normalisierung. Tags werden davor schon mit dem `LIK
 CREATE TABLE `tags` (
   `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `photo_id` int(10) UNSIGNED NOT NULL,
-  `name` varchar(191) NOT NULL,
+  `name` varchar(255) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (id),
@@ -44,7 +44,7 @@ CREATE TABLE `comments` (
   `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `user_id` int(10) UNSIGNED NOT NULL,
   `photo_id` int(10) UNSIGNED NOT NULL,
-  `body` varchar(191) NOT NULL,
+  `body` varchar(255) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
@@ -53,7 +53,7 @@ CREATE TABLE `comments` (
 ) 
 ```
 
-Dummydaten mit [diesem Datensatz](https://wi-wissen.github.io/instahub-doc-de/sql/comments.sql) einfügen.
+Dummydaten mit <a href="/sql/comments.sql" download>diesem Datensatz</a> einfügen.
 
 ## Tabelle Follower
 
@@ -70,7 +70,7 @@ CREATE TABLE `follows` (
 )
 ```
 
-Dummydaten mit [diesem Datensatz](https://wi-wissen.github.io/instahub-doc-de/sql/follows.sql) einfügen.
+Dummydaten mit <a href="/sql/follows.sql" download>diesem Datensatz</a> einfügen.
 
 ## Tabelle Likes
 
@@ -87,21 +87,21 @@ CREATE TABLE `likes` (
 )
 ```
 
-Dummydaten mit [diesem Datensatz](https://wi-wissen.github.io/instahub-doc-de/sql/likes.sql) einfügen.
+Dummydaten mit <a href="/sql/likes.sql" download>diesem Datensatz</a> einfügen.
 
 ## Tabelle Analytics (Tracking)
 
 ```sql
 CREATE TABLE `analytics` (
   `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `ip` varchar(191) NOT NULL,
-  `device` varchar(191) NOT NULL,
-  `brand_family` varchar(191) NOT NULL,
-  `brand_model` varchar(191) NOT NULL,
-  `browser_family` varchar(191) NOT NULL,
-  `browser_version` varchar(191) NOT NULL,
-  `platform_family` varchar(191) NOT NULL,
-  `platform_version` varchar(191) NOT NULL,
+  `ip` varchar(255) NOT NULL,
+  `device` varchar(255) NOT NULL,
+  `brand_family` varchar(255) NOT NULL,
+  `brand_model` varchar(255) NOT NULL,
+  `browser_family` varchar(255) NOT NULL,
+  `browser_version` varchar(255) NOT NULL,
+  `platform_family` varchar(255) NOT NULL,
+  `platform_version` varchar(255) NOT NULL,
   `user_id` int(10) UNSIGNED NOT NULL,
   `photo_id` int(10) UNSIGNED NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
@@ -120,10 +120,10 @@ Um die Tabelle zu füllen, müssen einzelne Bilder betrachtet werden. Alternativ
 CREATE TABLE `ads` (
   `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `priority` int(11) NOT NULL,
-  `name` varchar(191) NOT NULL,
+  `name` varchar(255) NOT NULL,
   `type` enum('banner','photo') NOT NULL,
-  `url` varchar(191) NOT NULL,
-  `img` varchar(191) NOT NULL,
+  `url` varchar(255) NOT NULL,
+  `img` varchar(255) NOT NULL,
   `query` longtext NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
@@ -146,17 +146,18 @@ Diese Tabelle ist in jedem neuen Hub vorhanden und muss nicht angelegt werden. S
 ```sql
 CREATE TABLE `users` (
   `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  `username` varchar(191) NOT NULL UNIQUE,
-  `email` varchar(191)NOT NULL UNIQUE,
-  `password` varchar(191) NOT NULL,
-  `name` varchar(191) NOT NULL,
-  `bio` varchar(191) DEFAULT NULL,
-  `gender` enum('male','female') DEFAULT NULL,
-  `birthday` datetime DEFAULT NULL,
-  `city` varchar(191) DEFAULT NULL,
-  `country` varchar(191) DEFAULT NULL,
+  `name` varchar(255) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `email_verified_at` timestamp NULL DEFAULT NULL,
+  `password` varchar(255) NOT NULL,
+  `bio` varchar(255) DEFAULT NULL,
+  `gender` enum('male','female','diverse') DEFAULT NULL,
+  `birthday` date DEFAULT NULL,
+  `city` varchar(255) DEFAULT NULL,
+  `country` varchar(255) DEFAULT NULL,
   `centimeters` int(11) DEFAULT NULL,
-  `avatar` varchar(191) NOT NULL DEFAULT 'avatar.png',
+  `avatar` varchar(255) NOT NULL DEFAULT 'avatar.png',
   `role` enum('user','dba','teacher','admin') NOT NULL DEFAULT 'user',
   `is_active` tinyint(1) NOT NULL DEFAULT 0,
   `remember_token` varchar(100) DEFAULT NULL,
@@ -165,4 +166,4 @@ CREATE TABLE `users` (
 );
 ```
 
-Die Dummydaten sind in [diesem Datensatz](https://wi-wissen.github.io/instahub-doc-de/sql/users.sql) enthalten. Wichtig ist, dass hier das Admin-Nutzerkonto nicht dabei ist, da dies beim Registrieren angelegt wird.
+Die Dummydaten sind in <a href="/sql/users.sql" download>diesem Datensatz</a> enthalten. Wichtig ist, dass hier das Admin-Nutzerkonto nicht dabei ist, da dies beim Registrieren angelegt wird.

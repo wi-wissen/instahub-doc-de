@@ -236,7 +236,7 @@ CREATE TABLE `photos` (
 1. Verstehe den obigen SQL-Befehl.
 2. Führe den obigen SQL-Befehl aus.
 
-Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensatz](https://wi-wissen.github.io/instahub-doc-de/sql/photos.sql) einfügen.
+Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du <a href="/sql/photos.sql" download>diesem Datensatz</a> einfügen.
 
 ## Tabelle Tags
 ```sql
@@ -273,7 +273,7 @@ CREATE TABLE `comments` (
 1. Verstehe den obigen SQL-Befehl.
 2. Führe den obigen SQL-Befehl aus.
 
-Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensatz](https://wi-wissen.github.io/instahub-doc-de/sql/comments.sql) einfügen.
+Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du <a href="/sql/comments.sql" download>diesem Datensatz</a> einfügen.
 
 ## Tabelle Follower
 ```sql
@@ -291,7 +291,7 @@ CREATE TABLE `follows` (
 1. Verstehe den obigen SQL-Befehl.
 2. Führe den obigen SQL-Befehl aus.
 
-Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensatz](https://wi-wissen.github.io/instahub-doc-de/sql/follows.sql) einfügen.
+Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du <a href="/sql/follows.sql" download>diesem Datensatz</a> einfügen.
 
 ## Tabelle Likes
 ```sql
@@ -309,7 +309,7 @@ CREATE TABLE `likes` (
 1. Verstehe den obigen SQL-Befehl.
 2. Führe den obigen SQL-Befehl aus.
 
-Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du [diesen Datensatz](https://wi-wissen.github.io/instahub-doc-de/sql/likes.sql) einfügen.
+Um die Aktivität deiner Mitglieder zu beschleunigen, kannst du <a href="/sql/likes.sql" download>diesem Datensatz</a> einfügen.
 
 ## Tabelle Analytics (Tracking)
 
@@ -367,7 +367,7 @@ INSERT INTO `ads` (`id`, `priority`, `name`, `type`, `url`, `img`, `query`, `cre
 
 4. Erstelle eine selbst ausgedachte Regel für eine Werbeanzeige.
 
-[Hier](frontend?id=personalisierte-werbung) findest du in der Dokumentation eine Erklärung, wie die Werbeanzeigen funktionieren. Du kannst vorgegebene Werbeanzeigen aus dem Menüeintrag *Kampagnen* umsetzen oder dir selbst eine Anzeige ausdenken. Dazu entwirfst du die Werbung auf deinem Rechner und lädst diese anschließend als Photo hoch. Jetzt kannst du den Link zu diesem Bild (nicht der Photo-Seite!) verwenden.
+[Hier](werbung) findest du in der Dokumentation eine Erklärung, wie die Werbeanzeigen funktionieren. Du kannst vorgegebene Werbeanzeigen aus dem Menüeintrag *Kampagnen* umsetzen oder dir selbst eine Anzeige ausdenken. Dazu entwirfst du die Werbung auf deinem Rechner und lädst diese anschließend als Photo hoch. Jetzt kannst du den Link zu diesem Bild (nicht der Photo-Seite!) verwenden.
 
 ## Modellieren von Daten
 

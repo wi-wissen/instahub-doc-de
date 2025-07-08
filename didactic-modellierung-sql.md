@@ -13,7 +13,7 @@ Der hier vorgestellte Ansatz ist eine Abwandlung meines Vorgehens bei der friend
 | Verändern von Daten                         | CRUD-Befehle innerhalb einer Tabelle | 2 UE   |
 | Datenschutz und -sicherheit                 | Gesellschaftliche Aspekte von DBs    | 2 UE   |
 | Photos und Tags im InstaHub                 | 1:n-Kardinalitäten                   | 2 UE   |
-| Followers, Likes und Kommentare im Instahub | n:m-Kardinalitäten                   | 1 UE   |
+| Followers, Likes und Kommentare im InstaHub | n:m-Kardinalitäten                   | 1 UE   |
 | Modellieren von Daten                       | Modelle mit klaren Anforderungen     | 2-4 UE |
 | Auswerten von Daten II                      | tabellenübergreifende SQL-Befehle    | 2 UE   |
 | Die Macht verknüpfter Daten                 | tabellenübergreifende CRUD-Befehle   | 2 UE   |
@@ -61,7 +61,7 @@ Lara möchte nun endlich loslegen, sie möchte das Hochladen von Fotos ermöglic
 
 Zur Übung werden Fotos noch mit Tags angereichert. Dies war auch schon vorher in der Weboberfläche möglich. Dazu wurde auf einen LIKE-Befehl zurückgeführt. Hiermit lässt sich schon die 1. Normalform (nur atomare Werte) gut aufzeigen.
 
-## Followers, Likes und Kommentare im Instahub – n:m-Kardinalitäten
+## Followers, Likes und Kommentare im InstaHub – n:m-Kardinalitäten
 
 n:m-Kardinalitäten werden in lernschwachen Klassen durch Lehrervortrag eingeführt. In lernstarken Gruppen kann die Notwendigkeit der Hilfstabelle teilweise selbst herausgearbeitet werden.
 
