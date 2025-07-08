@@ -12,13 +12,13 @@ Wurde einer Lehrkraft ein InstaHub zugeordnet, so muss dieser ebenfalls erst akt
 
 <div class="player-schule" style="max-width: 1280px; margin: 0 auto;">
   <iframe
-  src="https://player.schule/youtube/TKf7slf2K2M?embed=1"
+  src="https://player.schule/youtube/diP5nuSz8dg?embed=1"
   style="width:100%; aspect-ratio: 1280/720"
   frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen allowTransparency
   ></iframe>
 </div>
 
-<figcaption>Video aus Online-Workshop bei <a href="https://youtu.be/TKf7slf2K2M">YouTube</a> ansehen </figcaption>
+<figcaption>Video aus Online-Workshop bei <a href="https://youtu.be/diP5nuSz8dg">YouTube</a> ansehen </figcaption>
 
 ## Grundeinstellungen
 
