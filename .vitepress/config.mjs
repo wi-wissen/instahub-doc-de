@@ -7,6 +7,7 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
+  cleanUrls: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/favicon-32x32.png',
@@ -53,9 +54,7 @@ export default defineConfig({
       prev: 'zurück',
       next: 'weiter'
     },
-	
-    cleanUrls: true,
-	
+		
     darkModeSwitchLabel: 'Aussehen',
     
     returnToTopLabel: 'nach oben',
