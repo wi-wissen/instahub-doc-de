@@ -248,8 +248,7 @@ INSERT INTO `photos` (`id`, `user_id`, `description`, `url`, `created_at`, `upda
 (250, 55, 'Schütze, was uns am Herzen liegt 🌍💕 Heute im Park Bäume pflanzen, weil jeder Schritt zählt. #Umweltschützer #GreenLiving #NatureLover', 'storage/photos/2/250.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (251, 55, 'Neue Bäume pflanzen für eine grünere Zukunft 🌱💪 #Nachhaltigleben #Umweltschützer #GrünIstDieHoffnung', 'storage/photos/2/251.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (252, 56, '🎮 Peacing out nach einem intensiven Gaming-Marathon! ✌️ Level 14 erreicht, nächster Stop: Highscore! 🏆 #Gamerlife #LevelUpLife #PeaceOut', 'storage/photos/2/252.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
-(253, 56, 'Nach einem intensiven Gaming-Abend 🕹️ entspanne ich mich in meinem Vintage-Gamer-Shirt. 🖖 #Zocken #GameOn #GamingLife', 'storage/photos/2/253.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10');
-INSERT INTO `photos` (`id`, `user_id`, `description`, `url`, `created_at`, `updated_at`) VALUES
+(253, 56, 'Nach einem intensiven Gaming-Abend 🕹️ entspanne ich mich in meinem Vintage-Gamer-Shirt. 🖖 #Zocken #GameOn #GamingLife', 'storage/photos/2/253.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (254, 56, 'Level up, one game at a time 🎮✨ #GameOn #LevelUpLife #GamingVibes', 'storage/photos/2/254.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (255, 57, 'Zwischen den Zeilen entdecke ich meine Welt 🌍📖 #Bookstagram #Bücherwurm #LiteraturLiebe', 'storage/photos/2/255.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (256, 57, 'Ein ruhiger Moment mit einem Klassiker in der Hand 📖✨ #PageTurner #Bücherwurm #LesenIstLeben', 'storage/photos/2/256.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
@@ -498,8 +497,7 @@ INSERT INTO `photos` (`id`, `user_id`, `description`, `url`, `created_at`, `upda
 (499, 107, 'Heute beim Spaziergang ein süßes Eichhörnchen entdeckt! 🐿️💚 Natur ist einfach faszinierend. #PawsomeWorld #Tierliebe #NatureLover', 'storage/photos/2/499.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (500, 107, 'Experiment im Grünen! 🧪🌳 Heute teste ich die Eigenschaften von Pflanzenextrakten. Kleine Forscher auf großer Entdeckungsreise! #Forschergeist #Experimentierfreude #Naturwissenschaften', 'storage/photos/2/500.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (501, 107, 'Der Moment, wenn eine Eidechse neugierig aus ihrem Versteck schaut 🦎 Der perfekte Augenblick zum Erkunden der Natur! 🌿 #PawsomeWorld #PetLife #NatureLovers', 'storage/photos/2/501.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
-(502, 107, 'Die faszinierende Welt der Laborexperimente direkt in der Natur entdeckt 🌿🔬 #Forschergeist #ScienceRules #CuriosityDriven', 'storage/photos/2/502.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10');
-INSERT INTO `photos` (`id`, `user_id`, `description`, `url`, `created_at`, `updated_at`) VALUES
+(502, 107, 'Die faszinierende Welt der Laborexperimente direkt in der Natur entdeckt 🌿🔬 #Forschergeist #ScienceRules #CuriosityDriven', 'storage/photos/2/502.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (503, 108, 'Manchmal sind die einfachsten Rezepte die besten. 😌🍅 #Feinschmecker #ChefMode', 'storage/photos/2/503.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (504, 108, 'Ein neues Rezept, eine moderne Küche und große Träume! 💭👨🏿‍🍳 #Feinschmecker #CookingPassion #Inspiration', 'storage/photos/2/504.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (505, 108, 'Volle Konzentration in der Küche 👨🏿‍🍳🌟. Teste gerade ein neues Rezept aus! #ChefMode #Kochliebe #Passion', 'storage/photos/2/505.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
@@ -748,8 +746,7 @@ INSERT INTO `photos` (`id`, `user_id`, `description`, `url`, `created_at`, `upda
 (754, 162, 'Ein wunderbarer Tag, um die frische Bergluft zu genießen und neue Pfade zu erkunden 🌳✨ #Wanderlust #OutdoorAbenteuer', 'storage/photos/2/754.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (755, 162, 'Zwischen den Bäumen hindurch zum Gipfel! 🏞️ Die reine Luft und der unberührte Pfad sind einfach inspirierend. #Wanderlust #TrailBlazer #NatureLover', 'storage/photos/2/755.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (756, 162, 'Frühstückspause auf dem Trail 🥾✨ Fühle mich top im neuen Athleisure-Look! #StyleGame #Modetrends #OutdoorChic', 'storage/photos/2/756.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
-(757, 163, 'Fashion-Check im urbanen Dschungel 🌆👗 Immer auf der Suche nach dem perfekten OOTD! #Fashionista #OOTD #StilRevolution', 'storage/photos/2/757.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10');
-INSERT INTO `photos` (`id`, `user_id`, `description`, `url`, `created_at`, `updated_at`) VALUES
+(757, 163, 'Fashion-Check im urbanen Dschungel 🌆👗 Immer auf der Suche nach dem perfekten OOTD! #Fashionista #OOTD #StilRevolution', 'storage/photos/2/757.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (758, 164, 'Matchball 🍓🎾 Die härteste Challenge des Tages: Die Erdbeeren vom Tennisplatz fernzuhalten! #ServingLooks #CourtCrush #TennisLife', 'storage/photos/2/758.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (759, 164, 'Reise-Abenteuer im Visier 🌍 Der Tennisplatz im Hintergrund kann warten! #TravelGram #Weltenbummler #Abenteuerlust', 'storage/photos/2/759.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (760, 164, 'Power-Serve im Anmarsch! 🎾👀 Wer hätte gedacht, dass Tennis so spannend sein kann? #Tennisass #CourtCrush', 'storage/photos/2/760.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
@@ -1003,8 +1000,7 @@ INSERT INTO `photos` (`id`, `user_id`, `description`, `url`, `created_at`, `upda
 (1008, 215, 'Nach einem intensiven Workout im Fitnessstudio 💪! Immer auf der Suche nach dem nächsten Abenteuer 🏋️‍♀️ #SweatySelfie #Fitnessjunkie #StayActive', 'storage/photos/2/1008.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (1009, 216, 'Der perfekte Aufschlag bei Sonnenuntergang ☀️🎾 #Tennisass #ServingLooks #VintageVibes', 'storage/photos/2/1009.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (1010, 216, 'Wieder auf dem Court und immer mit Herz dabei 💪🎾 #CourtCrush #Tennisass #VintageVibes', 'storage/photos/2/1010.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
-(1011, 216, 'Matchvorbereitung auf dem Platz 🌟🎾 Heute steht intensives Training an, um mein Aufschlagspiel zu perfektionieren! #CourtCrush #Aufschlag #TennisLove', 'storage/photos/2/1011.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10');
-INSERT INTO `photos` (`id`, `user_id`, `description`, `url`, `created_at`, `updated_at`) VALUES
+(1011, 216, 'Matchvorbereitung auf dem Platz 🌟🎾 Heute steht intensives Training an, um mein Aufschlagspiel zu perfektionieren! #CourtCrush #Aufschlag #TennisLove', 'storage/photos/2/1011.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (1012, 217, 'Sprachen lernen im Park 📚🌳 #Sprachtalent #Weltsprachen #Sprachabenteuer', 'storage/photos/2/1012.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (1013, 217, 'Sprachen lernen im Park und dabei die Sonne genießen ☀️📚 #LanguageNinja #Sprachtalent #LearningOutdoors', 'storage/photos/2/1013.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (1014, 217, '🌍 Zwischen den Seiten meines neuen Französischbuchs entdecke ich eine ganz neue Welt 📚 #LanguageNinja #PolyglotLife #BücherLiebe', 'storage/photos/2/1014.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
@@ -1256,8 +1252,7 @@ INSERT INTO `photos` (`id`, `user_id`, `description`, `url`, `created_at`, `upda
 (1260, 268, 'Die Natur genießen 🌸🌿 Bin dabei, meine Kräuter zu pflegen in meinem kleinen Garten! #PlantParent #GrünerDaumen #GartenLiebe', 'storage/photos/2/1260.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (1261, 268, 'Nach dem Tennismatch ab ins Beet! 🏃‍♀️🌱 Diese Erdbeeren werden der Hit im Sommer! #Grünerdaumen #UrbanJungle #Sommerfrüchte', 'storage/photos/2/1261.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (1262, 268, 'Nach einem erfolgreichen Tennismatch noch schnell die Erdbeerpflanzen pflegen 🌱🍓 #GrünerDaumen #UrbanJungle #Gartenliebe', 'storage/photos/2/1262.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
-(1263, 268, '🌸 Der erste Frühlingsgruß! Mein Garten erwacht zum Leben. 🪴 #UrbanJungle #PlantParent #Blumenliebe', 'storage/photos/2/1263.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10');
-INSERT INTO `photos` (`id`, `user_id`, `description`, `url`, `created_at`, `updated_at`) VALUES
+(1263, 268, '🌸 Der erste Frühlingsgruß! Mein Garten erwacht zum Leben. 🪴 #UrbanJungle #PlantParent #Blumenliebe', 'storage/photos/2/1263.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (1264, 268, 'Die ersten frischen Kräuter sprießen schon 🌿🌻. Bald wird in meiner Küche der Duft von Basilikum und Minze wehen! #Gartenliebe #PlantParent #Kräutergarten', 'storage/photos/2/1264.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (1265, 269, 'Zwischen den Vorhängen der Bühne wartet der Zauber auf seinen Auftritt. 🌟 Die Magie des Theaters lebt in diesen stillen Momenten. #Bühnenzauber #Theaterliebe #Traumwelt', 'storage/photos/2/1265.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (1266, 269, 'Versunken zwischen den Seiten 📚, wo jede Geschichte ein neues Abenteuer beginnt. ✨ #PageTurner #Bücherwurm #LesenLiebe', 'storage/photos/2/1266.webp', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),

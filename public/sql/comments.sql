@@ -397,8 +397,7 @@ INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `upda
 (396, 177, 108, 'Haha, dieses Mural ist so cool! 😂 Die Farben machen direkt gute Laune!', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (397, 280, 108, 'Wow! So inspirierend – dieses Mural spricht Bände über Gemeinschaft! 🌍', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (398, 230, 108, 'Ich liebe Straßenkunst, vor allem wenn sie so viel aussagt wie diese hier!', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
-(399, 295, 108, 'Dieses Mural ist einfach umwerfend! So viel Power und Aussagekraft! ✊🏾', '2024-07-13 21:43:10', '2024-07-13 21:43:10');
-INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `updated_at`) VALUES
+(399, 295, 108, 'Dieses Mural ist einfach umwerfend! So viel Power und Aussagekraft! ✊🏾', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (400, 19, 108, 'Haha, die Farben explodieren förmlich vor Energie! 🎨', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (401, 309, 109, 'Das erinnert mich daran, wie ich stundenlang in der Bibliothek stöberte 📚', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (402, 29, 109, 'Haha, sieh nur, wie ernst du bei der Sache bist! 😄', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
@@ -792,8 +791,7 @@ INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `upda
 (795, 252, 221, 'Haha, nicht nur auf dem Platz sportlich, sondern auch auf den Trails! 😂', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (796, 5, 221, 'Weiter so! Du rockst die Trails! 💥', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (797, 3, 221, 'Einfach mal die Natur genießen. Schöne Aufnahme.', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
-(798, 15, 221, 'Das sieht ziemlich gefährlich aus! Pass auf dich auf!', '2024-07-13 21:43:10', '2024-07-13 21:43:10');
-INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `updated_at`) VALUES
+(798, 15, 221, 'Das sieht ziemlich gefährlich aus! Pass auf dich auf!', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (799, 302, 222, 'Deine Abenteuerlust ist echt inspirierend! So sieht man richtig motiviert aus 🌟', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (800, 23, 222, 'Wow, die frische Luft muss fantastisch sein! 🌲', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (801, 67, 224, 'Dein Blick ist so tiefgründig, als würdest du gerade die Grundfragen des Lebens überdenken 🌌.', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
@@ -1175,8 +1173,7 @@ INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `upda
 (1198, 14, 254, 'Jetzt fehlen nur noch die Cheat Codes, um richtig loslegen zu können 😂', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (1199, 19, 254, 'Hahaha, ich wette, der Endboss hat keine Chance gegen dich 😆', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (1200, 215, 254, 'Also genau dieses Spiel hat meine Kindheit geprägt. Absoluter Klassiker!', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
-(1201, 115, 254, 'Wie lange hast du gebraucht, um dieses Level zu knacken?', '2024-07-13 21:43:10', '2024-07-13 21:43:10');
-INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `updated_at`) VALUES
+(1201, 115, 254, 'Wie lange hast du gebraucht, um dieses Level zu knacken?', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (1202, 315, 255, 'Ich bewundere deine Leidenschaft für Bücher 📚.', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (1203, 156, 255, 'Man spürt förmlich die Tiefe deiner Gedanken..', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (1204, 68, 255, 'Dein Lesehunger ist echt inspirierend! 🤩', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
@@ -1567,8 +1564,7 @@ INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `upda
 (1593, 169, 320, 'Schwimmen ist so ein großartiger Sport – bleib dran! 🌊', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (1594, 233, 320, 'Machst du auch Wettkämpfe, oder ist es für dich ein Hobby?', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (1595, 131, 320, 'Wusstest du, dass regelmäßiges Schwimmen die Konzentrationsfähigkeit stärkt?', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
-(1596, 296, 320, 'Deine Entschlossenheit ist inspirierend! Mach weiter so! 💪', '2024-07-13 21:43:10', '2024-07-13 21:43:10');
-INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `updated_at`) VALUES
+(1596, 296, 320, 'Deine Entschlossenheit ist inspirierend! Mach weiter so! 💪', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (1597, 277, 321, 'Wow, das sieht nach einem tollen Tag am Pool aus! Die Farben sind so lebendig. 🌊', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (1598, 32, 321, 'Ich fühle deine Begeisterung für das Schwimmen! Der Sommer kann kommen. ☀️', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (1599, 244, 321, 'Haha, das Wasser sieht so einladend aus, ich würde sofort reinspringen! 😂', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
@@ -1941,8 +1937,7 @@ INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `upda
 (1966, 189, 351, 'Ich erinnere mich, wie ich früher meine Tennisausrüstung genutzt habe, um meine Gefühle auszudrücken. 🎾', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (1967, 207, 351, 'Wow, deine Kunst ist einfach fantastisch! 🎨✨ Deine Emotionen spiegeln sich perfekt wider!', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (1968, 141, 351, 'Wie hast du es geschafft, so viel Gefühl in dieses Bild zu legen? 🤔', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
-(1969, 290, 351, 'Deine Kreativität ist wirklich beeindruckend! Weiter so! 🎨💪', '2024-07-13 21:43:10', '2024-07-13 21:43:10');
-INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `updated_at`) VALUES
+(1969, 290, 351, 'Deine Kreativität ist wirklich beeindruckend! Weiter so! 🎨💪', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (1970, 124, 351, 'Dein Bild ist echt schön. Die Farben sind toll gewählt.', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (1971, 173, 351, 'Ich hoffe, du hast keine Farbe verschüttet und dein Zimmer neu dekoriert 😂', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (1972, 52, 351, 'Wusstest du, dass Farben auch Emotionen beeinflussen können? Dein Bild zeigt das perfekt!', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
@@ -2323,8 +2318,7 @@ INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `upda
 (2349, 114, 415, 'Dein Engagement inspiriert mich total. Ich wünschte, ich könnte so fokussiert sein! 😅', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (2350, 19, 416, 'Ein Klassiker für jeden Coder! 👏💡', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (2351, 263, 417, 'Wow, diese Bücherregale strahlen wirklich Weisheit aus! ✨', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
-(2352, 134, 417, 'Die perfekte Ecke für tiefgründige Gedanken 🌟', '2024-07-13 21:43:10', '2024-07-13 21:43:10');
-INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `updated_at`) VALUES
+(2352, 134, 417, 'Die perfekte Ecke für tiefgründige Gedanken 🌟', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (2353, 212, 417, 'Man spürt förmlich die philosophische Atmosphäre! 😍', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (2354, 53, 417, 'Dieses Bild hat eine beruhigende und inspirierende Wirkung.', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (2355, 41, 418, 'Inspirierende Umgebung! Die perfekte Mischung aus Philosophie und Technologie 🤔💻', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
@@ -2713,8 +2707,7 @@ INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `upda
 (2744, 198, 496, 'Eine neutrale Meinung: Die Designs auf dem T-Shirt sind interessant, aber nichts Außergewöhnliches.', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (2745, 258, 496, 'Warum muss alles so kompliziert dargestellt werden? Einfache Wissenschaft reicht doch auch!', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (2746, 45, 496, 'Sehr informativ! Diese Symbole und Elemente sind ein super Ansatz, Wissenschaft zu vermitteln.', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
-(2747, 136, 497, 'Deine Begeisterung für die Wissenschaft ist ansteckend! 😊', '2024-07-13 21:43:10', '2024-07-13 21:43:10');
-INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `updated_at`) VALUES
+(2747, 136, 497, 'Deine Begeisterung für die Wissenschaft ist ansteckend! 😊', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (2748, 50, 497, 'Man sieht richtig, wie sehr du in deinem Element bist! 😂', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (2749, 193, 497, 'Ich erinnere mich, wie ich auch oft draußen geforscht habe. Diese Momente sind goldwert!', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (2750, 27, 497, 'Dein Enthusiasmus motiviert mich richtig, auch mal wieder zu experimentieren! 🔬', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
@@ -3098,8 +3091,7 @@ INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `upda
 (3153, 284, 614, 'Die Atmosphäre in dieser Bibliothek sieht so inspirierend aus. Ein toller Platz zum Lernen! 😊', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (3154, 32, 614, 'Haha, das ist sicher die lustigste Bibliothek, die ich je gesehen habe! 🤣', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (3155, 37, 614, 'Wow, was für eine coole Szene! Sprachlern-Abenteuer in der Bibliothek! 🌟', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
-(3156, 63, 614, 'Ich kann fast den beruhigenden Geruch der Bücher riechen – so ein friedlicher Lernort! 📖', '2024-07-13 21:43:10', '2024-07-13 21:43:10');
-INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `updated_at`) VALUES
+(3156, 63, 614, 'Ich kann fast den beruhigenden Geruch der Bücher riechen – so ein friedlicher Lernort! 📖', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (3157, 122, 614, 'Dieses Foto erinnert mich daran, wie sehr ich Sprachen liebe. Muss bald mal wieder in die Bibliothek! 🧐', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (3158, 141, 614, 'Ein kleines bisschen Humor macht das Sprachlernen doch gleich viel angenehmer! 😂', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (3159, 216, 614, 'Diese gemütliche Bibliotheksszene macht richtig Lust aufs Lesen und Entdecken! 📚✨', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
@@ -3484,8 +3476,7 @@ INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `upda
 (3540, 278, 715, 'Wieso so ernst? Musik sollte dich glücklich machen! 😒', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (3541, 305, 715, 'Das erinnert mich daran, als ich letztes Jahr im Park Musik gehört habe. Die Zeit verfliegt einfach! 🕰', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (3542, 133, 715, 'Manchmal verstehe ich einfach nicht, was die Leute an dieser Art von Musik finden... wie geht\'s da dir?', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
-(3543, 146, 717, 'Es ist unglaublich, wie viel Emotionen du in dein Lächeln packen kannst. Deine Liebe zur Musik spürt man total! 🎶😊', '2024-07-13 21:43:10', '2024-07-13 21:43:10');
-INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `updated_at`) VALUES
+(3543, 146, 717, 'Es ist unglaublich, wie viel Emotionen du in dein Lächeln packen kannst. Deine Liebe zur Musik spürt man total! 🎶😊', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (3544, 241, 717, 'Ich kann total nachvollziehen, wie Musik dir Kraft gibt. Man sieht richtig, wie wichtig sie für dich ist. 💪🎧', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (3545, 203, 718, 'Deine Musikvibes passen perfekt in die Natur 🌳🎵', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (3546, 116, 718, 'So cool, wie du mit deinem Style und der Gitarre den Park rockst!', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
@@ -3863,8 +3854,7 @@ INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `upda
 (3918, 54, 747, 'Warum verschwendest du deine Zeit im Pool? 😡', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (3919, 147, 747, 'Meinst du, das Schwimmen löst all deine Probleme? 🙄', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (3920, 202, 747, 'Du rockst das Wasser wie eine wahre Königin! 👑🏊‍♀️', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
-(3921, 202, 747, 'Kann das Schwimmen wirklich helfen, wenn man traurig ist? 😠', '2024-07-13 21:43:10', '2024-07-13 21:43:10');
-INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `updated_at`) VALUES
+(3921, 202, 747, 'Kann das Schwimmen wirklich helfen, wenn man traurig ist? 😠', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (3922, 83, 747, 'Wie oft gehst du eigentlich schwimmen? 🏊‍♀️🤔', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (3923, 193, 747, 'Schönes Foto von dir am Pool. 😊', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (3924, 110, 747, 'Bist du auf der Suche nach Nemo? 😂🐠', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
@@ -4258,8 +4248,7 @@ INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `upda
 (4320, 189, 751, 'Das erinnert mich daran, wie ich mich in Büchern verliere. Einfach magisch! ✨', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (4321, 285, 751, 'Die Welt verblasst, aber Bücher bleiben! 💪📚', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (4322, 318, 751, 'Manchmal treffen Geschichten mitten ins Herz. Halte durch! ✨', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
-(4323, 25, 751, 'Wenn das Leben dir Zitronen gibt, fang an zu lesen! 🍋📖', '2024-07-13 21:43:10', '2024-07-13 21:43:10');
-INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `updated_at`) VALUES
+(4323, 25, 751, 'Wenn das Leben dir Zitronen gibt, fang an zu lesen! 🍋📖', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (4324, 97, 751, 'Bücher sind wirklich eine großartige Zuflucht.', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (4325, 282, 751, 'Niemand kann verstehen, wie stark die Macht der Literatur ist! 💪📚', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (4326, 113, 751, 'Wusstest du, dass Lesen nachweislich stressabbauend wirkt? Bleib dran!', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
@@ -4630,8 +4619,7 @@ INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `upda
 (4697, 291, 824, 'Ich liebe es auch, Wissenschaft mit meinen Hobbys zu verbinden! 😍👩‍🔬', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (4698, 73, 824, 'Neue Pflanzensorten im Gewächshaus zu züchten klingt spannend 🌱🌿.', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (4699, 158, 824, 'Ich hätte nie gedacht, dass man Gärtnern und Wissenschaft so cool kombinieren kann! 🌱🔬', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
-(4700, 219, 824, 'Wie hast du es geschafft, diese neuen Pflanzen zu züchten? 🌿🤓', '2024-07-13 21:43:10', '2024-07-13 21:43:10');
-INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `updated_at`) VALUES
+(4700, 219, 824, 'Wie hast du es geschafft, diese neuen Pflanzen zu züchten? 🌿🤓', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (4701, 143, 824, 'Wusstest du, dass die Forschung an Pflanzen zu besseren Wachstumsbedingungen führen kann? 🌱📚', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (4702, 232, 824, 'Das Gewächshaus scheint voller Leben zu sein 🌿😊.', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (4703, 22, 824, 'Es ist inspirierend zu sehen, wie du Wissenschaft und Gärtnern kombinierst 🌱💖.', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
@@ -5008,8 +4996,7 @@ INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `upda
 (5081, 192, 838, 'Warum sieht das wie das Set eines geheimen Sprachgenie-Films aus? 😂🎬', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (5082, 209, 838, 'Gibt es ein Wort, das du unbedingt lernen möchtest? 🌟📘', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (5083, 83, 839, 'Wow, diese Lichter 💙💜 – wie aus einer Sci-Fi-Welt! 🎉', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
-(5084, 24, 839, 'Unglaublich futuristisch! Bist du schon in der Zukunft angekommen? 🤩', '2024-07-13 21:43:10', '2024-07-13 21:43:10');
-INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `updated_at`) VALUES
+(5084, 24, 839, 'Unglaublich futuristisch! Bist du schon in der Zukunft angekommen? 🤩', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (5085, 236, 840, 'Manchmal ist Technologie auch nur eine Ablenkung von echten Emotionen. Unter all dem Glanz ist sie vielleicht nicht genug.', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (5086, 305, 840, 'Haha, ich wusste nicht, dass du auch eine geheime Ader für Technologie hast! Mega cool 😆📱', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (5087, 250, 841, 'Diese Prints sind absolut genial! 😍🖤', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
@@ -5400,8 +5387,7 @@ INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `upda
 (5472, 135, 952, 'Tolles Foto! Scheint als wäre der Park ein großartiger Ort für Filmideen.', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (5473, 171, 952, 'Haha, das Filmplakat sieht aus, als hätte es seine eigene Comedy-Show 😂', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (5474, 157, 952, 'Solche Orte inspirieren mich immer unglaublich – echt toll, das zu sehen! ✨', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
-(5475, 314, 953, 'Es ist so ungerecht, dass Tiere oft übersehen werden! 😠', '2024-07-13 21:43:10', '2024-07-13 21:43:10');
-INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `updated_at`) VALUES
+(5475, 314, 953, 'Es ist so ungerecht, dass Tiere oft übersehen werden! 😠', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (5476, 133, 953, 'Ich liebe es auch, die Natur zu erkunden und all diese wunderbaren Tiere zu entdecken! 🌳🐾', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (5477, 279, 954, 'Wow, diese Momentaufnahme ist einfach großartig! 🐿️', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (5478, 282, 954, 'Wie hast du es geschafft, das so perfekt festzuhalten? 🤔', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
@@ -5777,8 +5763,7 @@ INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `upda
 (5852, 204, 970, 'Wie tief ist das Wasser dort? 🌊', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (5853, 129, 970, 'Wer würde nicht gerne in so klarem Wasser schwimmen?! 😂', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (5854, 112, 970, 'Das ist echt ein perfekter Tag zum Schwimmen! ☀️🌊', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
-(5855, 21, 970, 'Dieses klare Wasser muss so erfrischend sein. 🌊✨', '2024-07-13 21:43:10', '2024-07-13 21:43:10');
-INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `updated_at`) VALUES
+(5855, 21, 970, 'Dieses klare Wasser muss so erfrischend sein. 🌊✨', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (5856, 266, 970, 'Ich war letzten Sommer auch am Meer. So schön! 🌊', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (5857, 56, 970, 'Das Meerwasser kann eine beruhigende Wirkung auf den Geist haben.', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (5858, 296, 970, 'So ein Himmel über dem Meer ist einfach magisch. 🌅', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
@@ -6172,8 +6157,7 @@ INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `upda
 (6251, 8, 1009, 'Wow, das sieht echt professionell aus! 🎾😲', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (6252, 301, 1009, 'Ich liebe es, wie du die Tenniswelt einfängst. So authentisch! 🏆', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (6253, 265, 1009, 'Spielst du auch im Verein oder machst du das einfach so für dich? 🤔', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
-(6254, 32, 1009, 'Warum sieht dieser Ball aus, als könnte er Geschichten erzählen? 😂🎾', '2024-07-13 21:43:10', '2024-07-13 21:43:10');
-INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `updated_at`) VALUES
+(6254, 32, 1009, 'Warum sieht dieser Ball aus, als könnte er Geschichten erzählen? 😂🎾', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (6255, 257, 1010, 'Du rockst das Court, immer mit vollem Einsatz 👏🎾', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (6256, 186, 1010, 'Tolles Bild! Dein Ehrgeiz ist bewundernswert 😊', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (6257, 84, 1010, 'Liebe die Vintage-Vibes! Viel Glück beim nächsten Match 🍀', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
@@ -6552,8 +6536,7 @@ INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `upda
 (6639, 40, 1107, 'Das erinnert mich daran, wie wichtig es ist, informiert zu bleiben. Danke für die Inspiration! 🌍📰', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (6640, 21, 1109, 'Ich liebe deinen Laufstil und dein Outfit! 🏃‍♀️✨', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (6641, 126, 1110, 'Wow, du siehst so fokussiert aus beim Lesen! 📰', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
-(6642, 8, 1110, 'Nachrichten beim Laufen? Respekt, das ist Multitasking auf einem neuen Level! 🏃‍♀️', '2024-07-13 21:43:10', '2024-07-13 21:43:10');
-INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `updated_at`) VALUES
+(6642, 8, 1110, 'Nachrichten beim Laufen? Respekt, das ist Multitasking auf einem neuen Level! 🏃‍♀️', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (6643, 263, 1110, 'Haha, wieder was Neues aus der Welt der Nachrichten entdeckt? 🤣', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (6644, 141, 1113, 'Haha, immer auf dem Sprung! 😄', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (6645, 264, 1113, 'Warum bist du so schnell? Ich kann das nicht verstehen! 😡', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
@@ -6948,8 +6931,7 @@ INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `upda
 (7043, 129, 1131, 'Woohoo! Highscore knacken und dann gleich ins nächste Level, du rockst! 🥳', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (7044, 308, 1131, 'Wenn der Endgegner nicht weiß, dass du ein Coding-Profi bist 😅🎮', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (7045, 304, 1131, 'Nach dem nächsten Level folgt der Pizza-Level, oder? 😂🍕', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
-(7046, 93, 1131, 'Jede Menge Punkte und jede Menge Spaß! Du bist echt eine Gaming-Queen! 👑🎮', '2024-07-13 21:43:10', '2024-07-13 21:43:10');
-INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `updated_at`) VALUES
+(7046, 93, 1131, 'Jede Menge Punkte und jede Menge Spaß! Du bist echt eine Gaming-Queen! 👑🎮', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (7047, 137, 1131, 'Wenn du den Highscore nicht schaffst, wer dann?! 🥵🎮', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (7048, 313, 1131, 'Ich spüre deine Leidenschaft für Gaming durch das Foto! Bleib dran, du wirst es schaffen! 💪', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (7049, 217, 1131, 'Welches Spiel hast du gerade den Highscore geknackt? 🧐', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
@@ -7347,8 +7329,7 @@ INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `upda
 (7441, 233, 1178, 'Wo hast du dieses Outfit her? Es ist einfach perfekt für einen Tag in der Stadt! 👗🌆', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (7442, 211, 1178, 'Dieses Foto ist einfach der Hammer! Dein Modegeschmack ist unschlagbar! 🌟👗', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (7443, 115, 1178, 'Fühlt sich die Stadtluft besser an, wenn man so modisch durch die Straßen geht? 😂👗', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
-(7444, 31, 1178, 'Manchmal spricht Mode Bände, besonders an Tagen wie diesen 😢👗', '2024-07-13 21:43:10', '2024-07-13 21:43:10');
-INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `updated_at`) VALUES
+(7444, 31, 1178, 'Manchmal spricht Mode Bände, besonders an Tagen wie diesen 😢👗', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (7445, 193, 1178, 'Wie kann Mode so schön und gleichzeitig so melancholisch sein?! 😠', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (7446, 41, 1178, 'Vergiss nicht, dass morgen wieder ein besserer Tag kommen wird, oder? 🌞🌆', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (7447, 19, 1178, 'Warum sehe ich aus, als würde ich nach einem Modekater suchen? 😂', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
@@ -7728,8 +7709,7 @@ INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `upda
 (7823, 206, 1182, 'Wusstest du, dass Urban Chic oft von der Straßenmode in Großstädten inspiriert ist? 🤔', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (7824, 300, 1182, 'Wenn der Urban Fashion Store Gefühle wie diesen Look kreiert, sollte ich da auch mal vorbeischauen! 😂', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (7825, 112, 1182, 'Echt cooler Look! Urban Fashion ist einfach unbeatable! 🔝', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
-(7826, 10, 1182, 'Was inspiriert dich bei der Auswahl deiner Outfits? 🍂💭', '2024-07-13 21:43:10', '2024-07-13 21:43:10');
-INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `updated_at`) VALUES
+(7826, 10, 1182, 'Was inspiriert dich bei der Auswahl deiner Outfits? 🍂💭', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (7827, 305, 1182, 'Die melancholische Stimmung hat echt Stil - man könnte fast eine Modenschau drum herum planen! 😂', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (7828, 178, 1182, 'Wie kombinierst du diese Urban Chic Teile? Bin neugierig! 🤔', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (7829, 273, 1182, 'Urban Chic ist heutzutage echt total im Trend, besonders für den Spätsommer! 🌆', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
@@ -8118,8 +8098,7 @@ INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `upda
 (8224, 17, 1239, 'Deutsch ist eine schöne Sprache, aber warum so viele Fälle? 😂', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (8225, 302, 1241, 'Dein Notizbuch sieht so faszinierend aus! 📝', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (8226, 173, 1241, 'Haha, ich wette, die nächste Vokabel bringt uns alle zum Lachen! 😂', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
-(8227, 143, 1241, 'Wow, so viele neue Wörter zu lernen! Das ist wirklich beeindruckend. 📚', '2024-07-13 21:43:10', '2024-07-13 21:43:10');
-INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `updated_at`) VALUES
+(8227, 143, 1241, 'Wow, so viele neue Wörter zu lernen! Das ist wirklich beeindruckend. 📚', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (8228, 217, 1241, 'Welche Sprache lernst du gerade? 🤔', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (8229, 248, 1241, 'Mega cooles Vokabelheft! Weiter so! 👏', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (8230, 74, 1243, 'Diese Sprachbücher sehen aus, als würden sie Abenteuer und Geheimnisse verbergen! 🌟📚✨', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
@@ -8505,8 +8484,7 @@ INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `upda
 (8632, 234, 1354, 'Ich liebe es, wie viel Enthusiasmus du ausstrahlst! Dein Lauf war bestimmt großartig! 😊', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (8633, 180, 1354, 'Ich wünschte, ich hätte auch so viel Disziplin wie du beim Laufen! Echt beeindruckend!', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (8634, 123, 1354, 'Ich kann die Energie und Freude förmlich spüren! Du bist eine echte Inspiration, besonders bei so einer tollen Kulisse!', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
-(8635, 246, 1355, 'Du siehst aus, als würdest du alles aus dem Weg räumen! 💣', '2024-07-13 21:43:10', '2024-07-13 21:43:10');
-INSERT INTO `comments` (`id`, `user_id`, `photo_id`, `body`, `created_at`, `updated_at`) VALUES
+(8635, 246, 1355, 'Du siehst aus, als würdest du alles aus dem Weg räumen! 💣', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (8636, 7, 1355, 'Mein Gott, dein Gesichtsausdruck könnte jemanden zum Lachen bringen! 😂', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (8637, 145, 1355, 'Wow, man sieht dir diesen Durchhaltewillen richtig an. Bleib stark! 💪', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
 (8638, 141, 1355, 'Haha, der entschlossene Blick ist einfach perfekt! 🤣', '2024-07-13 21:43:10', '2024-07-13 21:43:10'),
