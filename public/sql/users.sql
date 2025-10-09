@@ -318,30 +318,3 @@ INSERT INTO `users` (`id`, `name`, `username`, `email`, `email_verified_at`, `pa
 (319, 'Romy Eisenach', 'sprachfuchs_romy', 'sprachfuchs_romy@instahub.test', NULL, '$2b$12$HTs0Zj5KhMWgA1jhDWe0iu6cMQsWbLXKj0fjRULDZbY.w76VgjkAq', '🐾 Tierliebhaber & Sprachenfreak 🌍\n14 | divers | they/them\nSport & alternative Vibes 🏋️‍♂️🎸\nWütend auf Ungerechtigkeit, begeistert von Vielfalt! 🌈✊', '', '2009-09-17', 'Düsseldorf', 'Deutschland', 176, 'storage/avatars/2/319.webp', 'user', 0, NULL, '2024-09-29 16:07:40', '2024-09-29 16:07:40'),
 (320, 'Yuki Bergwald', 'sprachsprint', 'sprachsprint@instahub.test', NULL, '$2b$12$P4h0xs3To2qmj7DV.ue6qeV343pFQ947Vl5Lhsg3BvTbCdw7zm3OG', '🏃‍♂️💨 Laufend durch die Welt der Sprachen! 🌍🗣️\n17 | divers | Polyglott in Ausbildung 📚\nLiebe jeden Kilometer & jedes neue Wort! ❤️🔤', '', '2006-08-06', 'Stuttgart', 'Deutschland', 177, 'storage/avatars/2/320.webp', 'user', 0, NULL, '2024-09-29 16:07:40', '2024-09-29 16:07:40'),
 (321, 'admin', 'admin', 'admin@instahub.test', NULL, '$2y$12$gkLmv6P36lRBiiWLfChWUOcIhf51bMsBaezU64w0ieKzVL7Wdrv2C', NULL, NULL, NULL, NULL, NULL, NULL, 'avatar.png', 'dba', 1, NULL, '2025-02-23 08:35:37', '2025-02-23 08:35:37');
-
---
--- Indizes der exportierten Tabellen
---
-
---
--- Indizes für die Tabelle `users`
---
-ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `users_username_unique` (`username`),
-  ADD UNIQUE KEY `users_email_unique` (`email`);
-
---
--- AUTO_INCREMENT für exportierte Tabellen
---
-
---
--- AUTO_INCREMENT für Tabelle `users`
---
-ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=322;
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
