@@ -10,7 +10,7 @@ Es bieten sich folgende grundsätzliche didaktische Ansätze an:
 
 ### [Julian Dorn](https://wi-wissen.de/)
 
-Dieser didaktische Ansatz wurde vom Autor bereits mit über 200 SchülerInnen erfolgreich durchgeführt. Es lässt sich damit nach dem sächsischen Lehrplan Informatik der gesamte Lernbereich Datenbanken in der Sekundarstufe II behandeln. Hier erlernen SchülerInnen Fähigkeiten im Modellieren (ERM, Kardinalitäten, Schlüssel etc.) und im Umgang mit SQL (CRUD-Abfragen in einer und verknüpften Tabellen, sowie Anlagen von Tabellen).
+Dieser didaktische Ansatz ist sehr neu und wurde vom Autor mit bisher ungefähr 40 Schüler:innen erfolgreich durchgeführt. Es lässt sich damit nach dem neuen sächsischen Lehrplan Informatik der gesamte Lernbereich Datenbanken in der Sekundarstufe II behandeln. Hier erlernen SchülerInnen Fähigkeiten im Modellieren (ERM, Kardinalitäten, Schlüssel etc.) und im Umgang mit SQL (CRUD-Abfragen in einer und verknüpften Tabellen, sowie Anlagen von Tabellen).
 
 **Das Lehrbuch findest du unter [buch.informatik.cc](https://buch.informatik.cc/dm/)**
 
@@ -22,9 +22,9 @@ Basiert auf dem Datensatz von 2017
 
 Dieser didaktische Ansatz wurde vom Autor bereits mit über 200 SchülerInnen erfolgreich durchgeführt. Es lässt sich damit nach dem sächsischen Lehrplan Informatik der gesamte Lernbereich Datenbanken in der Sekundarstufe II behandeln. Hier erlernen SchülerInnen Fähigkeiten im Modellieren (ERM, Kardinalitäten, Schlüssel etc.) und im Umgang mit SQL (CRUD-Abfragen in einer und verknüpften Tabellen, sowie Anlagen von Tabellen).
 
-**Den Ablaufplan findest du unter [Modellierung und SQL](didactic-modellierung-sql)**
+**Den Ablaufplan findest du unter [Modellierung und SQL](https://wi-wissen.github.io/instahub-doc-de/#/didactic-modellierung-sql)**
 
-**Alle Aufgaben findest du vollständig unter [Übungen](exercices)**
+**Alle Aufgaben findest du vollständig unter [Übungen](https://wi-wissen.github.io/instahub-doc-de/#/exercices)**
 
 Das Material steht (wie auch diese Dokumentation) unter der [CC BY-NC-SA Lizenz](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
@@ -121,4 +121,3 @@ Basiert auf dem Datensatz von 2017
 :::
 
 Peter Braunschädel hat das konzipiert und die Implementierung vorbereitet. Mehr dazu in seiner Masterarbeit [Entwicklung und Umsetzung von Follow-Vorschlägen für InstaHub und Entwicklung einer entsprechenden Unterrichtsreihe zum Thema "**Relationen in sozialen Netzwerken und Gefahren der Erzeugung und Verarbeitung von personenbezogenen Daten" für die Sekundarstufe II**](https://kola.opus.hbz-nrw.de/frontdoor/index/index/searchtype/latest/rows/100/docId/2184/start/3)
-
