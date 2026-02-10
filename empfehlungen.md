@@ -2,15 +2,23 @@
 
 Wie behält man bei mehreren Milliarden Mitgliedern den Überblick? Scrollen wir im Adressbuch oder blättern wie in einem Magazin ist nicht. Hier erfährst du die Lösung.
 
+## Feed nach Tags filtern
+
+Über die Auswahl eines einzelnen Hashtags können Photos zu nur einem Thema betrachtet werden. Das geht etwa über `http://public.instahub.org/tag/natur`.
+
 ## Sortierung und Gewichtung des Feeds
 
 InstaHub sortiert auf Wunsch entweder nach den neusten oder den besten Ergebnissen. Im letzteren Fall erhalten Administratoren im Tooltip des jeweiligen Bildes auch das dazugehörige Scoring angezeigt:
 
 ![sort-scoring](img/sort-scoring.webp)
 
-### Gewichtung nach Affinität und Aktualität bei Themen-Feeds
+Die die Kriterien zur Gewichtung des Feeds lassen sich auch selbst gewichten:
 
-Über die Auswahl eines einzelnen Hashtags können Photos zu nur einem Thema betrachtet werden. Das geht etwa über `http://public.instahub.org/tag/natur`. Diese werden bei den besten Ergebnissen nach Affinität und Aktualität sortiert (siehe dazu auch [Kapitel 3.3.2](https://kola.opus.hbz-nrw.de/opus45-kola/frontdoor/deliver/index/docId/2013/file/Masterarbeit.pdf)).
+![feed-weights](img/feed-weights.webp)
+
+### Gewichtung nach Affinität und Aktualität
+
+Für die besten Ergebnissen wird der Feed nach Affinität und Aktualität sortiert (siehe dazu auch [Kapitel 3.3.2](https://kola.opus.hbz-nrw.de/opus45-kola/frontdoor/deliver/index/docId/2013/file/Masterarbeit.pdf)).
 
 Zusammengefasst passiert Folgendes:
 
